@@ -1,0 +1,11 @@
+﻿<wpf:ResourceDictionary xml:space="preserve" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:ss="urn:shemas-jetbrains-com:settings-storage-xaml" xmlns:wpf="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=4a48e704_002D9a05_002D4063_002D8dcf_002D74c855025afc/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="All tests from QueryUnitTest.cs" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;Or&gt;&#xD;
+    &lt;ProjectFile&gt;9C02FD81-7DD0-4997-96C2-20234D56EC28/f:QueryUnitTest.cs&lt;/ProjectFile&gt;&#xD;
+    &lt;TestAncestor&gt;&#xD;
+      &lt;TestId&gt;xUnit::9C02FD81-7DD0-4997-96C2-20234D56EC28::.NETCoreApp,Version=v3.1::Sensei.AspNet.Tests.DbProcessorUnitTest.DateTimeProcessor&lt;/TestId&gt;&#xD;
+      &lt;TestId&gt;xUnit::9C02FD81-7DD0-4997-96C2-20234D56EC28::.NETCoreApp,Version=v3.1::Sensei.AspNet.Tests.DbProcessorUnitTest.ClaimProcessor&lt;/TestId&gt;&#xD;
+      &lt;TestId&gt;xUnit::9C02FD81-7DD0-4997-96C2-20234D56EC28::.NETCoreApp,Version=v3.1::Sensei.AspNet.Tests.DbProcessorUnitTest.UserIdProcessor&lt;/TestId&gt;&#xD;
+    &lt;/TestAncestor&gt;&#xD;
+  &lt;/Or&gt;&#xD;
+&lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>
