@@ -1,20 +1,27 @@
 ﻿# Resolve HTTP queries
 
-Sensei provide helpers to handle common actions over HTTP requests,
-in specific it provide:
+Sensei provides a mechanism to perform the most common actions related to
+HTTP requests. The system provides a series of predefined helpers and,
+if necessary, it can be extended with customized actions.
+
+The default helpers are:
 
 - [Filtering](#filtering)
 - [Sorting](#sorting)
 - [Including](#including)
 - [Pagination](#pagination)
 
-Before run our queries we need to obtain a [Query](xref:Sensei.AspNet.QueryProcessor.Query)
-object that is where our filters will be applied.
+The actions are performed on a [Query](xref:Sensei.AspNet.QueryProcessor.Query)
+type object which contains the IQueryable interface on which to execute the
+queries and IServiceContainer which allows access to the DI system.
 
-To obtain that object we use the [QueryProcessor](xref:Sensei.AspNet.QueryProcessor.QueryProcessor)
-that is available into the DI system.
+To get a [Query](xref:Sensei.AspNet.QueryProcessor.Query) instance we can use
+the [QueryProcessor](xref:Sensei.AspNet.QueryProcessor.QueryProcessor) that is
+available inside the DI system and start the
+ [Query](xref:Sensei.AspNet.QueryProcessor.Query) through the `Start()` method.
 
-As example:
+Example:
+
 ```c#
 public class CategoryController : ControllerBase
 {
@@ -37,7 +44,7 @@ public class CategoryController : ControllerBase
 ```
 
 Once the [Query](xref:Sensei.AspNet.QueryProcessor.Query) is instantiated you can
-apply filters with a fluent syntax. As example:
+apply filters with a fluent syntax, as example:
  
 ```c#
 public ActionResult<Paginator<Category>> Get(
@@ -58,28 +65,37 @@ public ActionResult<Paginator<Category>> Get(
 
 ## Filtering
 
-Filters work with a lucene-like syntax with some differences to adapt it to an SQL data source.
+Filters work through lucene-like syntax with some limitations due to the
+SQL data source.
 
-As example:
+Filters are applied to strings using the `LIKE` operator which means that it is
+case insensitive, with the exception of some SQL servers such as PostgreSQL
+where `LIKE` is case sensitive.
+
+The wildcard characters used to filter strings depend on the SQL server used
+(as above they are processed through the `LIKE` operator).
+
+Example of a request with a filter applied:
+```test
+description:%coffee% AND (price:>10 OR quantity:<=100)
+```
 ```http request
-// description:%coffee% AND (price:>10 OR quantity:<=100)
-
 GET /categories?filters=description%3A%25coffee%25%20AND%20(price%3A%3E10%20OR%20quantity%3A%3C%3D100)
 ```
 
-It will be translate in something like:
+The previous query is converted to an SQL query similar to:
 
 ```sql
 SELECT * FROM Categories WHERE Description = '%coffee%' AND (Price > 10 OR Quantity <= 100)
 ```
 
 > [!WARNING]
-> At the moment filtering only work with server-side queries.
-> This because for string we use the DbFunctions.Like method.
+> Filters currently only work on queries that are resolved server-side,
+> due to the use of the DbFunctions.Like method to process strings.
 
 ### Syntax
 
-A series of examples for understand how filter queries work:
+Here is a series of examples to understand how filter queries work:
 
 - Where the field `name` match the value `coffee`
   ```text
