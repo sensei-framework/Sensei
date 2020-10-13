@@ -5,7 +5,7 @@ using Swashbuckle.AspNetCore.Annotations;
 // ReSharper disable UnusedType.Global
 // ReSharper disable UnusedMember.Global
 
-namespace Sensei.AspNet.Models
+namespace Sensei.AspNet.QueryProcessor.Entities
 {
     /// <summary>
     ///     Paginator model for HTTP responses

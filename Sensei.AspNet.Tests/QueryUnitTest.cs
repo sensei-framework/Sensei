@@ -4,6 +4,7 @@ using System.Linq;
 using System.Net;
 using System.Threading.Tasks;
 using Sensei.AspNet.Models;
+using Sensei.AspNet.QueryProcessor.Entities;
 using Sensei.AspNet.Tests.Utils;
 using Xunit;
 

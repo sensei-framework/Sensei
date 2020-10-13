@@ -2,6 +2,7 @@
 using System.Linq;
 using Microsoft.Extensions.DependencyInjection;
 using Sensei.AspNet.Models;
+using Sensei.AspNet.QueryProcessor.Entities;
 
 namespace Sensei.AspNet.QueryProcessor.QueryPagination
 {

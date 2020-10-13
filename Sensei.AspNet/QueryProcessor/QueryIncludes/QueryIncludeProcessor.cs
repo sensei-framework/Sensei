@@ -1,6 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
 using Sensei.AspNet.Models;
+using Sensei.AspNet.QueryProcessor.Entities;
 
 namespace Sensei.AspNet.QueryProcessor.QueryIncludes
 {

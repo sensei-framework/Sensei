@@ -8,6 +8,7 @@ using Foundatio.Parsers.LuceneQueries.Nodes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Sensei.AspNet.Models;
+using Sensei.AspNet.QueryProcessor.Entities;
 
 namespace Sensei.AspNet.QueryProcessor.QueryFilters
 {

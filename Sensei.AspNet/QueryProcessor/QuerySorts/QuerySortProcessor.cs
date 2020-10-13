@@ -4,6 +4,7 @@ using System.Linq;
 using System.Linq.Expressions;
 using Microsoft.Extensions.Logging;
 using Sensei.AspNet.Models;
+using Sensei.AspNet.QueryProcessor.Entities;
 
 namespace Sensei.AspNet.QueryProcessor.QuerySorts
 {

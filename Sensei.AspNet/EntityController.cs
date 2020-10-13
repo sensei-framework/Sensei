@@ -6,6 +6,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 using Sensei.AspNet.Models;
+using Sensei.AspNet.QueryProcessor.Entities;
 using Sensei.AspNet.QueryProcessor.QueryFilters;
 using Sensei.AspNet.QueryProcessor.QueryIncludes;
 using Sensei.AspNet.QueryProcessor.QueryPagination;

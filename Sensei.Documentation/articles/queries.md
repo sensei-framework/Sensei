@@ -215,10 +215,10 @@ GET /products?includes=category.parentCategory,items
 ## Pagination
 
 Pagination, unlike other filters, terminates the query and returns an object.
-The pagination object is [Paginator](xref:Sensei.AspNet.Models.Paginator`1)
+The pagination object is [Paginator](xref:Sensei.AspNet.QueryProcessor.Entities.Paginator`1)
 and contains all pagination information and filtered items.
 
-The [Paginator](xref:Sensei.AspNet.Models.Paginator`1) structure have the following fields:
+The [Paginator](xref:Sensei.AspNet.QueryProcessor.Entities.Paginator`1) structure have the following fields:
 - `Page` is the number of page returned
 - `PageSize` is the number of items returned per page
 - `Items` is a list of items returned
