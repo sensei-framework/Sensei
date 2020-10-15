@@ -1,7 +1,7 @@
 ﻿using System.Linq.Expressions;
 using Microsoft.EntityFrameworkCore;
 
-namespace Sensei.AspNet.QueryProcessor.QueryFilters
+namespace Sensei.AspNet.Queries.QueryFilters
 {
     internal static class ExpressionExt
     {

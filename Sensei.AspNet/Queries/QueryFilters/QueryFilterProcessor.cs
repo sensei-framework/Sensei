@@ -2,15 +2,13 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Linq.Expressions;
-using System.Reflection;
 using Foundatio.Parsers.LuceneQueries;
 using Foundatio.Parsers.LuceneQueries.Nodes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
-using Sensei.AspNet.Models;
-using Sensei.AspNet.QueryProcessor.Entities;
+using Sensei.AspNet.Queries.Entities;
 
-namespace Sensei.AspNet.QueryProcessor.QueryFilters
+namespace Sensei.AspNet.Queries.QueryFilters
 {
     /// <summary>
     ///     Process the filters for a query.
@@ -31,6 +29,7 @@ namespace Sensei.AspNet.QueryProcessor.QueryFilters
 
             var queryable = query.Queryable;
             var serviceProvider = query.ServiceProvider;
+            var queryContext = query.QueryContext;
             
             var logger = query.LoggerFactory.CreateLogger(Const.LoggerName);
             logger.LogDebug("Lucene query: {filters}", filtering.Filters);
@@ -50,7 +49,7 @@ namespace Sensei.AspNet.QueryProcessor.QueryFilters
             var parameterExpression = Expression.Parameter(typeof(TEntity), "e");
 
             var groupNodeExpression =
-                BuildNodeExpression<TEntity>(groupNode, parameterExpression, serviceProvider, logger);
+                BuildNodeExpression<TEntity>(groupNode, parameterExpression, serviceProvider, logger, queryContext);
             if (groupNodeExpression != null)
             {
                 var whereCallExpression = Expression.Call(  
@@ -69,7 +68,8 @@ namespace Sensei.AspNet.QueryProcessor.QueryFilters
         }
 
         private static Expression BuildNodeExpression<TEntity>(GroupNode groupNode,
-            Expression parameterExpression, IServiceProvider serviceProvider, ILogger logger)
+            Expression parameterExpression, IServiceProvider serviceProvider, ILogger logger,
+            QueryContext queryContext)
         {
             var expressions = new List<Expression>();
             
@@ -79,7 +79,8 @@ namespace Sensei.AspNet.QueryProcessor.QueryFilters
                 if (queryNode is GroupNode childGroupNode)
                 {
                     var expression =
-                        BuildNodeExpression<TEntity>(childGroupNode, parameterExpression, serviceProvider, logger);
+                        BuildNodeExpression<TEntity>(childGroupNode, parameterExpression, serviceProvider, logger,
+                            queryContext);
                     if (expression == null)
                     {
                         logger.LogError("Error creating group node expression");
@@ -105,7 +106,8 @@ namespace Sensei.AspNet.QueryProcessor.QueryFilters
 
                     // resolve the property expression
                     var (propertyInfo, propertyExpression) =
-                        QueryProcessor.ResolveProperty(typeof(TEntity), parameterExpression, field);
+                        queryContext.Resolve(typeof(TEntity), parameterExpression, field, QueryType.Filters,
+                            serviceProvider.GetService<SenseiOptions>());
 
                     // we skip if we can't find the property
                     if (propertyInfo == null || propertyExpression == null)

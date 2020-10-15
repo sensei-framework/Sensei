@@ -2,7 +2,7 @@
 using System.Linq;
 using Microsoft.Extensions.Logging;
 
-namespace Sensei.AspNet.QueryProcessor
+namespace Sensei.AspNet.Queries
 {
     /// <summary>
     ///     This is a container for an IQueryable expression that also store an IServiceProvider inside.
@@ -20,21 +20,17 @@ namespace Sensei.AspNet.QueryProcessor
         /// </summary>
         public IServiceProvider ServiceProvider { get; }
 
-        /// <summary>
-        ///     The logger factory.
-        /// </summary>
-        public ILoggerFactory LoggerFactory { get; }
+        internal ILoggerFactory LoggerFactory { get; }
+        
+        internal QueryContext QueryContext { get; }
 
-        /// <summary>
-        ///     Constructor.
-        /// </summary>
-        /// <param name="queryable">The queryable expression.</param>
-        /// <param name="serviceProvider">The service provider.</param>
-        public Query(IQueryable<TEntity> queryable, IServiceProvider serviceProvider, ILoggerFactory loggerFactory)
+        internal Query(IQueryable<TEntity> queryable, IServiceProvider serviceProvider,
+            ILoggerFactory loggerFactory, QueryContext queryContext)
         {
             Queryable = queryable;
             ServiceProvider = serviceProvider;
             LoggerFactory = loggerFactory;
+            QueryContext = queryContext;
         }
     }
 }

@@ -11,14 +11,14 @@ The default helpers are:
 - [Including](#including)
 - [Pagination](#pagination)
 
-The actions are performed on a [Query](xref:Sensei.AspNet.QueryProcessor.Query`1)
+The actions are performed on a [Query](xref:Sensei.AspNet.Queries.Query`1)
 type object which contains the IQueryable interface on which to execute the
 queries and IServiceContainer which allows access to the DI system.
 
-To get a [Query](xref:Sensei.AspNet.QueryProcessor.Query`1) instance we can use
-the [QueryProcessor](xref:Sensei.AspNet.QueryProcessor.QueryProcessor) that is
+To get a [Query](xref:Sensei.AspNet.Queries.Query`1) instance we can use
+the [QueryProcessor](xref:Sensei.AspNet.Queries.QueryProcessor) that is
 available inside the DI system and start the
- [Query](xref:Sensei.AspNet.QueryProcessor.Query`1) through the `Start()` method.
+ [Query](xref:Sensei.AspNet.Queries.Query`1) through the `Start()` method.
 
 Example:
 
@@ -43,7 +43,7 @@ public class CategoryController : ControllerBase
 }
 ```
 
-Once the [Query](xref:Sensei.AspNet.QueryProcessor.Query`1) is instantiated you can
+Once the [Query](xref:Sensei.AspNet.Queries.Query`1) is instantiated you can
 apply filters with a fluent syntax, as example:
  
 ```c#
@@ -215,10 +215,10 @@ GET /products?includes=category.parentCategory,items
 ## Pagination
 
 Pagination, unlike other filters, terminates the query and returns an object.
-The pagination object is [Paginator](xref:Sensei.AspNet.QueryProcessor.Entities.Paginator`1)
+The pagination object is [Paginator](xref:Sensei.AspNet.Queries.Entities.Paginator`1)
 and contains all pagination information and filtered items.
 
-The [Paginator](xref:Sensei.AspNet.QueryProcessor.Entities.Paginator`1) structure have the following fields:
+The [Paginator](xref:Sensei.AspNet.Queries.Entities.Paginator`1) structure have the following fields:
 - `Page` is the number of page returned
 - `PageSize` is the number of items returned per page
 - `Items` is a list of items returned

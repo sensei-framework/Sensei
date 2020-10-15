@@ -1,10 +1,9 @@
 ﻿using System;
 using System.Linq;
 using Microsoft.Extensions.DependencyInjection;
-using Sensei.AspNet.Models;
-using Sensei.AspNet.QueryProcessor.Entities;
+using Sensei.AspNet.Queries.Entities;
 
-namespace Sensei.AspNet.QueryProcessor.QueryPagination
+namespace Sensei.AspNet.Queries.QueryPagination
 {
     public static class QueryPaginationProcessor
     {

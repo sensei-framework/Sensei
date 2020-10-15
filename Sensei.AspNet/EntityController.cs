@@ -6,11 +6,12 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 using Sensei.AspNet.Models;
-using Sensei.AspNet.QueryProcessor.Entities;
-using Sensei.AspNet.QueryProcessor.QueryFilters;
-using Sensei.AspNet.QueryProcessor.QueryIncludes;
-using Sensei.AspNet.QueryProcessor.QueryPagination;
-using Sensei.AspNet.QueryProcessor.QuerySorts;
+using Sensei.AspNet.Queries;
+using Sensei.AspNet.Queries.Entities;
+using Sensei.AspNet.Queries.QueryFilters;
+using Sensei.AspNet.Queries.QueryIncludes;
+using Sensei.AspNet.Queries.QueryPagination;
+using Sensei.AspNet.Queries.QuerySorts;
 using Swashbuckle.AspNetCore.Annotations;
 
 // ReSharper disable MemberCanBePrivate.Global
@@ -36,7 +37,7 @@ namespace Sensei.AspNet
             // we use the service provider and not the DI in constructor because this can grow up in future
             // and we don't want to broke services that inherit this abstract class
             DbContext = serviceProvider.GetService<TDbContext>();
-            QueryProcessor = serviceProvider.GetService<QueryProcessor.QueryProcessor>();
+            QueryProcessor = serviceProvider.GetService<IQueryProcessor>();
             
             DbSet = DbContext.Set<TModel>();
         }
@@ -54,7 +55,7 @@ namespace Sensei.AspNet
         /// <summary>
         ///     The query processor
         /// </summary>
-        protected QueryProcessor.QueryProcessor QueryProcessor { get; }
+        protected IQueryProcessor QueryProcessor { get; }
 
         /// <summary>
         ///     Get records

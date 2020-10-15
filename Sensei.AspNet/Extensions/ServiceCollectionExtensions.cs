@@ -2,8 +2,9 @@
 using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.DependencyInjection.Extensions;
-using Sensei.AspNet.QueryProcessor.QueryFilters;
-using Sensei.AspNet.QueryProcessor.QueryFilters.Filters;
+using Sensei.AspNet.Queries;
+using Sensei.AspNet.Queries.QueryFilters;
+using Sensei.AspNet.Queries.QueryFilters.Filters;
 
 namespace Sensei.AspNet.Extensions
 {
@@ -14,7 +15,7 @@ namespace Sensei.AspNet.Extensions
         {
             services.TryAddSingleton<IHttpContextAccessor, HttpContextAccessor>();
 
-            services.AddTransient<QueryProcessor.QueryProcessor>();
+            services.AddTransient<IQueryProcessor, QueryProcessor>();
             services.AddTransient<IQueryFilter, StringQueryFilter>();
             services.AddTransient<IQueryFilter, NumericQueryFilter>();
             services.AddTransient<IQueryFilter, EnumQueryFilter>();

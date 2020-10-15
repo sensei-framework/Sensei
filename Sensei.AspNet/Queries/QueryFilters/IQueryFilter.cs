@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Linq.Expressions;
 
-namespace Sensei.AspNet.QueryProcessor.QueryFilters
+namespace Sensei.AspNet.Queries.QueryFilters
 {
     public interface IQueryFilter
     {

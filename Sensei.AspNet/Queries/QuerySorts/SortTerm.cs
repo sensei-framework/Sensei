@@ -1,4 +1,4 @@
-﻿namespace Sensei.AspNet.QueryProcessor.QuerySorts
+﻿namespace Sensei.AspNet.Queries.QuerySorts
 {
     internal class SortTerm
     {

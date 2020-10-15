@@ -1,16 +1,21 @@
 ﻿using System;
+using System.ComponentModel;
 using System.Linq.Expressions;
 
-namespace Sensei.AspNet.QueryProcessor.QueryFilters.Filters
+namespace Sensei.AspNet.Queries.QueryFilters.Filters
 {
-    public class StringQueryFilter : IQueryFilter
+    public class EnumQueryFilter : IQueryFilter
     {
-        public Type[] SupportedTypes => new[] {typeof(string)};
+        public Type[] SupportedTypes => new[]
+        {
+            typeof(Enum)
+        };
 
         public Expression GetCompareExpression(Expression propertyExpression, Type propertyType, string term)
         {
-            var termExpression = Expression.Constant(term, typeof(string));
-            return ExpressionExt.Like(propertyExpression, termExpression);
+            var value = TypeDescriptor.GetConverter(propertyType).ConvertFromInvariantString(term);
+            var valueExpression = Expression.Constant(value, propertyType);
+            return Expression.Equal(propertyExpression, valueExpression);
         }
 
         public Expression GetExistsExpression(Expression propertyExpression, Type propertyType)
@@ -21,14 +26,14 @@ namespace Sensei.AspNet.QueryProcessor.QueryFilters.Filters
         public Expression GetGreaterExpression(Expression propertyExpression, Type propertyType, string term,
             bool inclusive)
         {
-            // strings doesn't support it
+            // enums doesn't support it
             return null;
         }
 
         public Expression GetLessExpression(Expression propertyExpression, Type propertyType, string term,
             bool inclusive)
         {
-            // strings doesn't support it
+            // enums doesn't support it
             return null;
         }
     }

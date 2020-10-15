@@ -1,9 +1,9 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
-using Sensei.AspNet.Models;
-using Sensei.AspNet.QueryProcessor.Entities;
+using Sensei.AspNet.Queries.Entities;
 
-namespace Sensei.AspNet.QueryProcessor.QueryIncludes
+namespace Sensei.AspNet.Queries.QueryIncludes
 {
     public static class QueryIncludeProcessor
     {
@@ -15,14 +15,17 @@ namespace Sensei.AspNet.QueryProcessor.QueryIncludes
 
             var queryable = query.Queryable;
             var logger = query.LoggerFactory.CreateLogger(Const.LoggerName);
-            
+            var queryContext = query.QueryContext;
+            var serviceProvider = query.ServiceProvider;
+
             foreach (var item in including.Includes.Split(','))
             {
                 var include = item.Trim();
                 
                 // we resolve the property expression just to check the permissions
                 var (propertyInfo, _) =
-                    QueryProcessor.ResolveProperty(typeof(TEntity), null, include);
+                    queryContext.Resolve(typeof(TEntity), null, include, QueryType.Includes,
+                        serviceProvider.GetService<SenseiOptions>());
 
                 // we skip if we can't find the property
                 if (propertyInfo == null)

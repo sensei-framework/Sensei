@@ -1,12 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
 using System.Linq.Expressions;
+using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
-using Sensei.AspNet.Models;
-using Sensei.AspNet.QueryProcessor.Entities;
+using Sensei.AspNet.Queries.Entities;
 
-namespace Sensei.AspNet.QueryProcessor.QuerySorts
+namespace Sensei.AspNet.Queries.QuerySorts
 {
     public static class QuerySortProcessor
     {
@@ -17,6 +16,8 @@ namespace Sensei.AspNet.QueryProcessor.QuerySorts
             
             var queryable = query.Queryable;
             var logger = query.LoggerFactory.CreateLogger(Const.LoggerName);
+            var queryContext = query.QueryContext;
+            var serviceProvider = query.ServiceProvider;
 
             var parameterExpression = Expression.Parameter(typeof(TEntity), "e");
 
@@ -28,7 +29,8 @@ namespace Sensei.AspNet.QueryProcessor.QuerySorts
             {
                 // resolve the property expression
                 var (propertyInfo, propertyExpression) =
-                    QueryProcessor.ResolveProperty(typeof(TEntity), parameterExpression, term.Field);
+                    queryContext.Resolve(typeof(TEntity), parameterExpression, term.Field, QueryType.Sorts,
+                        serviceProvider.GetService<SenseiOptions>());
 
                 // we skip if we can't find the property
                 if (propertyInfo == null || propertyExpression == null)

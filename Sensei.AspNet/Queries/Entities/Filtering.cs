@@ -4,7 +4,7 @@
 // ReSharper disable UnusedType.Global
 // ReSharper disable UnusedMember.Global
 
-namespace Sensei.AspNet.QueryProcessor.Entities
+namespace Sensei.AspNet.Queries.Entities
 {
     /// <summary>
     ///     Filters model for HTTP requests

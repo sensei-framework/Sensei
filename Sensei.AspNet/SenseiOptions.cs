@@ -9,5 +9,11 @@ namespace Sensei.AspNet
         public int PaginationDefaultPageSize { get; set; } = 20;
 
         public int PaginationMaxPageSize { get; set; } = 100;
+
+        public bool EnableFiltersAsDefault { get; set; } = true;
+
+        public bool EnableSortsAsDefault { get; set; } = true;
+
+        public bool EnableIncludesAsDefault { get; set; } = true;
     }
 }
