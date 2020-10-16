@@ -4,6 +4,7 @@ using System.Linq.Expressions;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Sensei.AspNet.Queries.Entities;
+using Sensei.AspNet.Queries.Exceptions;
 
 namespace Sensei.AspNet.Queries.QuerySorts
 {
@@ -18,6 +19,7 @@ namespace Sensei.AspNet.Queries.QuerySorts
             var logger = query.LoggerFactory.CreateLogger(Const.LoggerName);
             var queryContext = query.QueryContext;
             var serviceProvider = query.ServiceProvider;
+            var options = serviceProvider.GetService<SenseiOptions>();
 
             var parameterExpression = Expression.Parameter(typeof(TEntity), "e");
 
@@ -36,6 +38,10 @@ namespace Sensei.AspNet.Queries.QuerySorts
                 if (propertyInfo == null || propertyExpression == null)
                 {
                     logger.LogError("Property for field {field} not found", term.Field);
+
+                    if (options.ThrowExceptionOnQueryError)
+                        throw new MissingPropertyException($"Property for field {term.Field} not found");
+
                     continue;
                 }
                 

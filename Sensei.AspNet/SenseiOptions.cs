@@ -15,5 +15,7 @@ namespace Sensei.AspNet
         public bool EnableSortsAsDefault { get; set; } = true;
 
         public bool EnableIncludesAsDefault { get; set; } = true;
+
+        public bool ThrowExceptionOnQueryError { get; set; } = true;
     }
 }

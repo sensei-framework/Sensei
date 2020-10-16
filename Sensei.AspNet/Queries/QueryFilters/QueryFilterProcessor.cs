@@ -7,6 +7,7 @@ using Foundatio.Parsers.LuceneQueries.Nodes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Sensei.AspNet.Queries.Entities;
+using Sensei.AspNet.Queries.Exceptions;
 
 namespace Sensei.AspNet.Queries.QueryFilters
 {
@@ -21,6 +22,10 @@ namespace Sensei.AspNet.Queries.QueryFilters
         /// <param name="query">The query where the filters need to applied.</param>
         /// <param name="filtering">The filters model.</param>
         /// <typeparam name="TEntity">The entity type associated to the query.</typeparam>
+        /// <exception cref="LuceneParserException">Raise if the lucene query have syntax errors.</exception>
+        /// <exception cref="MissingPropertyException">Raise if the property is missing or doesnt' have permissions.</exception>
+        /// <exception cref="MissingFilterException">Raise if there is no filter for the property type.</exception>
+        /// <exception cref="EvaluateFilterException">Raise if there is an error when evaluating a filter.</exception>
         /// <returns>The updated query.</returns>
         public static Query<TEntity> ApplyFilters<TEntity>(this Query<TEntity> query, Filtering filtering)
         {
@@ -30,6 +35,7 @@ namespace Sensei.AspNet.Queries.QueryFilters
             var queryable = query.Queryable;
             var serviceProvider = query.ServiceProvider;
             var queryContext = query.QueryContext;
+            var options = serviceProvider.GetService<SenseiOptions>();
             
             var logger = query.LoggerFactory.CreateLogger(Const.LoggerName);
             logger.LogDebug("Lucene query: {filters}", filtering.Filters);
@@ -43,13 +49,18 @@ namespace Sensei.AspNet.Queries.QueryFilters
             catch (Exception e)
             {
                 logger.LogError(e, "Cannot parse lucene query");
+                
+                if (options.ThrowExceptionOnQueryError)
+                    throw new LuceneParserException("Cannot parse lucene query", e);
+                
                 return query;
             }
 
             var parameterExpression = Expression.Parameter(typeof(TEntity), "e");
 
             var groupNodeExpression =
-                BuildNodeExpression<TEntity>(groupNode, parameterExpression, serviceProvider, logger, queryContext);
+                BuildNodeExpression<TEntity>(groupNode, parameterExpression, serviceProvider, logger, queryContext,
+                    options);
             if (groupNodeExpression != null)
             {
                 var whereCallExpression = Expression.Call(  
@@ -69,7 +80,7 @@ namespace Sensei.AspNet.Queries.QueryFilters
 
         private static Expression BuildNodeExpression<TEntity>(GroupNode groupNode,
             Expression parameterExpression, IServiceProvider serviceProvider, ILogger logger,
-            QueryContext queryContext)
+            QueryContext queryContext, SenseiOptions options)
         {
             var expressions = new List<Expression>();
             
@@ -80,12 +91,9 @@ namespace Sensei.AspNet.Queries.QueryFilters
                 {
                     var expression =
                         BuildNodeExpression<TEntity>(childGroupNode, parameterExpression, serviceProvider, logger,
-                            queryContext);
+                            queryContext, options);
                     if (expression == null)
-                    {
-                        logger.LogError("Error creating group node expression");
                         continue;
-                    }
                     expressions.Add(expression);
                 }
                 
@@ -101,18 +109,26 @@ namespace Sensei.AspNet.Queries.QueryFilters
                     if (string.IsNullOrEmpty(field))
                     {
                         logger.LogError("Missing field name");
+
+                        if (options.ThrowExceptionOnQueryError)
+                            throw new MissingPropertyException("Missing field name");
+                        
                         continue;
                     }
 
                     // resolve the property expression
                     var (propertyInfo, propertyExpression) =
-                        queryContext.Resolve(typeof(TEntity), parameterExpression, field, QueryType.Filters,
-                            serviceProvider.GetService<SenseiOptions>());
+                        queryContext.Resolve(typeof(TEntity), parameterExpression, field,
+                            QueryType.Filters, options);
 
                     // we skip if we can't find the property
                     if (propertyInfo == null || propertyExpression == null)
                     {
                         logger.LogError("Property for field {field} not found", field);
+
+                        if (options.ThrowExceptionOnQueryError)
+                            throw new MissingPropertyException($"Property for field {field} not found");
+                        
                         continue;
                     }
 
@@ -127,6 +143,11 @@ namespace Sensei.AspNet.Queries.QueryFilters
                     if (queryFilter == null)
                     {
                         logger.LogError("Query filter for type {type} not found", propertyInfo.PropertyType.Name);
+
+                        if (options.ThrowExceptionOnQueryError)
+                            throw new MissingPropertyException(
+                                $"Query filter for type {propertyInfo.PropertyType.Name} not found");
+                        
                         continue;
                     }
 
@@ -172,6 +193,9 @@ namespace Sensei.AspNet.Queries.QueryFilters
                     catch (Exception e)
                     {
                         logger.LogError(e, "Cannot build expression");
+                        
+                        if (options.ThrowExceptionOnQueryError)
+                            throw new EvaluateFilterException("Cannot build expression");
                     }
 
                     if (expression != null)

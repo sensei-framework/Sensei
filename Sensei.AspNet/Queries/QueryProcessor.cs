@@ -4,6 +4,7 @@ using System.Linq.Expressions;
 using System.Reflection;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
+using Sensei.AspNet.Queries.Exceptions;
 
 namespace Sensei.AspNet.Queries
 {
@@ -32,14 +33,16 @@ namespace Sensei.AspNet.Queries
         /// </summary>
         /// <param name="queryable">The queryable from a db set.</param>
         /// <typeparam name="TEntity">The entity type associated to the query.</typeparam>
+        /// <exception cref="QueryContextInvalidException">Raise if the query context doesn't inherit the object QueryContext.</exception>
         /// <returns>A query container.</returns>
         public Query<TEntity> Start<TEntity>(IQueryable<TEntity> queryable, IQueryContext queryContext = null)
         {
             queryContext ??= _serviceProvider.GetService<IQueryContext>();
             queryContext ??= new QueryContext();
-            
+
             if (!(queryContext is QueryContext))
-                throw new NotSupportedException();
+                throw new QueryContextInvalidException(
+                    $"Custom query contexts must inherit {typeof(QueryContext).FullName}");
 
             return new Query<TEntity>(queryable, _serviceProvider, _loggerFactory, (QueryContext) queryContext);
         }
