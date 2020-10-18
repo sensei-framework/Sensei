@@ -5,6 +5,7 @@ using Xunit;
 
 namespace Sensei.AspNet.Tests
 {
+    /*
     public class DbProcessorUnitTest : IClassFixture<TestServerFixture>
     {
         private readonly TestServerFixture _testServerFixture;
@@ -84,4 +85,5 @@ namespace Sensei.AspNet.Tests
             Assert.Equal(Guid.Parse("12345678-1234-1234-1234-123456789012"), result2.UserIdModified);
         }
     }
+    */
 }

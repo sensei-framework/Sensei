@@ -4,15 +4,13 @@ using System.Linq.Expressions;
 
 namespace Sensei.AspNet.Queries.QueryFilters.Filters
 {
-    public class NumericQueryFilter : IQueryFilter
+    public class GenericQueryFilter : IQueryFilter
     {
         public Type[] SupportedTypes => new[]
         {
-            typeof(decimal), typeof(decimal?),
-            typeof(int), typeof(int?),
-            typeof(long), typeof(long?),
-            typeof(double), typeof(double?),
-            typeof(float), typeof(float?)
+            typeof(Enum),
+            typeof(bool),
+            typeof(Guid)
         };
 
         public Expression GetCompareExpression(Expression propertyExpression, Type propertyType, string term)
@@ -30,23 +28,15 @@ namespace Sensei.AspNet.Queries.QueryFilters.Filters
         public Expression GetGreaterExpression(Expression propertyExpression, Type propertyType, string term,
             bool inclusive)
         {
-            var value = TypeDescriptor.GetConverter(propertyType).ConvertFromInvariantString(term);
-            var valueExpression = Expression.Constant(value, propertyType);
-
-            return inclusive
-                ? Expression.GreaterThanOrEqual(propertyExpression, valueExpression)
-                : Expression.GreaterThan(propertyExpression, valueExpression);
+            // enums doesn't support it
+            return null;
         }
 
         public Expression GetLessExpression(Expression propertyExpression, Type propertyType, string term,
             bool inclusive)
         {
-            var value = TypeDescriptor.GetConverter(propertyType).ConvertFromInvariantString(term);
-            var valueExpression = Expression.Constant(value, propertyType);
-
-            return inclusive
-                ? Expression.LessThanOrEqual(propertyExpression, valueExpression)
-                : Expression.LessThan(propertyExpression, valueExpression);
+            // enums doesn't support it
+            return null;
         }
     }
 }

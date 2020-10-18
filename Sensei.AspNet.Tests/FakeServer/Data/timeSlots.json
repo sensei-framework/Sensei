@@ -1,0 +1,11 @@
+[{
+  "id": "427afa65-68d0-48eb-91e8-2c3414784468",
+  "name": "Lunch",
+  "startTime": "12:30",
+  "endTime": "14:30"
+},{
+  "id": "48633ef0-a7bc-41b1-99a7-2e0604405307",
+  "name": "Dinner",
+  "startTime": "18:00",
+  "endTime": "21:00"
+}]

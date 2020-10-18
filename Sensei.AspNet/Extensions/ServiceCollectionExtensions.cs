@@ -17,8 +17,8 @@ namespace Sensei.AspNet.Extensions
 
             services.AddTransient<IQueryProcessor, QueryProcessor>();
             services.AddTransient<IQueryFilter, StringQueryFilter>();
-            services.AddTransient<IQueryFilter, NumericQueryFilter>();
-            services.AddTransient<IQueryFilter, EnumQueryFilter>();
+            services.AddTransient<IQueryFilter, ComplexQueryFilter>();
+            services.AddTransient<IQueryFilter, GenericQueryFilter>();
             
             var options = new SenseiOptions();
             optionsAction?.Invoke(options);

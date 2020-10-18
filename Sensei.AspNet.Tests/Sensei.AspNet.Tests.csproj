@@ -25,4 +25,19 @@
       <ProjectReference Include="..\Sensei.AspNet\Sensei.AspNet.csproj" />
     </ItemGroup>
 
+    <ItemGroup>
+      <None Update="FakeServer\Data\categories.json">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </None>
+      <None Update="FakeServer\Data\categoryTimeSlots.json">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </None>
+      <None Update="FakeServer\Data\products.json">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </None>
+      <None Update="FakeServer\Data\timeSlots.json">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </None>
+    </ItemGroup>
+
 </Project>

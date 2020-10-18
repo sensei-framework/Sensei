@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Linq.Expressions;
 using Foundatio.Parsers.LuceneQueries;
+using Foundatio.Parsers.LuceneQueries.Extensions;
 using Foundatio.Parsers.LuceneQueries.Nodes;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
@@ -132,12 +133,16 @@ namespace Sensei.AspNet.Queries.QueryFilters
                         continue;
                     }
 
+                    var propertyType = propertyInfo.PropertyType;
+                    var underlyingType = Nullable.GetUnderlyingType(propertyType);
+                    if (underlyingType != null)
+                        propertyType = underlyingType;
+
                     // retrieve the right query filter
                     var queryFilters = serviceProvider.GetServices<IQueryFilter>();
                     var queryFilter =
                         queryFilters.FirstOrDefault(f =>
-                            f.SupportedTypes.Any(t =>
-                                t == propertyInfo.PropertyType || t.IsAssignableFrom(propertyInfo.PropertyType)));
+                            f.SupportedTypes.Any(t => t.IsAssignableFrom(propertyType)));
 
                     // if we can't find the filter, skip it
                     if (queryFilter == null)
@@ -145,7 +150,7 @@ namespace Sensei.AspNet.Queries.QueryFilters
                         logger.LogError("Query filter for type {type} not found", propertyInfo.PropertyType.Name);
 
                         if (options.ThrowExceptionOnQueryError)
-                            throw new MissingPropertyException(
+                            throw new MissingFilterException(
                                 $"Query filter for type {propertyInfo.PropertyType.Name} not found");
                         
                         continue;
@@ -158,7 +163,7 @@ namespace Sensei.AspNet.Queries.QueryFilters
                         if (queryNode is TermNode termNode)
                         {
                             expression = queryFilter.GetCompareExpression(propertyExpression, propertyInfo.PropertyType,
-                                termNode.Term);
+                                termNode.Term.Unescape());
 
                             if (expression != null && termNode.IsNegated.HasValue && termNode.IsNegated.Value)
                                 expression = Expression.Not(expression);
@@ -176,10 +181,10 @@ namespace Sensei.AspNet.Queries.QueryFilters
                             Expression second = null;
                             if (!string.IsNullOrEmpty(rangeNode.Min))
                                 first = queryFilter.GetGreaterExpression(propertyExpression, propertyInfo.PropertyType,
-                                    rangeNode.Min, rangeNode.MinInclusive == true);
+                                    rangeNode.Min.Unescape(), rangeNode.MinInclusive == true);
                             if (!string.IsNullOrEmpty(rangeNode.Max))
                                 second = queryFilter.GetLessExpression(propertyExpression, propertyInfo.PropertyType,
-                                    rangeNode.Max, rangeNode.MaxInclusive == true);
+                                    rangeNode.Max.Unescape(), rangeNode.MaxInclusive == true);
 
                             if (first != null && second != null)
                                 expression = Expression.And(first, second);
@@ -218,14 +223,14 @@ namespace Sensei.AspNet.Queries.QueryFilters
             {
                 var lastExpression = expressions.First();
                 for (var i = 1; i < expressions.Count; i++)
-                    lastExpression = Expression.And(lastExpression, expressions[i]);
+                    lastExpression = Expression.AndAlso(lastExpression, expressions[i]);
                 finalExpression = lastExpression;
             }
             else
             {
                 var lastExpression = expressions.First();
                 for (var i = 1; i < expressions.Count; i++)
-                    lastExpression = Expression.Or(lastExpression, expressions[i]);
+                    lastExpression = Expression.OrElse(lastExpression, expressions[i]);
                 finalExpression = lastExpression;
             }
 

@@ -10,6 +10,7 @@ using Xunit;
 
 namespace Sensei.AspNet.Tests
 {
+    /*
     public class QueryUnitTest : IClassFixture<TestServerFixture>
     {
         private readonly TestServerFixture _testServerFixture;
@@ -203,4 +204,5 @@ namespace Sensei.AspNet.Tests
             Assert.Equal(testModel.Child2.Name, testModelResult.Child2.Name);
         }
     }
+    */
 }

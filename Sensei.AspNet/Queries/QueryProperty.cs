@@ -4,11 +4,11 @@ namespace Sensei.AspNet.Queries
 {
     public class QueryProperty
     {
-        private bool _canFilter;
-        private bool _canSort;
-        private bool _canInclude;
+        private bool? _canFilter;
+        private bool? _canSort;
+        private bool? _canInclude;
 
-        internal bool GetValue(QueryType queryType)
+        internal bool? GetValue(QueryType queryType)
         {
             switch (queryType)
             {

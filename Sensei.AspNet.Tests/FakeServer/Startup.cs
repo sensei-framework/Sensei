@@ -7,29 +7,49 @@ using Microsoft.AspNetCore.Mvc.Authorization;
 using Microsoft.AspNetCore.Mvc.Filters;
 using Microsoft.Data.Sqlite;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Sensei.AspNet.Extensions;
+using Sensei.AspNet.Queries;
+using Sensei.AspNet.Tests.FakeServer.Entities;
+using Sensei.AspNet.Utils.Database;
 
-namespace Sensei.AspNet.Tests.Utils
+namespace Sensei.AspNet.Tests.FakeServer
 {
     public class Startup
     {
+        private IConfiguration _configuration;
         private SqliteConnection _inMemorySqlite;
+
+        public Startup(IConfiguration configuration)
+        {
+            _configuration = configuration;
+        }
         
         public void ConfigureServices(IServiceCollection services)
         {
-            //_inMemorySqlite = new SqliteConnection("Data Source=C:\\Users\\skaman\\Desktop\\test.db");
+            //_inMemorySqlite = new SqliteConnection("Data Source=/Users/skaman/Desktop/test.db");
             _inMemorySqlite = new SqliteConnection("Data Source=:memory:");
             _inMemorySqlite.Open();
 
-            services.AddDbContext<TestDbContext>(options =>
+            services.AddDbContext<FakeServerDbContext>(options =>
                 options.UseSqlite(_inMemorySqlite));
             
             services.AddControllers();
 
             services.AddAuthentication();
             
-            services.UseSensei();
+            services.UseSensei(options =>
+            {
+                options.EnableFiltersAsDefault =
+                    _configuration.GetValue<bool?>("EnableFiltersAsDefault") ?? options.EnableFiltersAsDefault;
+            });
+
+            if (_configuration.GetValue<bool>("FilterFluentPermissive"))
+                services.AddTransient<IQueryContext, FluentPermissiveQueryContext>();
+            
+            if (_configuration.GetValue<bool>("FilterFluentStrict"))
+                services.AddTransient<IQueryContext, FluentStrictQueryContext>();
 
             services.AddMvc(
                 options =>
@@ -56,8 +76,15 @@ namespace Sensei.AspNet.Tests.Utils
             using var serviceScope = app.ApplicationServices
                 .GetRequiredService<IServiceScopeFactory>()
                 .CreateScope();
-            using var context = serviceScope.ServiceProvider.GetService<TestDbContext>();
+            using var context = serviceScope.ServiceProvider.GetService<FakeServerDbContext>();
             context.Database.Migrate();
+            
+            context.Seed<Category>("FakeServer/Data/categories.json");
+            context.Seed<Product>("FakeServer/Data/products.json");
+            context.Seed<ProductAlt1>("FakeServer/Data/products.json");
+            context.Seed<ProductAlt2>("FakeServer/Data/products.json");
+            context.Seed<TimeSlot>("FakeServer/Data/timeSlots.json");
+            context.Seed<CategoryTimeSlot>("FakeServer/Data/categoryTimeSlots.json");
         }
         
         private class FakeUserFilter : IAsyncActionFilter

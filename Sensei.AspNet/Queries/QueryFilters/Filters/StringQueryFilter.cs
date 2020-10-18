@@ -5,7 +5,10 @@ namespace Sensei.AspNet.Queries.QueryFilters.Filters
 {
     public class StringQueryFilter : IQueryFilter
     {
-        public Type[] SupportedTypes => new[] {typeof(string)};
+        public Type[] SupportedTypes => new[]
+        {
+            typeof(string)
+        };
 
         public Expression GetCompareExpression(Expression propertyExpression, Type propertyType, string term)
         {

@@ -47,9 +47,10 @@ namespace Sensei.AspNet.Queries
 
         private bool CheckPropertyEnabled(PropertyInfo propertyInfo, QueryType queryType)
         {
-            var queryProperty = _queryMapper.GetQueryProperty(propertyInfo.PropertyType);
-            if (queryProperty != null && queryProperty.GetValue(queryType))
-                return true;
+            var queryProperty = _queryMapper.GetQueryProperty(propertyInfo.ReflectedType, propertyInfo.Name);
+            var queryValue = queryProperty?.GetValue(queryType);
+            if (queryValue.HasValue)
+                return queryValue.Value;
 
             switch (queryType)
             {

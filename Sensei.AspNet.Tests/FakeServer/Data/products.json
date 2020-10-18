@@ -1,0 +1,208 @@
+[{
+  "id": "9b071199-cc54-4709-94bf-47d0ad31d82d",
+  "name": "Tomato soup",
+  "price": 2.0,
+  "categoryId": "b90c78c0-e430-4485-8253-ad154b78c40b",
+  "enabled": true,
+  "fileId": "c24f2672-b1ab-463d-9967-ad4e000a711b",
+  "status": 0,
+  "availability": 1,
+  "discount": 0.35,
+  "onlySunday": true,
+  "availableSince": "2020-12-01T08:00:00Z",
+  "discountAfter": "20:00"
+},{
+  "id": "dcd8b3d5-fad8-49cc-ae80-481847aca50e",
+  "name": "French onion soup",
+  "price": 2.5,
+  "categoryId": "b90c78c0-e430-4485-8253-ad154b78c40b",
+  "enabled": true,
+  "fileId": "b5ede0ef-d3f8-4006-84c9-304d46a5267d",
+  "status": 0,
+  "availability": 1,
+  "discount": 2.3,
+  "onlySunday": true,
+  "availableSince": "2020-12-02T08:00:00Z",
+  "discountAfter": "19:00"
+},{
+  "id": "0798128c-3270-4c53-abc5-37757a7f08a5",
+  "name": "Tomato salad",
+  "price": 2.9,
+  "categoryId": "b90c78c0-e430-4485-8253-ad154b78c40b",
+  "enabled": true,
+  "fileId": "c8d8d9d4-0c81-48af-aa77-5cddf5100454",
+  "status": 1,
+  "availability": 0,
+  "discount": 0.12,
+  "onlySunday": false,
+  "availableSince": "2020-12-03T08:00:00Z"
+},{
+  "id": "6adf0c7b-c916-4bcd-970d-71f32eaa733c",
+  "name": "Chicken salad",
+  "price": 3.3,
+  "categoryId": "b90c78c0-e430-4485-8253-ad154b78c40b",
+  "enabled": true,
+  "availableSince": "2020-12-04T08:00:00Z"
+},{
+  "id": "01e1e4cc-669a-4b4b-b2d2-f626fd8ab2f3",
+  "name": "German sausage and chips",
+  "price": 6.50,
+  "categoryId": "2f58b350-3811-4b88-9047-ab4f7e125aac",
+  "enabled": true,
+  "availableSince": "2020-12-05T08:00:00Z"
+},{
+  "id": "32009e15-2959-4a09-bf87-f846ea92df4f",
+  "name": "Grilled fish and potatoes",
+  "price": 6.25,
+  "categoryId": "2f58b350-3811-4b88-9047-ab4f7e125aac",
+  "enabled": true,
+  "availableSince": "2020-12-06T08:00:00Z"
+},{
+  "id": "9e887b1e-6813-4eb2-8a42-dae0cac31b7f",
+  "name": "Italian cheese & tomato pizza",
+  "price": 4.85,
+  "categoryId": "2f58b350-3811-4b88-9047-ab4f7e125aac",
+  "enabled": true,
+  "availableSince": "2020-12-07T08:00:00Z"
+},{
+  "id": "da07dff9-a2df-4808-906e-3789084396b4",
+  "name": "Thai chicken and rice",
+  "price": 5.95,
+  "categoryId": "2f58b350-3811-4b88-9047-ab4f7e125aac",
+  "enabled": true,
+  "availableSince": "2020-12-08T08:00:00Z"
+},{
+  "id": "fd9205d5-e17a-4bc2-bd16-a2a9691aa06f",
+  "name": "Vegetable pasta",
+  "price": 4.85,
+  "categoryId": "2f58b350-3811-4b88-9047-ab4f7e125aac",
+  "enabled": true,
+  "availableSince": "2020-12-09T08:00:00Z"
+},{
+  "id": "2c2d7d64-478a-4112-b686-024df0465de1",
+  "name": "Roast chicken and potatoes",
+  "price": 5.95,
+  "categoryId": "2f58b350-3811-4b88-9047-ab4f7e125aac",
+  "enabled": true,
+  "availableSince": "2020-12-10T08:00:00Z"
+},{
+  "id": "d459d254-a443-45e7-8dcf-d0de78463859",
+  "name": "Mineral water",
+  "price": 1.0,
+  "categoryId": "d33d6c38-0e23-472f-b1f7-3729b3847f0a",
+  "enabled": true,
+  "availableSince": "2020-12-11T08:00:00Z"
+},{
+  "id": "cd194fa4-c116-4f91-ae1e-bcc765d3d83b",
+  "name": "Fresh orange juice",
+  "price": 1.25,
+  "categoryId": "d33d6c38-0e23-472f-b1f7-3729b3847f0a",
+  "enabled": true,
+  "availableSince": "2020-12-12T08:00:00Z"
+},{
+  "id": "09deeec7-ffc7-49e7-9f29-baf41da813bd",
+  "name": "Soft drinks",
+  "price": 1.30,
+  "categoryId": "d33d6c38-0e23-472f-b1f7-3729b3847f0a",
+  "enabled": true,
+  "availableSince": "2020-12-13T08:00:00Z"
+},{
+  "id": "d858f4ee-f943-445d-ac6e-0461a19e4146",
+  "name": "English Tea",
+  "price": 0.9,
+  "categoryId": "d33d6c38-0e23-472f-b1f7-3729b3847f0a",
+  "enabled": true,
+  "availableSince": "2020-12-14T08:00:00Z"
+},{
+  "id": "4229389e-c71e-4d7f-9d4c-6f2fec1da2c9",
+  "name": "Irish Cream Coffee",
+  "price": 0.9,
+  "categoryId": "d33d6c38-0e23-472f-b1f7-3729b3847f0a",
+  "enabled": true,
+  "availableSince": "2020-12-15T08:00:00Z"
+},{
+  "id": "3bb5462a-c8e7-45f3-83ba-fc1c73a9371c",
+  "name": "Cheese Burger",
+  "price": 3.2,
+  "categoryId": "8cbd71c4-5e79-4c4b-8e1e-de9889539488",
+  "enabled": true,
+  "availableSince": "2020-12-16T08:00:00Z"
+},{
+  "id": "a5a37652-47f2-4472-97bc-2f97134dadaf",
+  "name": "Vegetable omelette",
+  "price": 3.25,
+  "categoryId": "8cbd71c4-5e79-4c4b-8e1e-de9889539488",
+  "enabled": true,
+  "availableSince": "2020-12-17T08:00:00Z"
+},{
+  "id": "42650cfb-6364-4b50-9618-e5c0668d006c",
+  "name": "Chocolate cake",
+  "price": 2.25,
+  "categoryId": "8cbd71c4-5e79-4c4b-8e1e-de9889539488",
+  "enabled": true,
+  "availableSince": "2020-12-18T08:00:00Z"
+},{
+  "id": "13f2d5c8-5ddc-4b99-b44d-d71c540362d4",
+  "name": "Cheese & tomato sandwich",
+  "price": 3.25,
+  "categoryId": "8cbd71c4-5e79-4c4b-8e1e-de9889539488",
+  "enabled": true,
+  "availableSince": "2020-12-19T08:00:00Z"
+},{
+  "id": "5a4d6311-18d4-49f0-8fe4-1f3ff3c0a5e0",
+  "name": "Burger",
+  "price": 2.9,
+  "categoryId": "8cbd71c4-5e79-4c4b-8e1e-de9889539488",
+  "enabled": true,
+  "availableSince": "2020-12-20T08:00:00Z"
+},{
+  "id": "8883f7d7-306c-4214-88ce-33d6b6d2bbc0",
+  "name": "Chicken sandwich",
+  "price": 3.5,
+  "categoryId": "8cbd71c4-5e79-4c4b-8e1e-de9889539488",
+  "enabled": true,
+  "availableSince": "2020-12-21T08:00:00Z"
+},{
+  "id": "47e855f2-acab-435c-a719-7b232169b45d",
+  "name": "Cheese omelette",
+  "price": 3.5,
+  "categoryId": "8cbd71c4-5e79-4c4b-8e1e-de9889539488",
+  "enabled": true,
+  "availableSince": "2020-12-22T08:00:00Z"
+},{
+  "id": "9d1fc285-e6aa-4cd2-a36a-25f33ee827da",
+  "name": "Fruit salad and cream",
+  "price": 2.25,
+  "categoryId": "9d06c838-289f-4233-9174-d4c831d7ceb8",
+  "enabled": true,
+  "availableSince": "2020-12-23T08:00:00Z"
+},{
+  "id": "5d4f73a6-9f29-4c0d-a6f6-1d8a8d87062e",
+  "name": "Ice cream",
+  "price": 2.0,
+  "categoryId": "9d06c838-289f-4233-9174-d4c831d7ceb8",
+  "enabled": true,
+  "info": "(choose from chocolate, coffee, or lemon)",
+  "availableSince": "2020-12-24T08:00:00Z"
+},{
+  "id": "7be93643-4e5a-43f9-a4ad-272a84f62483",
+  "name": "Lemon cake",
+  "price": 2.25,
+  "categoryId": "9d06c838-289f-4233-9174-d4c831d7ceb8",
+  "enabled": true,
+  "availableSince": "2020-12-25T08:00:00Z"
+},{
+  "id": "a523934d-6840-4329-a5ac-6b7871068ec5",
+  "name": "Chocolate cake",
+  "price": 2.25,
+  "categoryId": "9d06c838-289f-4233-9174-d4c831d7ceb8",
+  "enabled": true,
+  "availableSince": "2020-12-26T08:00:00Z"
+},{
+  "id": "adeaa7aa-06d6-4084-a560-da9a3f3c8cdd",
+  "name": "Cheese and biscuits",
+  "price": 2.5,
+  "categoryId": "9d06c838-289f-4233-9174-d4c831d7ceb8",
+  "enabled": true,
+  "availableSince": "2020-12-27T08:00:00Z"
+}]

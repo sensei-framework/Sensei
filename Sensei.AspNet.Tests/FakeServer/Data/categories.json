@@ -1,0 +1,23 @@
+[{
+  "id": "b90c78c0-e430-4485-8253-ad154b78c40b",
+  "name": "Starters",
+  "enabled": true,
+  "info": "All starters are served with bread and butter"
+},{
+  "id": "2f58b350-3811-4b88-9047-ab4f7e125aac",
+  "name": "Main courses",
+  "enabled": true
+},{
+  "id": "d33d6c38-0e23-472f-b1f7-3729b3847f0a",
+  "name": "Drinks",
+  "enabled": true
+},{
+  "id": "8cbd71c4-5e79-4c4b-8e1e-de9889539488",
+  "name": "Snacks",
+  "enabled": false,
+  "info": "All snacks are served with salad and chips"
+},{
+  "id": "9d06c838-289f-4233-9174-d4c831d7ceb8",
+  "name": "Desserts",
+  "enabled": true
+}]
