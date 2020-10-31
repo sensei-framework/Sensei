@@ -32,10 +32,12 @@ namespace Sensei.AspNet.Tests.Queries
 
             Assert.True(expectedResults.Compare(results));
         }
-        
+
         [Theory]
-        [MemberData(nameof(QueryIncludesTestCase.AttributePermissiveTestCases), MemberType = typeof(QueryIncludesTestCase))]
-        public void IncludeAttributePermissive(string query, Func<IQueryable<ProductAlt2>, IQueryable<ProductAlt2>> func,
+        [MemberData(nameof(QueryIncludesTestCase.AttributePermissiveTestCases),
+            MemberType = typeof(QueryIncludesTestCase))]
+        public void IncludeAttributePermissive(string query,
+            Func<IQueryable<ProductAlt2>, IQueryable<ProductAlt2>> func,
             bool shouldGenerateException)
         {
             var testServer = TestServerUtils.Create();
@@ -44,7 +46,7 @@ namespace Sensei.AspNet.Tests.Queries
             var queryProcessor = testServer.Services.GetService<IQueryProcessor>();
 
             var expectedResults = func(dbContext.ProductsAlt2).ToList();
-            
+
             // if expected result is empty, maybe this test is wrong
             Assert.NotEmpty(expectedResults);
 
@@ -60,13 +62,13 @@ namespace Sensei.AspNet.Tests.Queries
             {
                 haveException = true;
             }
-            
+
             Assert.Equal(shouldGenerateException, haveException);
 
             if (!shouldGenerateException)
                 Assert.True(expectedResults.Compare(results));
         }
-        
+
         [Theory]
         [MemberData(nameof(QueryIncludesTestCase.AttributeStrictTestCases), MemberType = typeof(QueryIncludesTestCase))]
         public void IncludeAttributeStrict(string query, Func<IQueryable<ProductAlt1>, IQueryable<ProductAlt1>> func,
@@ -82,7 +84,7 @@ namespace Sensei.AspNet.Tests.Queries
             var queryProcessor = testServer.Services.GetService<IQueryProcessor>();
 
             var expectedResults = func(dbContext.ProductsAlt1).ToList();
-            
+
             // if expected result is empty, maybe this test is wrong
             Assert.NotEmpty(expectedResults);
 
@@ -98,15 +100,16 @@ namespace Sensei.AspNet.Tests.Queries
             {
                 haveException = true;
             }
-            
+
             Assert.Equal(shouldGenerateException, haveException);
 
             if (!shouldGenerateException)
                 Assert.True(expectedResults.Compare(results));
         }
-        
+
         [Theory]
-        [MemberData(nameof(QueryIncludesTestCase.FluentPermissiveTestCases), MemberType = typeof(QueryIncludesTestCase))]
+        [MemberData(nameof(QueryIncludesTestCase.FluentPermissiveTestCases),
+            MemberType = typeof(QueryIncludesTestCase))]
         public void IncludeFluentPermissive(string query, Func<IQueryable<Product>, IQueryable<Product>> func,
             bool shouldGenerateException)
         {
@@ -119,7 +122,7 @@ namespace Sensei.AspNet.Tests.Queries
             var queryProcessor = testServer.Services.GetService<IQueryProcessor>();
 
             var expectedResults = func(dbContext.Products).ToList();
-            
+
             // if expected result is empty, maybe this test is wrong
             Assert.NotEmpty(expectedResults);
 
@@ -135,16 +138,18 @@ namespace Sensei.AspNet.Tests.Queries
             {
                 haveException = true;
             }
-            
+
             Assert.Equal(shouldGenerateException, haveException);
 
             if (!shouldGenerateException)
                 Assert.True(expectedResults.Compare(results));
         }
-        
+
         [Theory]
-        [MemberData(nameof(QueryIncludesTestCase.FluentPermissiveTestCases), MemberType = typeof(QueryIncludesTestCase))]
-        public void IncludeFluentPermissiveCustomContext(string query, Func<IQueryable<Product>, IQueryable<Product>> func,
+        [MemberData(nameof(QueryIncludesTestCase.FluentPermissiveTestCases),
+            MemberType = typeof(QueryIncludesTestCase))]
+        public void IncludeFluentPermissiveCustomContext(string query,
+            Func<IQueryable<Product>, IQueryable<Product>> func,
             bool shouldGenerateException)
         {
             var testServer = TestServerUtils.Create();
@@ -152,7 +157,7 @@ namespace Sensei.AspNet.Tests.Queries
             var queryProcessor = testServer.Services.GetService<IQueryProcessor>();
 
             var expectedResults = func(dbContext.Products).ToList();
-            
+
             // if expected result is empty, maybe this test is wrong
             Assert.NotEmpty(expectedResults);
 
@@ -168,13 +173,13 @@ namespace Sensei.AspNet.Tests.Queries
             {
                 haveException = true;
             }
-            
+
             Assert.Equal(shouldGenerateException, haveException);
 
             if (!shouldGenerateException)
                 Assert.True(expectedResults.Compare(results));
         }
-                
+
         [Theory]
         [MemberData(nameof(QueryIncludesTestCase.FluentStrictTestCases), MemberType = typeof(QueryIncludesTestCase))]
         public void IncludeFluentStrict(string query, Func<IQueryable<Product>, IQueryable<Product>> func,
@@ -191,7 +196,7 @@ namespace Sensei.AspNet.Tests.Queries
             var queryProcessor = testServer.Services.GetService<IQueryProcessor>();
 
             var expectedResults = func(dbContext.Products).ToList();
-            
+
             // if expected result is empty, maybe this test is wrong
             Assert.NotEmpty(expectedResults);
 
@@ -207,13 +212,13 @@ namespace Sensei.AspNet.Tests.Queries
             {
                 haveException = true;
             }
-            
+
             Assert.Equal(shouldGenerateException, haveException);
 
             if (!shouldGenerateException)
                 Assert.True(expectedResults.Compare(results));
         }
-        
+
         [Theory]
         [MemberData(nameof(QueryIncludesTestCase.FluentStrictTestCases), MemberType = typeof(QueryIncludesTestCase))]
         public void IncludeFluentStrictCustomMapper(string query, Func<IQueryable<Product>, IQueryable<Product>> func,
@@ -229,7 +234,7 @@ namespace Sensei.AspNet.Tests.Queries
             var queryProcessor = testServer.Services.GetService<IQueryProcessor>();
 
             var expectedResults = func(dbContext.Products).ToList();
-            
+
             // if expected result is empty, maybe this test is wrong
             Assert.NotEmpty(expectedResults);
 
@@ -245,13 +250,13 @@ namespace Sensei.AspNet.Tests.Queries
             {
                 haveException = true;
             }
-            
+
             Assert.Equal(shouldGenerateException, haveException);
 
             if (!shouldGenerateException)
                 Assert.True(expectedResults.Compare(results));
         }
-        
+
         [Theory]
         [MemberData(nameof(QueryIncludesTestCase.ExceptionsTestCases), MemberType = typeof(QueryIncludesTestCase))]
         public void IncludeExceptions(string query, Type expectedType)
@@ -270,7 +275,7 @@ namespace Sensei.AspNet.Tests.Queries
             {
                 exceptionType = e.GetType();
             }
-            
+
             Assert.NotNull(exceptionType);
             Assert.Equal(expectedType, exceptionType);
         }

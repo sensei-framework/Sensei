@@ -18,14 +18,14 @@ namespace Sensei.AspNet.Tests.FakeServer
 {
     public class Startup
     {
-        private IConfiguration _configuration;
+        private readonly IConfiguration _configuration;
         private SqliteConnection _inMemorySqlite;
 
         public Startup(IConfiguration configuration)
         {
             _configuration = configuration;
         }
-        
+
         public void ConfigureServices(IServiceCollection services)
         {
             //_inMemorySqlite = new SqliteConnection("Data Source=/Users/skaman/Desktop/test.db");
@@ -34,11 +34,11 @@ namespace Sensei.AspNet.Tests.FakeServer
 
             services.AddDbContext<FakeServerDbContext>(options =>
                 options.UseSqlite(_inMemorySqlite));
-            
+
             services.AddControllers();
 
             services.AddAuthentication();
-            
+
             services.UseSensei(options =>
             {
                 options.EnableFiltersAsDefault =
@@ -51,7 +51,7 @@ namespace Sensei.AspNet.Tests.FakeServer
 
             if (_configuration.GetValue<bool>("FluentPermissive"))
                 services.AddTransient<IQueryContext, FluentPermissiveQueryContext>();
-            
+
             if (_configuration.GetValue<bool>("FluentStrict"))
                 services.AddTransient<IQueryContext, FluentStrictQueryContext>();
 
@@ -62,11 +62,11 @@ namespace Sensei.AspNet.Tests.FakeServer
                     options.Filters.Add(new FakeUserFilter());
                 });
         }
-        
+
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
             UpdateDatabase(app);
-            
+
             app.UseRouting();
 
             app.UseAuthentication();
@@ -74,7 +74,7 @@ namespace Sensei.AspNet.Tests.FakeServer
 
             app.UseEndpoints(endpoints => { endpoints.MapControllers(); });
         }
-        
+
         private static void UpdateDatabase(IApplicationBuilder app)
         {
             using var serviceScope = app.ApplicationServices
@@ -82,7 +82,7 @@ namespace Sensei.AspNet.Tests.FakeServer
                 .CreateScope();
             using var context = serviceScope.ServiceProvider.GetService<FakeServerDbContext>();
             context.Database.Migrate();
-            
+
             context.Seed<Category>("FakeServer/Data/categories.json");
             context.Seed<Product>("FakeServer/Data/products.json");
             context.Seed<ProductAlt1>("FakeServer/Data/products.json");
@@ -90,7 +90,7 @@ namespace Sensei.AspNet.Tests.FakeServer
             context.Seed<TimeSlot>("FakeServer/Data/timeSlots.json");
             context.Seed<CategoryTimeSlot>("FakeServer/Data/categoryTimeSlots.json");
         }
-        
+
         private class FakeUserFilter : IAsyncActionFilter
         {
             public async Task OnActionExecutionAsync(ActionExecutingContext context, ActionExecutionDelegate next)
@@ -99,7 +99,7 @@ namespace Sensei.AspNet.Tests.FakeServer
                 {
                     new Claim(ClaimTypes.NameIdentifier, "12345678-1234-1234-1234-123456789012"),
                     new Claim(ClaimTypes.Name, "TestUser"),
-                    new Claim(ClaimTypes.Email, "test.user@example.com"), // add as many claims as you need
+                    new Claim(ClaimTypes.Email, "test.user@example.com") // add as many claims as you need
                 }));
 
                 await next();

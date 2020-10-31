@@ -1,12 +1,9 @@
 using System;
-using System.Collections.Generic;
 using System.Linq;
 using Microsoft.Extensions.DependencyInjection;
 using Sensei.AspNet.Queries;
 using Sensei.AspNet.Queries.Entities;
-using Sensei.AspNet.Queries.Exceptions;
 using Sensei.AspNet.Queries.QueryPagination;
-using Sensei.AspNet.Queries.QuerySorts;
 using Sensei.AspNet.Tests.FakeServer;
 using Sensei.AspNet.Tests.FakeServer.Entities;
 using Sensei.AspNet.Tests.Utils;

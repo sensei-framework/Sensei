@@ -25,7 +25,7 @@ namespace Sensei.AspNet.Tests.Queries
             var queryProcessor = testServer.Services.GetService<IQueryProcessor>();
 
             var expectedResults = func(dbContext.Products).ToList();
-            
+
             // if expected result is empty, maybe this test is wrong
             Assert.NotEmpty(expectedResults);
 
@@ -35,9 +35,10 @@ namespace Sensei.AspNet.Tests.Queries
 
             Assert.True(expectedResults.Compare(results));
         }
-        
+
         [Theory]
-        [MemberData(nameof(QueryFiltersTestCase.AttributePermissiveTestCases), MemberType = typeof(QueryFiltersTestCase))]
+        [MemberData(nameof(QueryFiltersTestCase.AttributePermissiveTestCases),
+            MemberType = typeof(QueryFiltersTestCase))]
         public void FilterAttributePermissive(string query, Func<IQueryable<ProductAlt2>,
             IQueryable<ProductAlt2>> func, bool shouldGenerateException)
         {
@@ -47,7 +48,7 @@ namespace Sensei.AspNet.Tests.Queries
             var queryProcessor = testServer.Services.GetService<IQueryProcessor>();
 
             var expectedResults = func(dbContext.ProductsAlt2).ToList();
-            
+
             // if expected result is empty, maybe this test is wrong
             Assert.NotEmpty(expectedResults);
 
@@ -63,13 +64,13 @@ namespace Sensei.AspNet.Tests.Queries
             {
                 haveException = true;
             }
-            
+
             Assert.Equal(shouldGenerateException, haveException);
 
             if (!shouldGenerateException)
                 Assert.True(expectedResults.Compare(results));
         }
-        
+
         [Theory]
         [MemberData(nameof(QueryFiltersTestCase.AttributeStrictTestCases), MemberType = typeof(QueryFiltersTestCase))]
         public void FilterAttributeStrict(string query, Func<IQueryable<ProductAlt1>,
@@ -85,7 +86,7 @@ namespace Sensei.AspNet.Tests.Queries
             var queryProcessor = testServer.Services.GetService<IQueryProcessor>();
 
             var expectedResults = func(dbContext.ProductsAlt1).ToList();
-            
+
             // if expected result is empty, maybe this test is wrong
             Assert.NotEmpty(expectedResults);
 
@@ -101,13 +102,13 @@ namespace Sensei.AspNet.Tests.Queries
             {
                 haveException = true;
             }
-            
+
             Assert.Equal(shouldGenerateException, haveException);
 
             if (!shouldGenerateException)
                 Assert.True(expectedResults.Compare(results));
         }
-        
+
         [Theory]
         [MemberData(nameof(QueryFiltersTestCase.FluentPermissiveTestCases), MemberType = typeof(QueryFiltersTestCase))]
         public void FilterFluentPermissive(string query, Func<IQueryable<Product>,
@@ -122,7 +123,7 @@ namespace Sensei.AspNet.Tests.Queries
             var queryProcessor = testServer.Services.GetService<IQueryProcessor>();
 
             var expectedResults = func(dbContext.Products).ToList();
-            
+
             // if expected result is empty, maybe this test is wrong
             Assert.NotEmpty(expectedResults);
 
@@ -138,13 +139,13 @@ namespace Sensei.AspNet.Tests.Queries
             {
                 haveException = true;
             }
-            
+
             Assert.Equal(shouldGenerateException, haveException);
 
             if (!shouldGenerateException)
                 Assert.True(expectedResults.Compare(results));
         }
-        
+
         [Theory]
         [MemberData(nameof(QueryFiltersTestCase.FluentPermissiveTestCases), MemberType = typeof(QueryFiltersTestCase))]
         public void FilterFluentPermissiveCustomMapper(string query, Func<IQueryable<Product>,
@@ -155,7 +156,7 @@ namespace Sensei.AspNet.Tests.Queries
             var queryProcessor = testServer.Services.GetService<IQueryProcessor>();
 
             var expectedResults = func(dbContext.Products).ToList();
-            
+
             // if expected result is empty, maybe this test is wrong
             Assert.NotEmpty(expectedResults);
 
@@ -171,13 +172,13 @@ namespace Sensei.AspNet.Tests.Queries
             {
                 haveException = true;
             }
-            
+
             Assert.Equal(shouldGenerateException, haveException);
 
             if (!shouldGenerateException)
                 Assert.True(expectedResults.Compare(results));
         }
-        
+
         [Theory]
         [MemberData(nameof(QueryFiltersTestCase.FluentStrictTestCases), MemberType = typeof(QueryFiltersTestCase))]
         public void FilterFluentStrict(string query, Func<IQueryable<Product>,
@@ -193,7 +194,7 @@ namespace Sensei.AspNet.Tests.Queries
             var queryProcessor = testServer.Services.GetService<IQueryProcessor>();
 
             var expectedResults = func(dbContext.Products).ToList();
-            
+
             // if expected result is empty, maybe this test is wrong
             Assert.NotEmpty(expectedResults);
 
@@ -209,13 +210,13 @@ namespace Sensei.AspNet.Tests.Queries
             {
                 haveException = true;
             }
-            
+
             Assert.Equal(shouldGenerateException, haveException);
 
             if (!shouldGenerateException)
                 Assert.True(expectedResults.Compare(results));
         }
-        
+
         [Theory]
         [MemberData(nameof(QueryFiltersTestCase.FluentStrictTestCases), MemberType = typeof(QueryFiltersTestCase))]
         public void FilterFluentStrictCustomMapper(string query, Func<IQueryable<Product>,
@@ -230,7 +231,7 @@ namespace Sensei.AspNet.Tests.Queries
             var queryProcessor = testServer.Services.GetService<IQueryProcessor>();
 
             var expectedResults = func(dbContext.Products).ToList();
-            
+
             // if expected result is empty, maybe this test is wrong
             Assert.NotEmpty(expectedResults);
 
@@ -246,13 +247,13 @@ namespace Sensei.AspNet.Tests.Queries
             {
                 haveException = true;
             }
-            
+
             Assert.Equal(shouldGenerateException, haveException);
 
             if (!shouldGenerateException)
                 Assert.True(expectedResults.Compare(results));
         }
-        
+
         [Theory]
         [MemberData(nameof(QueryFiltersTestCase.ExceptionsTestCases), MemberType = typeof(QueryFiltersTestCase))]
         public void FilterExceptions(string query, Type expectedType)
@@ -271,7 +272,7 @@ namespace Sensei.AspNet.Tests.Queries
             {
                 exceptionType = e.GetType();
             }
-            
+
             Assert.NotNull(exceptionType);
             Assert.Equal(expectedType, exceptionType);
         }

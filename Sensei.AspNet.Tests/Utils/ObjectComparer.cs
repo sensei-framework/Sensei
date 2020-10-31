@@ -10,7 +10,7 @@ namespace Sensei.AspNet.Tests.Utils
             {
                 ReferenceLoopHandling = ReferenceLoopHandling.Ignore
             };
-            
+
             var a = JsonConvert.SerializeObject(listA, Formatting.None, settings);
             var b = JsonConvert.SerializeObject(listB, Formatting.None, settings);
             return a == b;

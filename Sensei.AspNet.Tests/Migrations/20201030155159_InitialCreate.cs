@@ -8,8 +8,8 @@ namespace Sensei.AspNet.Tests.Migrations
         protected override void Up(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.CreateTable(
-                name: "Categories",
-                columns: table => new
+                "Categories",
+                table => new
                 {
                     Id = table.Column<Guid>(nullable: false),
                     CreatedAt = table.Column<DateTime>(nullable: false),
@@ -18,14 +18,11 @@ namespace Sensei.AspNet.Tests.Migrations
                     Enabled = table.Column<bool>(nullable: false),
                     Info = table.Column<string>(nullable: true)
                 },
-                constraints: table =>
-                {
-                    table.PrimaryKey("PK_Categories", x => x.Id);
-                });
+                constraints: table => { table.PrimaryKey("PK_Categories", x => x.Id); });
 
             migrationBuilder.CreateTable(
-                name: "TimeSlots",
-                columns: table => new
+                "TimeSlots",
+                table => new
                 {
                     Id = table.Column<Guid>(nullable: false),
                     CreatedAt = table.Column<DateTime>(nullable: false),
@@ -34,14 +31,11 @@ namespace Sensei.AspNet.Tests.Migrations
                     StartTime = table.Column<TimeSpan>(nullable: false),
                     EndTime = table.Column<TimeSpan>(nullable: false)
                 },
-                constraints: table =>
-                {
-                    table.PrimaryKey("PK_TimeSlots", x => x.Id);
-                });
+                constraints: table => { table.PrimaryKey("PK_TimeSlots", x => x.Id); });
 
             migrationBuilder.CreateTable(
-                name: "Products",
-                columns: table => new
+                "Products",
+                table => new
                 {
                     Id = table.Column<Guid>(nullable: false),
                     CreatedAt = table.Column<DateTime>(nullable: false),
@@ -64,22 +58,22 @@ namespace Sensei.AspNet.Tests.Migrations
                 {
                     table.PrimaryKey("PK_Products", x => x.Id);
                     table.ForeignKey(
-                        name: "FK_Products_Categories_CategoryAltId",
-                        column: x => x.CategoryAltId,
-                        principalTable: "Categories",
-                        principalColumn: "Id",
+                        "FK_Products_Categories_CategoryAltId",
+                        x => x.CategoryAltId,
+                        "Categories",
+                        "Id",
                         onDelete: ReferentialAction.Cascade);
                     table.ForeignKey(
-                        name: "FK_Products_Categories_CategoryId",
-                        column: x => x.CategoryId,
-                        principalTable: "Categories",
-                        principalColumn: "Id",
+                        "FK_Products_Categories_CategoryId",
+                        x => x.CategoryId,
+                        "Categories",
+                        "Id",
                         onDelete: ReferentialAction.Cascade);
                 });
 
             migrationBuilder.CreateTable(
-                name: "ProductsAlt1",
-                columns: table => new
+                "ProductsAlt1",
+                table => new
                 {
                     Id = table.Column<Guid>(nullable: false),
                     CreatedAt = table.Column<DateTime>(nullable: false),
@@ -102,22 +96,22 @@ namespace Sensei.AspNet.Tests.Migrations
                 {
                     table.PrimaryKey("PK_ProductsAlt1", x => x.Id);
                     table.ForeignKey(
-                        name: "FK_ProductsAlt1_Categories_CategoryAltId",
-                        column: x => x.CategoryAltId,
-                        principalTable: "Categories",
-                        principalColumn: "Id",
+                        "FK_ProductsAlt1_Categories_CategoryAltId",
+                        x => x.CategoryAltId,
+                        "Categories",
+                        "Id",
                         onDelete: ReferentialAction.Cascade);
                     table.ForeignKey(
-                        name: "FK_ProductsAlt1_Categories_CategoryId",
-                        column: x => x.CategoryId,
-                        principalTable: "Categories",
-                        principalColumn: "Id",
+                        "FK_ProductsAlt1_Categories_CategoryId",
+                        x => x.CategoryId,
+                        "Categories",
+                        "Id",
                         onDelete: ReferentialAction.Cascade);
                 });
 
             migrationBuilder.CreateTable(
-                name: "ProductsAlt2",
-                columns: table => new
+                "ProductsAlt2",
+                table => new
                 {
                     Id = table.Column<Guid>(nullable: false),
                     CreatedAt = table.Column<DateTime>(nullable: false),
@@ -140,22 +134,22 @@ namespace Sensei.AspNet.Tests.Migrations
                 {
                     table.PrimaryKey("PK_ProductsAlt2", x => x.Id);
                     table.ForeignKey(
-                        name: "FK_ProductsAlt2_Categories_CategoryAltId",
-                        column: x => x.CategoryAltId,
-                        principalTable: "Categories",
-                        principalColumn: "Id",
+                        "FK_ProductsAlt2_Categories_CategoryAltId",
+                        x => x.CategoryAltId,
+                        "Categories",
+                        "Id",
                         onDelete: ReferentialAction.Cascade);
                     table.ForeignKey(
-                        name: "FK_ProductsAlt2_Categories_CategoryId",
-                        column: x => x.CategoryId,
-                        principalTable: "Categories",
-                        principalColumn: "Id",
+                        "FK_ProductsAlt2_Categories_CategoryId",
+                        x => x.CategoryId,
+                        "Categories",
+                        "Id",
                         onDelete: ReferentialAction.Cascade);
                 });
 
             migrationBuilder.CreateTable(
-                name: "CategoryTimeSlots",
-                columns: table => new
+                "CategoryTimeSlots",
+                table => new
                 {
                     Id = table.Column<Guid>(nullable: false),
                     CreatedAt = table.Column<DateTime>(nullable: false),
@@ -167,79 +161,79 @@ namespace Sensei.AspNet.Tests.Migrations
                 {
                     table.PrimaryKey("PK_CategoryTimeSlots", x => x.Id);
                     table.ForeignKey(
-                        name: "FK_CategoryTimeSlots_Categories_CategoryId",
-                        column: x => x.CategoryId,
-                        principalTable: "Categories",
-                        principalColumn: "Id",
+                        "FK_CategoryTimeSlots_Categories_CategoryId",
+                        x => x.CategoryId,
+                        "Categories",
+                        "Id",
                         onDelete: ReferentialAction.Cascade);
                     table.ForeignKey(
-                        name: "FK_CategoryTimeSlots_TimeSlots_TimeSlotId",
-                        column: x => x.TimeSlotId,
-                        principalTable: "TimeSlots",
-                        principalColumn: "Id",
+                        "FK_CategoryTimeSlots_TimeSlots_TimeSlotId",
+                        x => x.TimeSlotId,
+                        "TimeSlots",
+                        "Id",
                         onDelete: ReferentialAction.Cascade);
                 });
 
             migrationBuilder.CreateIndex(
-                name: "IX_CategoryTimeSlots_CategoryId",
-                table: "CategoryTimeSlots",
-                column: "CategoryId");
+                "IX_CategoryTimeSlots_CategoryId",
+                "CategoryTimeSlots",
+                "CategoryId");
 
             migrationBuilder.CreateIndex(
-                name: "IX_CategoryTimeSlots_TimeSlotId",
-                table: "CategoryTimeSlots",
-                column: "TimeSlotId");
+                "IX_CategoryTimeSlots_TimeSlotId",
+                "CategoryTimeSlots",
+                "TimeSlotId");
 
             migrationBuilder.CreateIndex(
-                name: "IX_Products_CategoryAltId",
-                table: "Products",
-                column: "CategoryAltId");
+                "IX_Products_CategoryAltId",
+                "Products",
+                "CategoryAltId");
 
             migrationBuilder.CreateIndex(
-                name: "IX_Products_CategoryId",
-                table: "Products",
-                column: "CategoryId");
+                "IX_Products_CategoryId",
+                "Products",
+                "CategoryId");
 
             migrationBuilder.CreateIndex(
-                name: "IX_ProductsAlt1_CategoryAltId",
-                table: "ProductsAlt1",
-                column: "CategoryAltId");
+                "IX_ProductsAlt1_CategoryAltId",
+                "ProductsAlt1",
+                "CategoryAltId");
 
             migrationBuilder.CreateIndex(
-                name: "IX_ProductsAlt1_CategoryId",
-                table: "ProductsAlt1",
-                column: "CategoryId");
+                "IX_ProductsAlt1_CategoryId",
+                "ProductsAlt1",
+                "CategoryId");
 
             migrationBuilder.CreateIndex(
-                name: "IX_ProductsAlt2_CategoryAltId",
-                table: "ProductsAlt2",
-                column: "CategoryAltId");
+                "IX_ProductsAlt2_CategoryAltId",
+                "ProductsAlt2",
+                "CategoryAltId");
 
             migrationBuilder.CreateIndex(
-                name: "IX_ProductsAlt2_CategoryId",
-                table: "ProductsAlt2",
-                column: "CategoryId");
+                "IX_ProductsAlt2_CategoryId",
+                "ProductsAlt2",
+                "CategoryId");
         }
 
         protected override void Down(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.DropTable(
-                name: "CategoryTimeSlots");
+                "CategoryTimeSlots");
 
             migrationBuilder.DropTable(
-                name: "Products");
+                "Products");
 
             migrationBuilder.DropTable(
-                name: "ProductsAlt1");
+                "ProductsAlt1");
 
             migrationBuilder.DropTable(
-                name: "ProductsAlt2");
+                "ProductsAlt2");
 
             migrationBuilder.DropTable(
-                name: "TimeSlots");
+                "TimeSlots");
 
             migrationBuilder.DropTable(
-                name: "Categories");
+                "Categories");
         }
     }
 }

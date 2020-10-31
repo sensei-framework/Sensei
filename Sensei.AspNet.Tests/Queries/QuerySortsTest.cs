@@ -32,7 +32,7 @@ namespace Sensei.AspNet.Tests.Queries
 
             Assert.True(expectedResults.Compare(results));
         }
-        
+
         [Theory]
         [MemberData(nameof(QuerySortsTestCase.AttributePermissiveTestCases), MemberType = typeof(QuerySortsTestCase))]
         public void SortAttributePermissive(string query, Func<IQueryable<ProductAlt2>, IQueryable<ProductAlt2>> func,
@@ -44,7 +44,7 @@ namespace Sensei.AspNet.Tests.Queries
             var queryProcessor = testServer.Services.GetService<IQueryProcessor>();
 
             var expectedResults = func(dbContext.ProductsAlt2).ToList();
-            
+
             // if expected result is empty, maybe this test is wrong
             Assert.NotEmpty(expectedResults);
 
@@ -60,13 +60,13 @@ namespace Sensei.AspNet.Tests.Queries
             {
                 haveException = true;
             }
-            
+
             Assert.Equal(shouldGenerateException, haveException);
 
             if (!shouldGenerateException)
                 Assert.True(expectedResults.Compare(results));
         }
-        
+
         [Theory]
         [MemberData(nameof(QuerySortsTestCase.AttributeStrictTestCases), MemberType = typeof(QuerySortsTestCase))]
         public void SortAttributeStrict(string query, Func<IQueryable<ProductAlt1>, IQueryable<ProductAlt1>> func,
@@ -82,7 +82,7 @@ namespace Sensei.AspNet.Tests.Queries
             var queryProcessor = testServer.Services.GetService<IQueryProcessor>();
 
             var expectedResults = func(dbContext.ProductsAlt1).ToList();
-            
+
             // if expected result is empty, maybe this test is wrong
             Assert.NotEmpty(expectedResults);
 
@@ -98,13 +98,13 @@ namespace Sensei.AspNet.Tests.Queries
             {
                 haveException = true;
             }
-            
+
             Assert.Equal(shouldGenerateException, haveException);
 
             if (!shouldGenerateException)
                 Assert.True(expectedResults.Compare(results));
         }
-        
+
         [Theory]
         [MemberData(nameof(QuerySortsTestCase.FluentPermissiveTestCases), MemberType = typeof(QuerySortsTestCase))]
         public void SortFluentPermissive(string query, Func<IQueryable<Product>, IQueryable<Product>> func,
@@ -119,7 +119,7 @@ namespace Sensei.AspNet.Tests.Queries
             var queryProcessor = testServer.Services.GetService<IQueryProcessor>();
 
             var expectedResults = func(dbContext.Products).ToList();
-            
+
             // if expected result is empty, maybe this test is wrong
             Assert.NotEmpty(expectedResults);
 
@@ -135,13 +135,13 @@ namespace Sensei.AspNet.Tests.Queries
             {
                 haveException = true;
             }
-            
+
             Assert.Equal(shouldGenerateException, haveException);
 
             if (!shouldGenerateException)
                 Assert.True(expectedResults.Compare(results));
         }
-        
+
         [Theory]
         [MemberData(nameof(QuerySortsTestCase.FluentPermissiveTestCases), MemberType = typeof(QuerySortsTestCase))]
         public void SortFluentPermissiveCustomContext(string query, Func<IQueryable<Product>, IQueryable<Product>> func,
@@ -152,7 +152,7 @@ namespace Sensei.AspNet.Tests.Queries
             var queryProcessor = testServer.Services.GetService<IQueryProcessor>();
 
             var expectedResults = func(dbContext.Products).ToList();
-            
+
             // if expected result is empty, maybe this test is wrong
             Assert.NotEmpty(expectedResults);
 
@@ -168,13 +168,13 @@ namespace Sensei.AspNet.Tests.Queries
             {
                 haveException = true;
             }
-            
+
             Assert.Equal(shouldGenerateException, haveException);
 
             if (!shouldGenerateException)
                 Assert.True(expectedResults.Compare(results));
         }
-                
+
         [Theory]
         [MemberData(nameof(QuerySortsTestCase.FluentStrictTestCases), MemberType = typeof(QuerySortsTestCase))]
         public void SortFluentStrict(string query, Func<IQueryable<Product>, IQueryable<Product>> func,
@@ -191,7 +191,7 @@ namespace Sensei.AspNet.Tests.Queries
             var queryProcessor = testServer.Services.GetService<IQueryProcessor>();
 
             var expectedResults = func(dbContext.Products).ToList();
-            
+
             // if expected result is empty, maybe this test is wrong
             Assert.NotEmpty(expectedResults);
 
@@ -207,13 +207,13 @@ namespace Sensei.AspNet.Tests.Queries
             {
                 haveException = true;
             }
-            
+
             Assert.Equal(shouldGenerateException, haveException);
 
             if (!shouldGenerateException)
                 Assert.True(expectedResults.Compare(results));
         }
-        
+
         [Theory]
         [MemberData(nameof(QuerySortsTestCase.FluentStrictTestCases), MemberType = typeof(QuerySortsTestCase))]
         public void SortFluentStrictCustomMapper(string query, Func<IQueryable<Product>, IQueryable<Product>> func,
@@ -229,7 +229,7 @@ namespace Sensei.AspNet.Tests.Queries
             var queryProcessor = testServer.Services.GetService<IQueryProcessor>();
 
             var expectedResults = func(dbContext.Products).ToList();
-            
+
             // if expected result is empty, maybe this test is wrong
             Assert.NotEmpty(expectedResults);
 
@@ -245,13 +245,13 @@ namespace Sensei.AspNet.Tests.Queries
             {
                 haveException = true;
             }
-            
+
             Assert.Equal(shouldGenerateException, haveException);
 
             if (!shouldGenerateException)
                 Assert.True(expectedResults.Compare(results));
         }
-        
+
         [Theory]
         [MemberData(nameof(QuerySortsTestCase.ExceptionsTestCases), MemberType = typeof(QuerySortsTestCase))]
         public void SortExceptions(string query, Type expectedType)
@@ -270,7 +270,7 @@ namespace Sensei.AspNet.Tests.Queries
             {
                 exceptionType = e.GetType();
             }
-            
+
             Assert.NotNull(exceptionType);
             Assert.Equal(expectedType, exceptionType);
         }

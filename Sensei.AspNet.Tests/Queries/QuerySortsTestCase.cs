@@ -64,7 +64,7 @@ namespace Sensei.AspNet.Tests.Queries
                 };
             }
         }
-        
+
         public static IEnumerable<object[]> AttributePermissiveTestCases
         {
             get
@@ -99,7 +99,7 @@ namespace Sensei.AspNet.Tests.Queries
                 };
             }
         }
-        
+
         public static IEnumerable<object[]> AttributeStrictTestCases
         {
             get
@@ -134,7 +134,7 @@ namespace Sensei.AspNet.Tests.Queries
                 };
             }
         }
-        
+
         public static IEnumerable<object[]> FluentPermissiveTestCases
         {
             get
@@ -169,7 +169,7 @@ namespace Sensei.AspNet.Tests.Queries
                 };
             }
         }
-        
+
         public static IEnumerable<object[]> FluentStrictTestCases
         {
             get
@@ -204,7 +204,7 @@ namespace Sensei.AspNet.Tests.Queries
                 };
             }
         }
-        
+
         public static IEnumerable<object[]> ExceptionsTestCases
         {
             get

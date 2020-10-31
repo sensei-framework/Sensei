@@ -23,7 +23,7 @@ namespace Sensei.AspNet.Tests.Utils
         {
             var response = await PostAsync(client, path, data);
             response.EnsureSuccessStatusCode();
-            
+
             var result = await response.Content.ReadAsStringAsync();
             return JsonConvert.DeserializeObject<T>(result);
         }
@@ -32,7 +32,7 @@ namespace Sensei.AspNet.Tests.Utils
         {
             var response = await PutAsync(client, path, data);
             response.EnsureSuccessStatusCode();
-            
+
             var result = await response.Content.ReadAsStringAsync();
             return JsonConvert.DeserializeObject<T>(result);
         }
@@ -41,7 +41,7 @@ namespace Sensei.AspNet.Tests.Utils
         {
             var response = await client.GetAsync(path);
             response.EnsureSuccessStatusCode();
-            
+
             var result = await response.Content.ReadAsStringAsync();
             return JsonConvert.DeserializeObject<T>(result);
         }

@@ -2,7 +2,6 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using Sensei.AspNet.Queries.Entities;
-using Sensei.AspNet.Queries.Exceptions;
 using Sensei.AspNet.Tests.FakeServer.Entities;
 
 namespace Sensei.AspNet.Tests.Queries
@@ -57,7 +56,7 @@ namespace Sensei.AspNet.Tests.Queries
                         HaveNext = x.Count() > 20
                     })
                 };
-                
+
                 yield return new object[]
                 {
                     null,
@@ -72,7 +71,7 @@ namespace Sensei.AspNet.Tests.Queries
                         HaveNext = x.Count() > 100
                     })
                 };
-                
+
                 yield return new object[]
                 {
                     null,
@@ -87,7 +86,7 @@ namespace Sensei.AspNet.Tests.Queries
                         HaveNext = x.Count() > 100
                     })
                 };
-                
+
                 yield return new object[]
                 {
                     1,
