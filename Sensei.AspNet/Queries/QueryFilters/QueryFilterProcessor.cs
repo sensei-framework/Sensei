@@ -118,12 +118,12 @@ namespace Sensei.AspNet.Queries.QueryFilters
                     }
 
                     // resolve the property expression
-                    var (propertyInfo, propertyExpression) =
+                    var queryPropertyInfo =
                         queryContext.Resolve(typeof(TEntity), parameterExpression, field,
                             QueryType.Filters, options);
 
                     // we skip if we can't find the property
-                    if (propertyInfo == null || propertyExpression == null)
+                    if (queryPropertyInfo?.PropertyInfo == null || queryPropertyInfo.Expression == null)
                     {
                         logger.LogError("Property for field {field} not found", field);
 
@@ -133,7 +133,7 @@ namespace Sensei.AspNet.Queries.QueryFilters
                         continue;
                     }
 
-                    var propertyType = propertyInfo.PropertyType;
+                    var propertyType = queryPropertyInfo.PropertyInfo.PropertyType;
                     var underlyingType = Nullable.GetUnderlyingType(propertyType);
                     if (underlyingType != null)
                         propertyType = underlyingType;
@@ -147,11 +147,12 @@ namespace Sensei.AspNet.Queries.QueryFilters
                     // if we can't find the filter, skip it
                     if (queryFilter == null)
                     {
-                        logger.LogError("Query filter for type {type} not found", propertyInfo.PropertyType.Name);
+                        logger.LogError("Query filter for type {type} not found",
+                            queryPropertyInfo.PropertyInfo.PropertyType.Name);
 
                         if (options.ThrowExceptionOnQueryError)
                             throw new MissingFilterException(
-                                $"Query filter for type {propertyInfo.PropertyType.Name} not found");
+                                $"Query filter for type {queryPropertyInfo.PropertyInfo.PropertyType.Name} not found");
                         
                         continue;
                     }
@@ -162,7 +163,8 @@ namespace Sensei.AspNet.Queries.QueryFilters
                     {
                         if (queryNode is TermNode termNode)
                         {
-                            expression = queryFilter.GetCompareExpression(propertyExpression, propertyInfo.PropertyType,
+                            expression = queryFilter.GetCompareExpression(queryPropertyInfo.Expression,
+                                queryPropertyInfo.PropertyInfo.PropertyType,
                                 termNode.Term.Unescape());
 
                             if (expression != null && termNode.IsNegated.HasValue && termNode.IsNegated.Value)
@@ -170,7 +172,8 @@ namespace Sensei.AspNet.Queries.QueryFilters
                         }
                         else if (queryNode is ExistsNode existsNode)
                         {
-                            expression = queryFilter.GetExistsExpression(propertyExpression, propertyInfo.PropertyType);
+                            expression = queryFilter.GetExistsExpression(queryPropertyInfo.Expression,
+                                queryPropertyInfo.PropertyInfo.PropertyType);
 
                             if (expression != null && existsNode.IsNegated.HasValue && existsNode.IsNegated.Value)
                                 expression = Expression.Not(expression);
@@ -180,10 +183,12 @@ namespace Sensei.AspNet.Queries.QueryFilters
                             Expression first = null;
                             Expression second = null;
                             if (!string.IsNullOrEmpty(rangeNode.Min))
-                                first = queryFilter.GetGreaterExpression(propertyExpression, propertyInfo.PropertyType,
+                                first = queryFilter.GetGreaterExpression(queryPropertyInfo.Expression,
+                                    queryPropertyInfo.PropertyInfo.PropertyType,
                                     rangeNode.Min.Unescape(), rangeNode.MinInclusive == true);
                             if (!string.IsNullOrEmpty(rangeNode.Max))
-                                second = queryFilter.GetLessExpression(propertyExpression, propertyInfo.PropertyType,
+                                second = queryFilter.GetLessExpression(queryPropertyInfo.Expression,
+                                    queryPropertyInfo.PropertyInfo.PropertyType,
                                     rangeNode.Max.Unescape(), rangeNode.MaxInclusive == true);
 
                             if (first != null && second != null)

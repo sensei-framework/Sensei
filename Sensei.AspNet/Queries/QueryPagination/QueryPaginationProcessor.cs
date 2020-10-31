@@ -18,7 +18,7 @@ namespace Sensei.AspNet.Queries.QueryPagination
             var maxPageSize = options.PaginationMaxPageSize > 0 ? options.PaginationMaxPageSize : pageSize;
             var count = queryable.Count();
 
-            if (pageSize == 0 && maxPageSize > 0)
+            if (pageSize > maxPageSize || pageSize == 0 && maxPageSize > 0)
                 pageSize = maxPageSize;
 
             if (pageSize > 0)

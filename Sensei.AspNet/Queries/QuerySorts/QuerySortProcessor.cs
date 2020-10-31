@@ -30,12 +30,12 @@ namespace Sensei.AspNet.Queries.QuerySorts
             foreach (var term in terms)
             {
                 // resolve the property expression
-                var (propertyInfo, propertyExpression) =
+                var queryPropertyInfo =
                     queryContext.Resolve(typeof(TEntity), parameterExpression, term.Field, QueryType.Sorts,
                         serviceProvider.GetService<SenseiOptions>());
 
                 // we skip if we can't find the property
-                if (propertyInfo == null || propertyExpression == null)
+                if (queryPropertyInfo?.PropertyInfo == null || queryPropertyInfo.Expression == null)
                 {
                     logger.LogError("Property for field {field} not found", term.Field);
 
@@ -45,18 +45,29 @@ namespace Sensei.AspNet.Queries.QuerySorts
                     continue;
                 }
                 
+                // we get the property for the MakeMemberAccess
+                // maybe this can be done better
+                dynamic propertyValue = parameterExpression;
+                if (term.Field.Contains("."))
+                {
+                    var parts = term.Field.Split('.');
+                    for (var i = 0; i < parts.Length - 1; i++)
+                        propertyValue = Expression.PropertyOrField(propertyValue, parts[i]);
+                }
+                
+                // choose the right command
                 var command = term.Type == SortTypeEnum.Descending ?
                     useThenBy ? "ThenByDescending" : "OrderByDescending" :
                     useThenBy ? "ThenBy" : "OrderBy";
                 
                 // update the expression
-                var memberExpression = Expression.MakeMemberAccess(parameterExpression, propertyInfo);
+                var memberExpression = Expression.MakeMemberAccess(propertyValue, queryPropertyInfo.PropertyInfo);
                 var orderByExpression = Expression.Lambda(memberExpression, parameterExpression);
                 currentExpression =
                     Expression.Call(
                         typeof(Queryable),
                         command,
-                        new[] { typeof(TEntity), propertyInfo.PropertyType },
+                        new[] { typeof(TEntity), queryPropertyInfo.PropertyInfo.PropertyType },
                         currentExpression, Expression.Quote(orderByExpression));
 
                 useThenBy = true;

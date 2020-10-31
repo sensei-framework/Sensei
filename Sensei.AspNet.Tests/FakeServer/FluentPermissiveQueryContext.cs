@@ -8,10 +8,15 @@ namespace Sensei.AspNet.Tests.FakeServer
         protected override QueryMapper MapProperties(QueryMapper mapper)
         {
             mapper.Property<Product>(p => p.Name)
-                .CanFilter(false);
+                .CanFilter(false)
+                .CanSort(false);
 
             mapper.Property<Product>(p => p.Enabled)
-                .CanFilter(false);
+                .CanFilter(false)
+                .CanSort(false);
+
+            mapper.Property<Product>(p => p.CategoryAlt)
+                .CanInclude(false);
 
             return mapper;
         }

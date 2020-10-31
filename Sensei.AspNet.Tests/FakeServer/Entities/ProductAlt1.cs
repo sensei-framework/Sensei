@@ -18,14 +18,21 @@ namespace Sensei.AspNet.Tests.FakeServer.Entities
             OutOfStock
         }
 
+        [CanSort]
         [CanFilter]
         public string Name { get; set; }
         
+        [CanSort]
         [CanFilter]
         public bool Enabled { get; set; }
         public float Price { get; set; }
         public Guid CategoryId { get; set; }
+        
+        [CanInclude]
         public Category Category { get; set; }
+        
+        public Guid CategoryAltId { get; set; }
+        public Category CategoryAlt { get; set; }
         public string Info { get; set; }
         
         public Guid? FileId { get; set; }

@@ -5,7 +5,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Sensei.AspNet.Queries;
 using Sensei.AspNet.Queries.Entities;
 using Sensei.AspNet.Queries.Exceptions;
-using Sensei.AspNet.Queries.QueryFilters;
+using Sensei.AspNet.Queries.QuerySorts;
 using Sensei.AspNet.Tests.FakeServer;
 using Sensei.AspNet.Tests.FakeServer.Entities;
 using Sensei.AspNet.Tests.Utils;
@@ -13,11 +13,11 @@ using Xunit;
 
 namespace Sensei.AspNet.Tests.Queries
 {
-    public class QueryFiltersTest
+    public class QuerySortsTest
     {
         [Theory]
-        [MemberData(nameof(QueryFiltersTestCase.TestCases), MemberType = typeof(QueryFiltersTestCase))]
-        public void Filters(string query, Func<IQueryable<Product>, IQueryable<Product>> func)
+        [MemberData(nameof(QuerySortsTestCase.TestCases), MemberType = typeof(QuerySortsTestCase))]
+        public void Sort(string query, Func<IQueryable<Product>, IQueryable<Product>> func)
         {
             var testServer = TestServerUtils.Create();
 
@@ -25,21 +25,18 @@ namespace Sensei.AspNet.Tests.Queries
             var queryProcessor = testServer.Services.GetService<IQueryProcessor>();
 
             var expectedResults = func(dbContext.Products).ToList();
-            
-            // if expected result is empty, maybe this test is wrong
-            Assert.NotEmpty(expectedResults);
 
             var results = queryProcessor.Start(dbContext.Products)
-                .ApplyFilters(new Filtering {Filters = query})
+                .ApplySorting(new Sorting {Sorts = query})
                 .Queryable.ToList();
 
             Assert.True(expectedResults.Compare(results));
         }
         
         [Theory]
-        [MemberData(nameof(QueryFiltersTestCase.AttributePermissiveTestCases), MemberType = typeof(QueryFiltersTestCase))]
-        public void FilterAttributePermissive(string query, Func<IQueryable<ProductAlt2>,
-            IQueryable<ProductAlt2>> func, bool shouldGenerateException)
+        [MemberData(nameof(QuerySortsTestCase.AttributePermissiveTestCases), MemberType = typeof(QuerySortsTestCase))]
+        public void SortAttributePermissive(string query, Func<IQueryable<ProductAlt2>, IQueryable<ProductAlt2>> func,
+            bool shouldGenerateException)
         {
             var testServer = TestServerUtils.Create();
 
@@ -56,7 +53,7 @@ namespace Sensei.AspNet.Tests.Queries
             try
             {
                 results = queryProcessor.Start(dbContext.ProductsAlt2)
-                    .ApplyFilters(new Filtering {Filters = query})
+                    .ApplySorting(new Sorting {Sorts = query})
                     .Queryable.ToList();
             }
             catch (MissingPropertyException)
@@ -71,13 +68,13 @@ namespace Sensei.AspNet.Tests.Queries
         }
         
         [Theory]
-        [MemberData(nameof(QueryFiltersTestCase.AttributeStrictTestCases), MemberType = typeof(QueryFiltersTestCase))]
-        public void FilterAttributeStrict(string query, Func<IQueryable<ProductAlt1>,
-            IQueryable<ProductAlt1>> func, bool shouldGenerateException)
+        [MemberData(nameof(QuerySortsTestCase.AttributeStrictTestCases), MemberType = typeof(QuerySortsTestCase))]
+        public void SortAttributeStrict(string query, Func<IQueryable<ProductAlt1>, IQueryable<ProductAlt1>> func,
+            bool shouldGenerateException)
         {
             var testServer = TestServerUtils.Create(builder =>
             {
-                builder.UseSetting("EnableFiltersAsDefault", "false");
+                builder.UseSetting("EnableSortsAsDefault", "false");
                 return builder;
             });
 
@@ -94,7 +91,7 @@ namespace Sensei.AspNet.Tests.Queries
             try
             {
                 results = queryProcessor.Start(dbContext.ProductsAlt1)
-                    .ApplyFilters(new Filtering {Filters = query})
+                    .ApplySorting(new Sorting {Sorts = query})
                     .Queryable.ToList();
             }
             catch (MissingPropertyException)
@@ -109,9 +106,9 @@ namespace Sensei.AspNet.Tests.Queries
         }
         
         [Theory]
-        [MemberData(nameof(QueryFiltersTestCase.FluentPermissiveTestCases), MemberType = typeof(QueryFiltersTestCase))]
-        public void FilterFluentPermissive(string query, Func<IQueryable<Product>,
-            IQueryable<Product>> func, bool shouldGenerateException)
+        [MemberData(nameof(QuerySortsTestCase.FluentPermissiveTestCases), MemberType = typeof(QuerySortsTestCase))]
+        public void SortFluentPermissive(string query, Func<IQueryable<Product>, IQueryable<Product>> func,
+            bool shouldGenerateException)
         {
             var testServer = TestServerUtils.Create(builder =>
             {
@@ -131,7 +128,7 @@ namespace Sensei.AspNet.Tests.Queries
             try
             {
                 results = queryProcessor.Start(dbContext.Products)
-                    .ApplyFilters(new Filtering {Filters = query})
+                    .ApplySorting(new Sorting {Sorts = query})
                     .Queryable.ToList();
             }
             catch (MissingPropertyException)
@@ -146,9 +143,9 @@ namespace Sensei.AspNet.Tests.Queries
         }
         
         [Theory]
-        [MemberData(nameof(QueryFiltersTestCase.FluentPermissiveTestCases), MemberType = typeof(QueryFiltersTestCase))]
-        public void FilterFluentPermissiveCustomMapper(string query, Func<IQueryable<Product>,
-            IQueryable<Product>> func, bool shouldGenerateException)
+        [MemberData(nameof(QuerySortsTestCase.FluentPermissiveTestCases), MemberType = typeof(QuerySortsTestCase))]
+        public void SortFluentPermissiveCustomContext(string query, Func<IQueryable<Product>, IQueryable<Product>> func,
+            bool shouldGenerateException)
         {
             var testServer = TestServerUtils.Create();
             var dbContext = testServer.Services.GetService<FakeServerDbContext>();
@@ -164,7 +161,7 @@ namespace Sensei.AspNet.Tests.Queries
             try
             {
                 results = queryProcessor.Start(dbContext.Products, new FluentPermissiveQueryContext())
-                    .ApplyFilters(new Filtering {Filters = query})
+                    .ApplySorting(new Sorting {Sorts = query})
                     .Queryable.ToList();
             }
             catch (MissingPropertyException)
@@ -177,18 +174,19 @@ namespace Sensei.AspNet.Tests.Queries
             if (!shouldGenerateException)
                 Assert.True(expectedResults.Compare(results));
         }
-        
+                
         [Theory]
-        [MemberData(nameof(QueryFiltersTestCase.FluentStrictTestCases), MemberType = typeof(QueryFiltersTestCase))]
-        public void FilterFluentStrict(string query, Func<IQueryable<Product>,
-            IQueryable<Product>> func, bool shouldGenerateException)
+        [MemberData(nameof(QuerySortsTestCase.FluentStrictTestCases), MemberType = typeof(QuerySortsTestCase))]
+        public void SortFluentStrict(string query, Func<IQueryable<Product>, IQueryable<Product>> func,
+            bool shouldGenerateException)
         {
             var testServer = TestServerUtils.Create(builder =>
             {
-                builder.UseSetting("EnableFiltersAsDefault", "false");
                 builder.UseSetting("FluentStrict", "true");
+                builder.UseSetting("EnableSortsAsDefault", "false");
                 return builder;
             });
+
             var dbContext = testServer.Services.GetService<FakeServerDbContext>();
             var queryProcessor = testServer.Services.GetService<IQueryProcessor>();
 
@@ -202,7 +200,7 @@ namespace Sensei.AspNet.Tests.Queries
             try
             {
                 results = queryProcessor.Start(dbContext.Products)
-                    .ApplyFilters(new Filtering {Filters = query})
+                    .ApplySorting(new Sorting {Sorts = query})
                     .Queryable.ToList();
             }
             catch (MissingPropertyException)
@@ -217,15 +215,16 @@ namespace Sensei.AspNet.Tests.Queries
         }
         
         [Theory]
-        [MemberData(nameof(QueryFiltersTestCase.FluentStrictTestCases), MemberType = typeof(QueryFiltersTestCase))]
-        public void FilterFluentStrictCustomMapper(string query, Func<IQueryable<Product>,
-            IQueryable<Product>> func, bool shouldGenerateException)
+        [MemberData(nameof(QuerySortsTestCase.FluentStrictTestCases), MemberType = typeof(QuerySortsTestCase))]
+        public void SortFluentStrictCustomMapper(string query, Func<IQueryable<Product>, IQueryable<Product>> func,
+            bool shouldGenerateException)
         {
             var testServer = TestServerUtils.Create(builder =>
             {
-                builder.UseSetting("EnableFiltersAsDefault", "false");
+                builder.UseSetting("EnableSortsAsDefault", "false");
                 return builder;
             });
+
             var dbContext = testServer.Services.GetService<FakeServerDbContext>();
             var queryProcessor = testServer.Services.GetService<IQueryProcessor>();
 
@@ -239,7 +238,7 @@ namespace Sensei.AspNet.Tests.Queries
             try
             {
                 results = queryProcessor.Start(dbContext.Products, new FluentStrictQueryContext())
-                    .ApplyFilters(new Filtering {Filters = query})
+                    .ApplySorting(new Sorting {Sorts = query})
                     .Queryable.ToList();
             }
             catch (MissingPropertyException)
@@ -254,8 +253,8 @@ namespace Sensei.AspNet.Tests.Queries
         }
         
         [Theory]
-        [MemberData(nameof(QueryFiltersTestCase.ExceptionsTestCases), MemberType = typeof(QueryFiltersTestCase))]
-        public void FilterExceptions(string query, Type expectedType)
+        [MemberData(nameof(QuerySortsTestCase.ExceptionsTestCases), MemberType = typeof(QuerySortsTestCase))]
+        public void SortExceptions(string query, Type expectedType)
         {
             var testServer = TestServerUtils.Create();
             var dbContext = testServer.Services.GetService<FakeServerDbContext>();
@@ -265,7 +264,7 @@ namespace Sensei.AspNet.Tests.Queries
             try
             {
                 queryProcessor.Start(dbContext.Products)
-                    .ApplyFilters(new Filtering {Filters = query});
+                    .ApplySorting(new Sorting {Sorts = query});
             }
             catch (Exception e)
             {

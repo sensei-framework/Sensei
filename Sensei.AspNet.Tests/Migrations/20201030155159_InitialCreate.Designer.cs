@@ -9,7 +9,7 @@ using Sensei.AspNet.Tests.FakeServer;
 namespace Sensei.AspNet.Tests.Migrations
 {
     [DbContext(typeof(FakeServerDbContext))]
-    [Migration("20201018131511_InitialCreate")]
+    [Migration("20201030155159_InitialCreate")]
     partial class InitialCreate
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -83,6 +83,9 @@ namespace Sensei.AspNet.Tests.Migrations
                     b.Property<long>("AvailableSince")
                         .HasColumnType("INTEGER");
 
+                    b.Property<Guid>("CategoryAltId")
+                        .HasColumnType("TEXT");
+
                     b.Property<Guid>("CategoryId")
                         .HasColumnType("TEXT");
 
@@ -120,6 +123,8 @@ namespace Sensei.AspNet.Tests.Migrations
                         .HasColumnType("TEXT");
 
                     b.HasKey("Id");
+
+                    b.HasIndex("CategoryAltId");
 
                     b.HasIndex("CategoryId");
 
@@ -138,6 +143,9 @@ namespace Sensei.AspNet.Tests.Migrations
                     b.Property<long>("AvailableSince")
                         .HasColumnType("INTEGER");
 
+                    b.Property<Guid>("CategoryAltId")
+                        .HasColumnType("TEXT");
+
                     b.Property<Guid>("CategoryId")
                         .HasColumnType("TEXT");
 
@@ -175,6 +183,8 @@ namespace Sensei.AspNet.Tests.Migrations
                         .HasColumnType("TEXT");
 
                     b.HasKey("Id");
+
+                    b.HasIndex("CategoryAltId");
 
                     b.HasIndex("CategoryId");
 
@@ -193,6 +203,9 @@ namespace Sensei.AspNet.Tests.Migrations
                     b.Property<long>("AvailableSince")
                         .HasColumnType("INTEGER");
 
+                    b.Property<Guid>("CategoryAltId")
+                        .HasColumnType("TEXT");
+
                     b.Property<Guid>("CategoryId")
                         .HasColumnType("TEXT");
 
@@ -230,6 +243,8 @@ namespace Sensei.AspNet.Tests.Migrations
                         .HasColumnType("TEXT");
 
                     b.HasKey("Id");
+
+                    b.HasIndex("CategoryAltId");
 
                     b.HasIndex("CategoryId");
 
@@ -279,6 +294,12 @@ namespace Sensei.AspNet.Tests.Migrations
 
             modelBuilder.Entity("Sensei.AspNet.Tests.FakeServer.Entities.Product", b =>
                 {
+                    b.HasOne("Sensei.AspNet.Tests.FakeServer.Entities.Category", "CategoryAlt")
+                        .WithMany()
+                        .HasForeignKey("CategoryAltId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
                     b.HasOne("Sensei.AspNet.Tests.FakeServer.Entities.Category", "Category")
                         .WithMany()
                         .HasForeignKey("CategoryId")
@@ -288,6 +309,12 @@ namespace Sensei.AspNet.Tests.Migrations
 
             modelBuilder.Entity("Sensei.AspNet.Tests.FakeServer.Entities.ProductAlt1", b =>
                 {
+                    b.HasOne("Sensei.AspNet.Tests.FakeServer.Entities.Category", "CategoryAlt")
+                        .WithMany()
+                        .HasForeignKey("CategoryAltId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
                     b.HasOne("Sensei.AspNet.Tests.FakeServer.Entities.Category", "Category")
                         .WithMany()
                         .HasForeignKey("CategoryId")
@@ -297,6 +324,12 @@ namespace Sensei.AspNet.Tests.Migrations
 
             modelBuilder.Entity("Sensei.AspNet.Tests.FakeServer.Entities.ProductAlt2", b =>
                 {
+                    b.HasOne("Sensei.AspNet.Tests.FakeServer.Entities.Category", "CategoryAlt")
+                        .WithMany()
+                        .HasForeignKey("CategoryAltId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
                     b.HasOne("Sensei.AspNet.Tests.FakeServer.Entities.Category", "Category")
                         .WithMany()
                         .HasForeignKey("CategoryId")

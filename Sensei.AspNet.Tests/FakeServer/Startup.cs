@@ -43,12 +43,16 @@ namespace Sensei.AspNet.Tests.FakeServer
             {
                 options.EnableFiltersAsDefault =
                     _configuration.GetValue<bool?>("EnableFiltersAsDefault") ?? options.EnableFiltersAsDefault;
+                options.EnableSortsAsDefault =
+                    _configuration.GetValue<bool?>("EnableSortsAsDefault") ?? options.EnableSortsAsDefault;
+                options.EnableIncludesAsDefault =
+                    _configuration.GetValue<bool?>("EnableIncludesAsDefault") ?? options.EnableIncludesAsDefault;
             });
 
-            if (_configuration.GetValue<bool>("FilterFluentPermissive"))
+            if (_configuration.GetValue<bool>("FluentPermissive"))
                 services.AddTransient<IQueryContext, FluentPermissiveQueryContext>();
             
-            if (_configuration.GetValue<bool>("FilterFluentStrict"))
+            if (_configuration.GetValue<bool>("FluentStrict"))
                 services.AddTransient<IQueryContext, FluentStrictQueryContext>();
 
             services.AddMvc(

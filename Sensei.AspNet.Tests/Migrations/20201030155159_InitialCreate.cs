@@ -50,6 +50,7 @@ namespace Sensei.AspNet.Tests.Migrations
                     Enabled = table.Column<bool>(nullable: false),
                     Price = table.Column<float>(nullable: false),
                     CategoryId = table.Column<Guid>(nullable: false),
+                    CategoryAltId = table.Column<Guid>(nullable: false),
                     Info = table.Column<string>(nullable: true),
                     FileId = table.Column<Guid>(nullable: true),
                     Status = table.Column<int>(nullable: false),
@@ -62,6 +63,12 @@ namespace Sensei.AspNet.Tests.Migrations
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_Products", x => x.Id);
+                    table.ForeignKey(
+                        name: "FK_Products_Categories_CategoryAltId",
+                        column: x => x.CategoryAltId,
+                        principalTable: "Categories",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Cascade);
                     table.ForeignKey(
                         name: "FK_Products_Categories_CategoryId",
                         column: x => x.CategoryId,
@@ -81,6 +88,7 @@ namespace Sensei.AspNet.Tests.Migrations
                     Enabled = table.Column<bool>(nullable: false),
                     Price = table.Column<float>(nullable: false),
                     CategoryId = table.Column<Guid>(nullable: false),
+                    CategoryAltId = table.Column<Guid>(nullable: false),
                     Info = table.Column<string>(nullable: true),
                     FileId = table.Column<Guid>(nullable: true),
                     Status = table.Column<int>(nullable: false),
@@ -93,6 +101,12 @@ namespace Sensei.AspNet.Tests.Migrations
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_ProductsAlt1", x => x.Id);
+                    table.ForeignKey(
+                        name: "FK_ProductsAlt1_Categories_CategoryAltId",
+                        column: x => x.CategoryAltId,
+                        principalTable: "Categories",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Cascade);
                     table.ForeignKey(
                         name: "FK_ProductsAlt1_Categories_CategoryId",
                         column: x => x.CategoryId,
@@ -112,6 +126,7 @@ namespace Sensei.AspNet.Tests.Migrations
                     Enabled = table.Column<bool>(nullable: false),
                     Price = table.Column<float>(nullable: false),
                     CategoryId = table.Column<Guid>(nullable: false),
+                    CategoryAltId = table.Column<Guid>(nullable: false),
                     Info = table.Column<string>(nullable: true),
                     FileId = table.Column<Guid>(nullable: true),
                     Status = table.Column<int>(nullable: false),
@@ -124,6 +139,12 @@ namespace Sensei.AspNet.Tests.Migrations
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_ProductsAlt2", x => x.Id);
+                    table.ForeignKey(
+                        name: "FK_ProductsAlt2_Categories_CategoryAltId",
+                        column: x => x.CategoryAltId,
+                        principalTable: "Categories",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Cascade);
                     table.ForeignKey(
                         name: "FK_ProductsAlt2_Categories_CategoryId",
                         column: x => x.CategoryId,
@@ -170,14 +191,29 @@ namespace Sensei.AspNet.Tests.Migrations
                 column: "TimeSlotId");
 
             migrationBuilder.CreateIndex(
+                name: "IX_Products_CategoryAltId",
+                table: "Products",
+                column: "CategoryAltId");
+
+            migrationBuilder.CreateIndex(
                 name: "IX_Products_CategoryId",
                 table: "Products",
                 column: "CategoryId");
 
             migrationBuilder.CreateIndex(
+                name: "IX_ProductsAlt1_CategoryAltId",
+                table: "ProductsAlt1",
+                column: "CategoryAltId");
+
+            migrationBuilder.CreateIndex(
                 name: "IX_ProductsAlt1_CategoryId",
                 table: "ProductsAlt1",
                 column: "CategoryId");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_ProductsAlt2_CategoryAltId",
+                table: "ProductsAlt2",
+                column: "CategoryAltId");
 
             migrationBuilder.CreateIndex(
                 name: "IX_ProductsAlt2_CategoryId",

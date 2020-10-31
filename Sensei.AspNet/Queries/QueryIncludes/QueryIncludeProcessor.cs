@@ -25,12 +25,12 @@ namespace Sensei.AspNet.Queries.QueryIncludes
                 var include = item.Trim();
                 
                 // we resolve the property expression just to check the permissions
-                var (propertyInfo, _) =
+                var queryPropertyInfo =
                     queryContext.Resolve(typeof(TEntity), null, include, QueryType.Includes,
-                        serviceProvider.GetService<SenseiOptions>());
+                        serviceProvider.GetService<SenseiOptions>(), true);
 
                 // we skip if we can't find the property
-                if (propertyInfo == null)
+                if (queryPropertyInfo?.PropertyInfo == null)
                 {
                     logger.LogError("Property for field {field} not found", include);
 
@@ -40,7 +40,7 @@ namespace Sensei.AspNet.Queries.QueryIncludes
                     continue;
                 }
                 
-                queryable = queryable.Include(include);
+                queryable = queryable.Include(queryPropertyInfo.FullPath);
             }
 
             if (query.Queryable != queryable)

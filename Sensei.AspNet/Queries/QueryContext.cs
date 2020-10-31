@@ -1,4 +1,5 @@
 using System;
+using System.Collections;
 using System.Linq;
 using System.Linq.Expressions;
 using System.Reflection;
@@ -16,33 +17,48 @@ namespace Sensei.AspNet.Queries
         {
             return mapper;
         }
-        
-        internal (PropertyInfo, Expression) Resolve(Type containerType, Expression parentExpression,
-            string propertyName, QueryType queryType, SenseiOptions senseiOptions)
-        {
-            _senseiOptions ??= senseiOptions;
-            _queryMapper ??= MapProperties(new QueryMapper());
-                
-            // we split the property name to get the first property and the rest
-            var properties = propertyName.Split('.', 2);
-            var property = properties.First();
-            var childProperty = properties.Length > 1 ? properties.Last() : null;
-            
-            // get the property
-            var propertyInfo = GetProperty(containerType, property, queryType);
-            if (propertyInfo == null)
-                return (null, null);
-            
-            // check the permissions
-            // TODO: here we need to check if the user have the permissions to read that property (if don't return null)
 
-            // resolve the expression
-            var expression = parentExpression != null ? Expression.Property(parentExpression, propertyInfo) : null;
-            
-            // we check if continue to go recursively or we just return the expression
-            return string.IsNullOrEmpty(childProperty)
-                ? (propertyInfo, expression)
-                : Resolve(propertyInfo.PropertyType, expression, childProperty, queryType, senseiOptions);
+        internal QueryPropertyInfo Resolve(Type containerType, Expression parentExpression, string propertyName,
+            QueryType queryType, SenseiOptions senseiOptions, bool handleEnumerable = false, string fullPath = null)
+        {
+            while (true)
+            {
+                _senseiOptions ??= senseiOptions;
+                _queryMapper ??= MapProperties(new QueryMapper());
+
+                // we split the property name to get the first property and the rest
+                var properties = propertyName.Split('.', 2);
+                var property = properties.First();
+                var childProperty = properties.Length > 1 ? properties.Last() : null;
+
+                // get the property
+                var propertyInfo = GetProperty(containerType, property, queryType);
+                if (propertyInfo == null) return null;
+
+                // check the permissions
+                // TODO: here we need to check if the user have the permissions to read that property (if don't return null)
+
+                // set the path
+                if (fullPath == null)
+                    fullPath = propertyInfo.Name;
+                else
+                    fullPath += $".{propertyInfo.Name}";
+
+                // resolve the expression
+                var expression = parentExpression != null ? Expression.Property(parentExpression, propertyInfo) : null;
+
+                // we check if continue or just return the expression
+                if (string.IsNullOrEmpty(childProperty))
+                    return new QueryPropertyInfo(propertyInfo, expression, fullPath);
+                
+                // prepare data for next cycle
+                if (handleEnumerable && typeof(IEnumerable).IsAssignableFrom(propertyInfo.PropertyType))
+                    containerType = propertyInfo.PropertyType.GetGenericArguments()[0];
+                else
+                    containerType = propertyInfo.PropertyType;
+                parentExpression = expression;
+                propertyName = childProperty;
+            }
         }
 
         private bool CheckPropertyEnabled(PropertyInfo propertyInfo, QueryType queryType)
