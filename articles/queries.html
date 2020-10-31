@@ -1,0 +1,322 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Resolve HTTP queries </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Resolve HTTP queries ">
+    <meta name="generator" content="docfx 2.45.1.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="resolve-http-queries">Resolve HTTP queries</h1>
+
+<p>Sensei provides a mechanism to perform the most common actions related to
+HTTP requests. The system provides a series of predefined helpers and,
+if necessary, it can be extended with customized actions.</p>
+<p>The default helpers are:</p>
+<ul>
+<li><a href="#filtering">Filtering</a></li>
+<li><a href="#sorting">Sorting</a></li>
+<li><a href="#including">Including</a></li>
+<li><a href="#pagination">Pagination</a></li>
+</ul>
+<p>The actions are performed on a <a class="xref" href="../api/Sensei.AspNet.Queries.Query-1.html">Query</a>
+type object which contains the IQueryable interface on which to execute the
+queries and IServiceContainer which allows access to the DI system.</p>
+<p>To get a <a class="xref" href="../api/Sensei.AspNet.Queries.Query-1.html">Query</a> instance we can use
+the <a class="xref" href="../api/Sensei.AspNet.Queries.QueryProcessor.html">QueryProcessor</a> that is
+available inside the DI system and start the
+<a class="xref" href="../api/Sensei.AspNet.Queries.Query-1.html">Query</a> through the <code>Start()</code> method.</p>
+<p>Example:</p>
+<pre><code class="lang-c#">public class CategoryController : ControllerBase
+{
+    private MyDbContext _dbContext;
+    private QueryProcessor _queryProcessor;
+
+    public CategoryController(MyDbContext dbContext, QueryProcessor queryProcessor)
+    {
+        _dbContext = dbContext;
+        _queryProcessor = queryProcessor;
+    }
+
+    public ActionResult Get()
+    {
+        var query = QueryProcessor.Start(_dbContext.Categories);
+        // ...
+        return query.Queryable;
+    }
+}
+</code></pre>
+<p>Once the <a class="xref" href="../api/Sensei.AspNet.Queries.Query-1.html">Query</a> is instantiated you can
+apply filters with a fluent syntax, as example:</p>
+<pre><code class="lang-c#">public ActionResult&lt;Paginator&lt;Category&gt;&gt; Get(
+    [FromQuery] Filtering filtering,
+    [FromQuery] Sorting sorting,
+    [FromQuery] Pagination pagination,
+    [FromQuery] Including including
+)
+{
+    return QueryProcessor
+        .Start(DbSet)
+            .ApplyFilters(filtering)
+            .ApplySorting(sorting)
+            .ApplyIncluding(including)
+            .ApplyPagination(pagination);
+}
+</code></pre>
+<h2 id="filtering">Filtering</h2>
+<p>Filters work through lucene-like syntax with some limitations due to the
+SQL data source.</p>
+<p>Filters are applied to strings using the <code>LIKE</code> operator which means that it is
+case insensitive, with the exception of some SQL servers such as PostgreSQL
+where <code>LIKE</code> is case sensitive.</p>
+<p>The wildcard characters used to filter strings depend on the SQL server used
+(as above they are processed through the <code>LIKE</code> operator).</p>
+<p>Example of a request with a filter applied:</p>
+<pre><code class="lang-text">description:%coffee% AND (price:&gt;10 OR quantity:&lt;=100)
+</code></pre>
+<pre><code class="lang-http">GET /categories?filters=description%3A%25coffee%25%20AND%20(price%3A%3E10%20OR%20quantity%3A%3C%3D100)
+</code></pre>
+<p>The previous query is converted to an SQL query similar to:</p>
+<pre><code class="lang-sql">SELECT * FROM Categories WHERE Description = '%coffee%' AND (Price &gt; 10 OR Quantity &lt;= 100)
+</code></pre>
+<div class="WARNING">
+<h5>Warning</h5>
+<p>Filters currently only work on queries that are resolved server-side,
+due to the use of the DbFunctions.Like method to process strings.</p>
+</div>
+<h3 id="syntax">Syntax</h3>
+<p>Here is a series of examples to understand how filter queries work:</p>
+<ul>
+<li>Where the field <code>name</code> match the value <code>coffee</code>
+<pre><code class="lang-text">name:coffee
+</code></pre>
+</li>
+<li>Where the field <code>name</code> doesn't match the value <code>coffee</code>
+<pre><code class="lang-text">NOT name:coffee
+</code></pre>
+</li>
+<li>here the field <code>author</code> match the value <code>John Smith</code>
+<pre><code class="lang-text">author:&quot;John Smith&quot;
+</code></pre>
+</li>
+<li>Where the field <code>description</code> contain the value <code>sugar</code>
+<pre><code class="lang-text">description:%sugar%
+</code></pre>
+</li>
+<li>Where the field <code>description</code> starts with the value <code>sugar</code>
+<pre><code class="lang-text">description:%sugar
+</code></pre>
+</li>
+<li>Where the field <code>description</code> end with the value <code>sugar</code>
+<pre><code class="lang-text">description:sugar%
+</code></pre>
+</li>
+<li>Where the field <code>author</code> is not <code>null</code>
+<pre><code class="lang-text">_exists_:author
+</code></pre>
+</li>
+<li>Where the field <code>author</code> is <code>null</code>
+<pre><code class="lang-text">NOT _exists_:author
+</code></pre>
+</li>
+<li>Where the field <code>price</code> is greater than <code>10</code>
+<pre><code class="lang-text">price:&gt;10
+</code></pre>
+</li>
+<li>Where the field <code>price</code> is greater or equal than <code>10</code>
+<pre><code class="lang-text">price:&gt;=10
+</code></pre>
+</li>
+<li>Where the field <code>price</code> is less than <code>20</code>
+<pre><code class="lang-text">price:&lt;20
+</code></pre>
+</li>
+<li>Where the field <code>price</code> is less or equal than <code>20</code>
+<pre><code class="lang-text">price:&lt;=20
+</code></pre>
+</li>
+<li>Where the field <code>price</code> is greater than <code>10</code> and less than <code>20</code>
+<pre><code class="lang-text">price:[10 TO 20]
+</code></pre>
+</li>
+<li>Where the field <code>price</code> is greater than <code>10</code> and less than <code>20</code> and
+<code>description</code> contain <code>sugar</code> or <code>name</code> is not equal to <code>coffee</code>
+<pre><code class="lang-text">price:[10 TO 20] AND (description:%sugar% OR NOT name:coffee)
+</code></pre>
+</li>
+</ul>
+<p>It also works with child classes. To access a child class, simply use the operator <code>.</code>.
+For example, if we want to search for all the products belonging to the class that has
+the name &quot;drinks&quot;, we can do:</p>
+<pre><code class="lang-text">category.name:drinks
+</code></pre>
+<h2 id="sorting">Sorting</h2>
+<p>Sorting works by specifying the columns to be sorted separated by a comma.
+The ascending sort is the default. It can also be explicitly specified with the <code>+</code>
+operator before the column name. For the descending sort, the operator <code>-</code> must be used.</p>
+<p>It is also possible to sort by child class using the <code>.</code> operator.</p>
+<p>Example of a request with sorting applied:</p>
+<pre><code class="lang-text">-price,name
+</code></pre>
+<pre><code class="lang-http">GET /categories?sorts=-price,name
+</code></pre>
+<h3 id="syntax-1">Syntax</h3>
+<p>Here is a series of examples to understand how filter queries work:</p>
+<ul>
+<li>Order by <code>name</code> ascending
+<pre><code class="lang-text">name
+</code></pre>
+</li>
+<li>Order by <code>name</code> descending
+<pre><code class="lang-text">-name
+</code></pre>
+</li>
+<li>Order by <code>name</code> ascending, than <code>price</code> descending
+<pre><code class="lang-text">name,-price
+</code></pre>
+</li>
+<li>Order by <code>description</code> ascending in child class <code>category</code>, than <code>price</code> descending
+<pre><code class="lang-text">category.description,-price
+</code></pre>
+</li>
+</ul>
+<h2 id="including">Including</h2>
+<p>You can include child entities by specifying the name of the fields to include
+separated by commas. You can also include children of children by specifying
+the field names separated by the <code>.</code> operator.</p>
+<p>Example of a request with including applied:</p>
+<pre><code class="lang-text">category.parentCategory,items
+</code></pre>
+<pre><code class="lang-http">GET /products?includes=category.parentCategory,items
+</code></pre>
+<h2 id="pagination">Pagination</h2>
+<p>Pagination, unlike other filters, terminates the query and returns an object.
+The pagination object is <a class="xref" href="../api/Sensei.AspNet.Queries.Entities.Paginator-1.html">Paginator</a>
+and contains all pagination information and filtered items.</p>
+<p>The <a class="xref" href="../api/Sensei.AspNet.Queries.Entities.Paginator-1.html">Paginator</a> structure have the following fields:</p>
+<ul>
+<li><code>Page</code> is the number of page returned</li>
+<li><code>PageSize</code> is the number of items returned per page</li>
+<li><code>Items</code> is a list of items returned</li>
+<li><code>Total</code> is the number of the total items</li>
+<li><code>HaveNext</code> is the flag that indicate if have a next page</li>
+<li><code>HavePrev</code> is the flag that indicate if have a previous page</li>
+</ul>
+<p>Example of a request with including applied:</p>
+<pre><code class="lang-http">GET /products?page=3&amp;pageSize=20
+</code></pre>
+<h3 id="default-configuration">Default configuration</h3>
+<p>When you configure Sensei with <a class="xref" href="../api/Sensei.AspNet.SenseiOptions.html">SenseiOptions</a> you have two fields for configure the pagination:</p>
+<ul>
+<li><code>PaginationDefaultPageSize</code> is the default page size (default is 20)</li>
+<li><code>PaginationMaxPageSize</code> is the max number available per the page size (default is 100)</li>
+</ul>
+<div class="NOTE">
+<h5>Note</h5>
+<p>Page counting start from 1</p>
+</div>
+<div class="NOTE">
+<h5>Note</h5>
+<p>If you pass <code>pageSize</code> equal to 0, it will return the number of items specified in
+<code>PaginationMaxPageSize</code> configuration. If <code>PaginationMaxPageSize</code> is equal to 0 too,
+all the items will be returned</p>
+</div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/sensei-framework/Sensei/blob/master/Sensei.Documentation/articles/queries.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

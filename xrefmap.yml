@@ -1,0 +1,1713 @@
+### YamlMime:XRefMap
+sorted: true
+references:
+- uid: Sensei.AspNet
+  name: Sensei.AspNet
+  href: api/Sensei.AspNet.html
+  commentId: N:Sensei.AspNet
+  fullName: Sensei.AspNet
+  nameWithType: Sensei.AspNet
+- uid: Sensei.AspNet.Attributes
+  name: Sensei.AspNet.Attributes
+  href: api/Sensei.AspNet.Attributes.html
+  commentId: N:Sensei.AspNet.Attributes
+  fullName: Sensei.AspNet.Attributes
+  nameWithType: Sensei.AspNet.Attributes
+- uid: Sensei.AspNet.Attributes.PopulateWithClaimAttribute
+  name: PopulateWithClaimAttribute
+  href: api/Sensei.AspNet.Attributes.PopulateWithClaimAttribute.html
+  commentId: T:Sensei.AspNet.Attributes.PopulateWithClaimAttribute
+  fullName: Sensei.AspNet.Attributes.PopulateWithClaimAttribute
+  nameWithType: PopulateWithClaimAttribute
+- uid: Sensei.AspNet.Attributes.PopulateWithClaimAttribute.#ctor(Sensei.AspNet.DbProcessor.DbEntityState,System.String,System.Boolean)
+  name: PopulateWithClaimAttribute(DbEntityState, String, Boolean)
+  href: api/Sensei.AspNet.Attributes.PopulateWithClaimAttribute.html#Sensei_AspNet_Attributes_PopulateWithClaimAttribute__ctor_Sensei_AspNet_DbProcessor_DbEntityState_System_String_System_Boolean_
+  commentId: M:Sensei.AspNet.Attributes.PopulateWithClaimAttribute.#ctor(Sensei.AspNet.DbProcessor.DbEntityState,System.String,System.Boolean)
+  fullName: Sensei.AspNet.Attributes.PopulateWithClaimAttribute.PopulateWithClaimAttribute(Sensei.AspNet.DbProcessor.DbEntityState, System.String, System.Boolean)
+  nameWithType: PopulateWithClaimAttribute.PopulateWithClaimAttribute(DbEntityState, String, Boolean)
+- uid: Sensei.AspNet.Attributes.PopulateWithClaimAttribute.#ctor*
+  name: PopulateWithClaimAttribute
+  href: api/Sensei.AspNet.Attributes.PopulateWithClaimAttribute.html#Sensei_AspNet_Attributes_PopulateWithClaimAttribute__ctor_
+  commentId: Overload:Sensei.AspNet.Attributes.PopulateWithClaimAttribute.#ctor
+  isSpec: "True"
+  fullName: Sensei.AspNet.Attributes.PopulateWithClaimAttribute.PopulateWithClaimAttribute
+  nameWithType: PopulateWithClaimAttribute.PopulateWithClaimAttribute
+- uid: Sensei.AspNet.Attributes.PopulateWithClaimAttribute.PostProcess(DbContext,IServiceProvider,EntityEntry,System.Object,System.Object,Type)
+  name: PostProcess(DbContext, IServiceProvider, EntityEntry, Object, Object, Type)
+  href: api/Sensei.AspNet.Attributes.PopulateWithClaimAttribute.html#Sensei_AspNet_Attributes_PopulateWithClaimAttribute_PostProcess_DbContext_IServiceProvider_EntityEntry_System_Object_System_Object_Type_
+  commentId: M:Sensei.AspNet.Attributes.PopulateWithClaimAttribute.PostProcess(DbContext,IServiceProvider,EntityEntry,System.Object,System.Object,Type)
+  fullName: Sensei.AspNet.Attributes.PopulateWithClaimAttribute.PostProcess(DbContext, IServiceProvider, EntityEntry, System.Object, System.Object, Type)
+  nameWithType: PopulateWithClaimAttribute.PostProcess(DbContext, IServiceProvider, EntityEntry, Object, Object, Type)
+- uid: Sensei.AspNet.Attributes.PopulateWithClaimAttribute.PostProcess*
+  name: PostProcess
+  href: api/Sensei.AspNet.Attributes.PopulateWithClaimAttribute.html#Sensei_AspNet_Attributes_PopulateWithClaimAttribute_PostProcess_
+  commentId: Overload:Sensei.AspNet.Attributes.PopulateWithClaimAttribute.PostProcess
+  isSpec: "True"
+  fullName: Sensei.AspNet.Attributes.PopulateWithClaimAttribute.PostProcess
+  nameWithType: PopulateWithClaimAttribute.PostProcess
+- uid: Sensei.AspNet.Attributes.PopulateWithClaimAttribute.PreProcess(DbContext,IServiceProvider,EntityEntry,System.Object,System.Object,Type)
+  name: PreProcess(DbContext, IServiceProvider, EntityEntry, Object, Object, Type)
+  href: api/Sensei.AspNet.Attributes.PopulateWithClaimAttribute.html#Sensei_AspNet_Attributes_PopulateWithClaimAttribute_PreProcess_DbContext_IServiceProvider_EntityEntry_System_Object_System_Object_Type_
+  commentId: M:Sensei.AspNet.Attributes.PopulateWithClaimAttribute.PreProcess(DbContext,IServiceProvider,EntityEntry,System.Object,System.Object,Type)
+  fullName: Sensei.AspNet.Attributes.PopulateWithClaimAttribute.PreProcess(DbContext, IServiceProvider, EntityEntry, System.Object, System.Object, Type)
+  nameWithType: PopulateWithClaimAttribute.PreProcess(DbContext, IServiceProvider, EntityEntry, Object, Object, Type)
+- uid: Sensei.AspNet.Attributes.PopulateWithClaimAttribute.PreProcess*
+  name: PreProcess
+  href: api/Sensei.AspNet.Attributes.PopulateWithClaimAttribute.html#Sensei_AspNet_Attributes_PopulateWithClaimAttribute_PreProcess_
+  commentId: Overload:Sensei.AspNet.Attributes.PopulateWithClaimAttribute.PreProcess
+  isSpec: "True"
+  fullName: Sensei.AspNet.Attributes.PopulateWithClaimAttribute.PreProcess
+  nameWithType: PopulateWithClaimAttribute.PreProcess
+- uid: Sensei.AspNet.Attributes.PopulateWithClaimAttribute.State
+  name: State
+  href: api/Sensei.AspNet.Attributes.PopulateWithClaimAttribute.html#Sensei_AspNet_Attributes_PopulateWithClaimAttribute_State
+  commentId: P:Sensei.AspNet.Attributes.PopulateWithClaimAttribute.State
+  fullName: Sensei.AspNet.Attributes.PopulateWithClaimAttribute.State
+  nameWithType: PopulateWithClaimAttribute.State
+- uid: Sensei.AspNet.Attributes.PopulateWithClaimAttribute.State*
+  name: State
+  href: api/Sensei.AspNet.Attributes.PopulateWithClaimAttribute.html#Sensei_AspNet_Attributes_PopulateWithClaimAttribute_State_
+  commentId: Overload:Sensei.AspNet.Attributes.PopulateWithClaimAttribute.State
+  isSpec: "True"
+  fullName: Sensei.AspNet.Attributes.PopulateWithClaimAttribute.State
+  nameWithType: PopulateWithClaimAttribute.State
+- uid: Sensei.AspNet.Attributes.PopulateWithDateTimeAttribute
+  name: PopulateWithDateTimeAttribute
+  href: api/Sensei.AspNet.Attributes.PopulateWithDateTimeAttribute.html
+  commentId: T:Sensei.AspNet.Attributes.PopulateWithDateTimeAttribute
+  fullName: Sensei.AspNet.Attributes.PopulateWithDateTimeAttribute
+  nameWithType: PopulateWithDateTimeAttribute
+- uid: Sensei.AspNet.Attributes.PopulateWithDateTimeAttribute.#ctor(Sensei.AspNet.DbProcessor.DbEntityState)
+  name: PopulateWithDateTimeAttribute(DbEntityState)
+  href: api/Sensei.AspNet.Attributes.PopulateWithDateTimeAttribute.html#Sensei_AspNet_Attributes_PopulateWithDateTimeAttribute__ctor_Sensei_AspNet_DbProcessor_DbEntityState_
+  commentId: M:Sensei.AspNet.Attributes.PopulateWithDateTimeAttribute.#ctor(Sensei.AspNet.DbProcessor.DbEntityState)
+  fullName: Sensei.AspNet.Attributes.PopulateWithDateTimeAttribute.PopulateWithDateTimeAttribute(Sensei.AspNet.DbProcessor.DbEntityState)
+  nameWithType: PopulateWithDateTimeAttribute.PopulateWithDateTimeAttribute(DbEntityState)
+- uid: Sensei.AspNet.Attributes.PopulateWithDateTimeAttribute.#ctor*
+  name: PopulateWithDateTimeAttribute
+  href: api/Sensei.AspNet.Attributes.PopulateWithDateTimeAttribute.html#Sensei_AspNet_Attributes_PopulateWithDateTimeAttribute__ctor_
+  commentId: Overload:Sensei.AspNet.Attributes.PopulateWithDateTimeAttribute.#ctor
+  isSpec: "True"
+  fullName: Sensei.AspNet.Attributes.PopulateWithDateTimeAttribute.PopulateWithDateTimeAttribute
+  nameWithType: PopulateWithDateTimeAttribute.PopulateWithDateTimeAttribute
+- uid: Sensei.AspNet.Attributes.PopulateWithDateTimeAttribute.PostProcess(DbContext,IServiceProvider,EntityEntry,System.Object,System.Object,Type)
+  name: PostProcess(DbContext, IServiceProvider, EntityEntry, Object, Object, Type)
+  href: api/Sensei.AspNet.Attributes.PopulateWithDateTimeAttribute.html#Sensei_AspNet_Attributes_PopulateWithDateTimeAttribute_PostProcess_DbContext_IServiceProvider_EntityEntry_System_Object_System_Object_Type_
+  commentId: M:Sensei.AspNet.Attributes.PopulateWithDateTimeAttribute.PostProcess(DbContext,IServiceProvider,EntityEntry,System.Object,System.Object,Type)
+  fullName: Sensei.AspNet.Attributes.PopulateWithDateTimeAttribute.PostProcess(DbContext, IServiceProvider, EntityEntry, System.Object, System.Object, Type)
+  nameWithType: PopulateWithDateTimeAttribute.PostProcess(DbContext, IServiceProvider, EntityEntry, Object, Object, Type)
+- uid: Sensei.AspNet.Attributes.PopulateWithDateTimeAttribute.PostProcess*
+  name: PostProcess
+  href: api/Sensei.AspNet.Attributes.PopulateWithDateTimeAttribute.html#Sensei_AspNet_Attributes_PopulateWithDateTimeAttribute_PostProcess_
+  commentId: Overload:Sensei.AspNet.Attributes.PopulateWithDateTimeAttribute.PostProcess
+  isSpec: "True"
+  fullName: Sensei.AspNet.Attributes.PopulateWithDateTimeAttribute.PostProcess
+  nameWithType: PopulateWithDateTimeAttribute.PostProcess
+- uid: Sensei.AspNet.Attributes.PopulateWithDateTimeAttribute.PreProcess(DbContext,IServiceProvider,EntityEntry,System.Object,System.Object,Type)
+  name: PreProcess(DbContext, IServiceProvider, EntityEntry, Object, Object, Type)
+  href: api/Sensei.AspNet.Attributes.PopulateWithDateTimeAttribute.html#Sensei_AspNet_Attributes_PopulateWithDateTimeAttribute_PreProcess_DbContext_IServiceProvider_EntityEntry_System_Object_System_Object_Type_
+  commentId: M:Sensei.AspNet.Attributes.PopulateWithDateTimeAttribute.PreProcess(DbContext,IServiceProvider,EntityEntry,System.Object,System.Object,Type)
+  fullName: Sensei.AspNet.Attributes.PopulateWithDateTimeAttribute.PreProcess(DbContext, IServiceProvider, EntityEntry, System.Object, System.Object, Type)
+  nameWithType: PopulateWithDateTimeAttribute.PreProcess(DbContext, IServiceProvider, EntityEntry, Object, Object, Type)
+- uid: Sensei.AspNet.Attributes.PopulateWithDateTimeAttribute.PreProcess*
+  name: PreProcess
+  href: api/Sensei.AspNet.Attributes.PopulateWithDateTimeAttribute.html#Sensei_AspNet_Attributes_PopulateWithDateTimeAttribute_PreProcess_
+  commentId: Overload:Sensei.AspNet.Attributes.PopulateWithDateTimeAttribute.PreProcess
+  isSpec: "True"
+  fullName: Sensei.AspNet.Attributes.PopulateWithDateTimeAttribute.PreProcess
+  nameWithType: PopulateWithDateTimeAttribute.PreProcess
+- uid: Sensei.AspNet.Attributes.PopulateWithDateTimeAttribute.State
+  name: State
+  href: api/Sensei.AspNet.Attributes.PopulateWithDateTimeAttribute.html#Sensei_AspNet_Attributes_PopulateWithDateTimeAttribute_State
+  commentId: P:Sensei.AspNet.Attributes.PopulateWithDateTimeAttribute.State
+  fullName: Sensei.AspNet.Attributes.PopulateWithDateTimeAttribute.State
+  nameWithType: PopulateWithDateTimeAttribute.State
+- uid: Sensei.AspNet.Attributes.PopulateWithDateTimeAttribute.State*
+  name: State
+  href: api/Sensei.AspNet.Attributes.PopulateWithDateTimeAttribute.html#Sensei_AspNet_Attributes_PopulateWithDateTimeAttribute_State_
+  commentId: Overload:Sensei.AspNet.Attributes.PopulateWithDateTimeAttribute.State
+  isSpec: "True"
+  fullName: Sensei.AspNet.Attributes.PopulateWithDateTimeAttribute.State
+  nameWithType: PopulateWithDateTimeAttribute.State
+- uid: Sensei.AspNet.Attributes.PopulateWithUserIdAttribute
+  name: PopulateWithUserIdAttribute
+  href: api/Sensei.AspNet.Attributes.PopulateWithUserIdAttribute.html
+  commentId: T:Sensei.AspNet.Attributes.PopulateWithUserIdAttribute
+  fullName: Sensei.AspNet.Attributes.PopulateWithUserIdAttribute
+  nameWithType: PopulateWithUserIdAttribute
+- uid: Sensei.AspNet.Attributes.PopulateWithUserIdAttribute.#ctor(Sensei.AspNet.DbProcessor.DbEntityState,System.Boolean)
+  name: PopulateWithUserIdAttribute(DbEntityState, Boolean)
+  href: api/Sensei.AspNet.Attributes.PopulateWithUserIdAttribute.html#Sensei_AspNet_Attributes_PopulateWithUserIdAttribute__ctor_Sensei_AspNet_DbProcessor_DbEntityState_System_Boolean_
+  commentId: M:Sensei.AspNet.Attributes.PopulateWithUserIdAttribute.#ctor(Sensei.AspNet.DbProcessor.DbEntityState,System.Boolean)
+  fullName: Sensei.AspNet.Attributes.PopulateWithUserIdAttribute.PopulateWithUserIdAttribute(Sensei.AspNet.DbProcessor.DbEntityState, System.Boolean)
+  nameWithType: PopulateWithUserIdAttribute.PopulateWithUserIdAttribute(DbEntityState, Boolean)
+- uid: Sensei.AspNet.Attributes.PopulateWithUserIdAttribute.#ctor*
+  name: PopulateWithUserIdAttribute
+  href: api/Sensei.AspNet.Attributes.PopulateWithUserIdAttribute.html#Sensei_AspNet_Attributes_PopulateWithUserIdAttribute__ctor_
+  commentId: Overload:Sensei.AspNet.Attributes.PopulateWithUserIdAttribute.#ctor
+  isSpec: "True"
+  fullName: Sensei.AspNet.Attributes.PopulateWithUserIdAttribute.PopulateWithUserIdAttribute
+  nameWithType: PopulateWithUserIdAttribute.PopulateWithUserIdAttribute
+- uid: Sensei.AspNet.Attributes.PopulateWithUserIdAttribute.PostProcess(DbContext,IServiceProvider,EntityEntry,System.Object,System.Object,Type)
+  name: PostProcess(DbContext, IServiceProvider, EntityEntry, Object, Object, Type)
+  href: api/Sensei.AspNet.Attributes.PopulateWithUserIdAttribute.html#Sensei_AspNet_Attributes_PopulateWithUserIdAttribute_PostProcess_DbContext_IServiceProvider_EntityEntry_System_Object_System_Object_Type_
+  commentId: M:Sensei.AspNet.Attributes.PopulateWithUserIdAttribute.PostProcess(DbContext,IServiceProvider,EntityEntry,System.Object,System.Object,Type)
+  fullName: Sensei.AspNet.Attributes.PopulateWithUserIdAttribute.PostProcess(DbContext, IServiceProvider, EntityEntry, System.Object, System.Object, Type)
+  nameWithType: PopulateWithUserIdAttribute.PostProcess(DbContext, IServiceProvider, EntityEntry, Object, Object, Type)
+- uid: Sensei.AspNet.Attributes.PopulateWithUserIdAttribute.PostProcess*
+  name: PostProcess
+  href: api/Sensei.AspNet.Attributes.PopulateWithUserIdAttribute.html#Sensei_AspNet_Attributes_PopulateWithUserIdAttribute_PostProcess_
+  commentId: Overload:Sensei.AspNet.Attributes.PopulateWithUserIdAttribute.PostProcess
+  isSpec: "True"
+  fullName: Sensei.AspNet.Attributes.PopulateWithUserIdAttribute.PostProcess
+  nameWithType: PopulateWithUserIdAttribute.PostProcess
+- uid: Sensei.AspNet.Attributes.PopulateWithUserIdAttribute.PreProcess(DbContext,IServiceProvider,EntityEntry,System.Object,System.Object,Type)
+  name: PreProcess(DbContext, IServiceProvider, EntityEntry, Object, Object, Type)
+  href: api/Sensei.AspNet.Attributes.PopulateWithUserIdAttribute.html#Sensei_AspNet_Attributes_PopulateWithUserIdAttribute_PreProcess_DbContext_IServiceProvider_EntityEntry_System_Object_System_Object_Type_
+  commentId: M:Sensei.AspNet.Attributes.PopulateWithUserIdAttribute.PreProcess(DbContext,IServiceProvider,EntityEntry,System.Object,System.Object,Type)
+  fullName: Sensei.AspNet.Attributes.PopulateWithUserIdAttribute.PreProcess(DbContext, IServiceProvider, EntityEntry, System.Object, System.Object, Type)
+  nameWithType: PopulateWithUserIdAttribute.PreProcess(DbContext, IServiceProvider, EntityEntry, Object, Object, Type)
+- uid: Sensei.AspNet.Attributes.PopulateWithUserIdAttribute.PreProcess*
+  name: PreProcess
+  href: api/Sensei.AspNet.Attributes.PopulateWithUserIdAttribute.html#Sensei_AspNet_Attributes_PopulateWithUserIdAttribute_PreProcess_
+  commentId: Overload:Sensei.AspNet.Attributes.PopulateWithUserIdAttribute.PreProcess
+  isSpec: "True"
+  fullName: Sensei.AspNet.Attributes.PopulateWithUserIdAttribute.PreProcess
+  nameWithType: PopulateWithUserIdAttribute.PreProcess
+- uid: Sensei.AspNet.Attributes.PopulateWithUserIdAttribute.State
+  name: State
+  href: api/Sensei.AspNet.Attributes.PopulateWithUserIdAttribute.html#Sensei_AspNet_Attributes_PopulateWithUserIdAttribute_State
+  commentId: P:Sensei.AspNet.Attributes.PopulateWithUserIdAttribute.State
+  fullName: Sensei.AspNet.Attributes.PopulateWithUserIdAttribute.State
+  nameWithType: PopulateWithUserIdAttribute.State
+- uid: Sensei.AspNet.Attributes.PopulateWithUserIdAttribute.State*
+  name: State
+  href: api/Sensei.AspNet.Attributes.PopulateWithUserIdAttribute.html#Sensei_AspNet_Attributes_PopulateWithUserIdAttribute_State_
+  commentId: Overload:Sensei.AspNet.Attributes.PopulateWithUserIdAttribute.State
+  isSpec: "True"
+  fullName: Sensei.AspNet.Attributes.PopulateWithUserIdAttribute.State
+  nameWithType: PopulateWithUserIdAttribute.State
+- uid: Sensei.AspNet.DbProcessor
+  name: Sensei.AspNet.DbProcessor
+  href: api/Sensei.AspNet.DbProcessor.html
+  commentId: N:Sensei.AspNet.DbProcessor
+  fullName: Sensei.AspNet.DbProcessor
+  nameWithType: Sensei.AspNet.DbProcessor
+- uid: Sensei.AspNet.DbProcessor.DbEntityState
+  name: DbEntityState
+  href: api/Sensei.AspNet.DbProcessor.DbEntityState.html
+  commentId: T:Sensei.AspNet.DbProcessor.DbEntityState
+  fullName: Sensei.AspNet.DbProcessor.DbEntityState
+  nameWithType: DbEntityState
+- uid: Sensei.AspNet.DbProcessor.DbEntityState.Added
+  name: Added
+  href: api/Sensei.AspNet.DbProcessor.DbEntityState.html#Sensei_AspNet_DbProcessor_DbEntityState_Added
+  commentId: F:Sensei.AspNet.DbProcessor.DbEntityState.Added
+  fullName: Sensei.AspNet.DbProcessor.DbEntityState.Added
+  nameWithType: DbEntityState.Added
+- uid: Sensei.AspNet.DbProcessor.DbEntityState.Deleted
+  name: Deleted
+  href: api/Sensei.AspNet.DbProcessor.DbEntityState.html#Sensei_AspNet_DbProcessor_DbEntityState_Deleted
+  commentId: F:Sensei.AspNet.DbProcessor.DbEntityState.Deleted
+  fullName: Sensei.AspNet.DbProcessor.DbEntityState.Deleted
+  nameWithType: DbEntityState.Deleted
+- uid: Sensei.AspNet.DbProcessor.DbEntityState.Modified
+  name: Modified
+  href: api/Sensei.AspNet.DbProcessor.DbEntityState.html#Sensei_AspNet_DbProcessor_DbEntityState_Modified
+  commentId: F:Sensei.AspNet.DbProcessor.DbEntityState.Modified
+  fullName: Sensei.AspNet.DbProcessor.DbEntityState.Modified
+  nameWithType: DbEntityState.Modified
+- uid: Sensei.AspNet.DbProcessor.DbProcessor
+  name: DbProcessor
+  href: api/Sensei.AspNet.DbProcessor.DbProcessor.html
+  commentId: T:Sensei.AspNet.DbProcessor.DbProcessor
+  fullName: Sensei.AspNet.DbProcessor.DbProcessor
+  nameWithType: DbProcessor
+- uid: Sensei.AspNet.DbProcessor.DbProcessor.PostProcess(DbContext,IServiceProvider)
+  name: PostProcess(DbContext, IServiceProvider)
+  href: api/Sensei.AspNet.DbProcessor.DbProcessor.html#Sensei_AspNet_DbProcessor_DbProcessor_PostProcess_DbContext_IServiceProvider_
+  commentId: M:Sensei.AspNet.DbProcessor.DbProcessor.PostProcess(DbContext,IServiceProvider)
+  fullName: Sensei.AspNet.DbProcessor.DbProcessor.PostProcess(DbContext, IServiceProvider)
+  nameWithType: DbProcessor.PostProcess(DbContext, IServiceProvider)
+- uid: Sensei.AspNet.DbProcessor.DbProcessor.PostProcess*
+  name: PostProcess
+  href: api/Sensei.AspNet.DbProcessor.DbProcessor.html#Sensei_AspNet_DbProcessor_DbProcessor_PostProcess_
+  commentId: Overload:Sensei.AspNet.DbProcessor.DbProcessor.PostProcess
+  isSpec: "True"
+  fullName: Sensei.AspNet.DbProcessor.DbProcessor.PostProcess
+  nameWithType: DbProcessor.PostProcess
+- uid: Sensei.AspNet.DbProcessor.DbProcessor.PreProcess(DbContext,IServiceProvider)
+  name: PreProcess(DbContext, IServiceProvider)
+  href: api/Sensei.AspNet.DbProcessor.DbProcessor.html#Sensei_AspNet_DbProcessor_DbProcessor_PreProcess_DbContext_IServiceProvider_
+  commentId: M:Sensei.AspNet.DbProcessor.DbProcessor.PreProcess(DbContext,IServiceProvider)
+  fullName: Sensei.AspNet.DbProcessor.DbProcessor.PreProcess(DbContext, IServiceProvider)
+  nameWithType: DbProcessor.PreProcess(DbContext, IServiceProvider)
+- uid: Sensei.AspNet.DbProcessor.DbProcessor.PreProcess*
+  name: PreProcess
+  href: api/Sensei.AspNet.DbProcessor.DbProcessor.html#Sensei_AspNet_DbProcessor_DbProcessor_PreProcess_
+  commentId: Overload:Sensei.AspNet.DbProcessor.DbProcessor.PreProcess
+  isSpec: "True"
+  fullName: Sensei.AspNet.DbProcessor.DbProcessor.PreProcess
+  nameWithType: DbProcessor.PreProcess
+- uid: Sensei.AspNet.DbProcessor.IDbProcessorAttribute
+  name: IDbProcessorAttribute
+  href: api/Sensei.AspNet.DbProcessor.IDbProcessorAttribute.html
+  commentId: T:Sensei.AspNet.DbProcessor.IDbProcessorAttribute
+  fullName: Sensei.AspNet.DbProcessor.IDbProcessorAttribute
+  nameWithType: IDbProcessorAttribute
+- uid: Sensei.AspNet.DbProcessor.IDbProcessorAttribute.PostProcess(DbContext,IServiceProvider,EntityEntry,System.Object,System.Object,Type)
+  name: PostProcess(DbContext, IServiceProvider, EntityEntry, Object, Object, Type)
+  href: api/Sensei.AspNet.DbProcessor.IDbProcessorAttribute.html#Sensei_AspNet_DbProcessor_IDbProcessorAttribute_PostProcess_DbContext_IServiceProvider_EntityEntry_System_Object_System_Object_Type_
+  commentId: M:Sensei.AspNet.DbProcessor.IDbProcessorAttribute.PostProcess(DbContext,IServiceProvider,EntityEntry,System.Object,System.Object,Type)
+  fullName: Sensei.AspNet.DbProcessor.IDbProcessorAttribute.PostProcess(DbContext, IServiceProvider, EntityEntry, System.Object, System.Object, Type)
+  nameWithType: IDbProcessorAttribute.PostProcess(DbContext, IServiceProvider, EntityEntry, Object, Object, Type)
+- uid: Sensei.AspNet.DbProcessor.IDbProcessorAttribute.PostProcess*
+  name: PostProcess
+  href: api/Sensei.AspNet.DbProcessor.IDbProcessorAttribute.html#Sensei_AspNet_DbProcessor_IDbProcessorAttribute_PostProcess_
+  commentId: Overload:Sensei.AspNet.DbProcessor.IDbProcessorAttribute.PostProcess
+  isSpec: "True"
+  fullName: Sensei.AspNet.DbProcessor.IDbProcessorAttribute.PostProcess
+  nameWithType: IDbProcessorAttribute.PostProcess
+- uid: Sensei.AspNet.DbProcessor.IDbProcessorAttribute.PreProcess(DbContext,IServiceProvider,EntityEntry,System.Object,System.Object,Type)
+  name: PreProcess(DbContext, IServiceProvider, EntityEntry, Object, Object, Type)
+  href: api/Sensei.AspNet.DbProcessor.IDbProcessorAttribute.html#Sensei_AspNet_DbProcessor_IDbProcessorAttribute_PreProcess_DbContext_IServiceProvider_EntityEntry_System_Object_System_Object_Type_
+  commentId: M:Sensei.AspNet.DbProcessor.IDbProcessorAttribute.PreProcess(DbContext,IServiceProvider,EntityEntry,System.Object,System.Object,Type)
+  fullName: Sensei.AspNet.DbProcessor.IDbProcessorAttribute.PreProcess(DbContext, IServiceProvider, EntityEntry, System.Object, System.Object, Type)
+  nameWithType: IDbProcessorAttribute.PreProcess(DbContext, IServiceProvider, EntityEntry, Object, Object, Type)
+- uid: Sensei.AspNet.DbProcessor.IDbProcessorAttribute.PreProcess*
+  name: PreProcess
+  href: api/Sensei.AspNet.DbProcessor.IDbProcessorAttribute.html#Sensei_AspNet_DbProcessor_IDbProcessorAttribute_PreProcess_
+  commentId: Overload:Sensei.AspNet.DbProcessor.IDbProcessorAttribute.PreProcess
+  isSpec: "True"
+  fullName: Sensei.AspNet.DbProcessor.IDbProcessorAttribute.PreProcess
+  nameWithType: IDbProcessorAttribute.PreProcess
+- uid: Sensei.AspNet.DbProcessor.IDbProcessorAttribute.State
+  name: State
+  href: api/Sensei.AspNet.DbProcessor.IDbProcessorAttribute.html#Sensei_AspNet_DbProcessor_IDbProcessorAttribute_State
+  commentId: P:Sensei.AspNet.DbProcessor.IDbProcessorAttribute.State
+  fullName: Sensei.AspNet.DbProcessor.IDbProcessorAttribute.State
+  nameWithType: IDbProcessorAttribute.State
+- uid: Sensei.AspNet.DbProcessor.IDbProcessorAttribute.State*
+  name: State
+  href: api/Sensei.AspNet.DbProcessor.IDbProcessorAttribute.html#Sensei_AspNet_DbProcessor_IDbProcessorAttribute_State_
+  commentId: Overload:Sensei.AspNet.DbProcessor.IDbProcessorAttribute.State
+  isSpec: "True"
+  fullName: Sensei.AspNet.DbProcessor.IDbProcessorAttribute.State
+  nameWithType: IDbProcessorAttribute.State
+- uid: Sensei.AspNet.EntityController`2
+  name: EntityController<TModel, TDbContext>
+  href: api/Sensei.AspNet.EntityController-2.html
+  commentId: T:Sensei.AspNet.EntityController`2
+  name.vb: EntityController(Of TModel, TDbContext)
+  fullName: Sensei.AspNet.EntityController<TModel, TDbContext>
+  fullName.vb: Sensei.AspNet.EntityController(Of TModel, TDbContext)
+  nameWithType: EntityController<TModel, TDbContext>
+  nameWithType.vb: EntityController(Of TModel, TDbContext)
+- uid: Sensei.AspNet.EntityController`2.#ctor(IServiceProvider)
+  name: EntityController(IServiceProvider)
+  href: api/Sensei.AspNet.EntityController-2.html#Sensei_AspNet_EntityController_2__ctor_IServiceProvider_
+  commentId: M:Sensei.AspNet.EntityController`2.#ctor(IServiceProvider)
+  fullName: Sensei.AspNet.EntityController<TModel, TDbContext>.EntityController(IServiceProvider)
+  fullName.vb: Sensei.AspNet.EntityController(Of TModel, TDbContext).EntityController(IServiceProvider)
+  nameWithType: EntityController<TModel, TDbContext>.EntityController(IServiceProvider)
+  nameWithType.vb: EntityController(Of TModel, TDbContext).EntityController(IServiceProvider)
+- uid: Sensei.AspNet.EntityController`2.#ctor*
+  name: EntityController
+  href: api/Sensei.AspNet.EntityController-2.html#Sensei_AspNet_EntityController_2__ctor_
+  commentId: Overload:Sensei.AspNet.EntityController`2.#ctor
+  isSpec: "True"
+  fullName: Sensei.AspNet.EntityController<TModel, TDbContext>.EntityController
+  fullName.vb: Sensei.AspNet.EntityController(Of TModel, TDbContext).EntityController
+  nameWithType: EntityController<TModel, TDbContext>.EntityController
+  nameWithType.vb: EntityController(Of TModel, TDbContext).EntityController
+- uid: Sensei.AspNet.EntityController`2.Count(Sensei.AspNet.Queries.Entities.Filtering)
+  name: Count(Filtering)
+  href: api/Sensei.AspNet.EntityController-2.html#Sensei_AspNet_EntityController_2_Count_Sensei_AspNet_Queries_Entities_Filtering_
+  commentId: M:Sensei.AspNet.EntityController`2.Count(Sensei.AspNet.Queries.Entities.Filtering)
+  fullName: Sensei.AspNet.EntityController<TModel, TDbContext>.Count(Sensei.AspNet.Queries.Entities.Filtering)
+  fullName.vb: Sensei.AspNet.EntityController(Of TModel, TDbContext).Count(Sensei.AspNet.Queries.Entities.Filtering)
+  nameWithType: EntityController<TModel, TDbContext>.Count(Filtering)
+  nameWithType.vb: EntityController(Of TModel, TDbContext).Count(Filtering)
+- uid: Sensei.AspNet.EntityController`2.Count*
+  name: Count
+  href: api/Sensei.AspNet.EntityController-2.html#Sensei_AspNet_EntityController_2_Count_
+  commentId: Overload:Sensei.AspNet.EntityController`2.Count
+  isSpec: "True"
+  fullName: Sensei.AspNet.EntityController<TModel, TDbContext>.Count
+  fullName.vb: Sensei.AspNet.EntityController(Of TModel, TDbContext).Count
+  nameWithType: EntityController<TModel, TDbContext>.Count
+  nameWithType.vb: EntityController(Of TModel, TDbContext).Count
+- uid: Sensei.AspNet.EntityController`2.DbContext
+  name: DbContext
+  href: api/Sensei.AspNet.EntityController-2.html#Sensei_AspNet_EntityController_2_DbContext
+  commentId: P:Sensei.AspNet.EntityController`2.DbContext
+  fullName: Sensei.AspNet.EntityController<TModel, TDbContext>.DbContext
+  fullName.vb: Sensei.AspNet.EntityController(Of TModel, TDbContext).DbContext
+  nameWithType: EntityController<TModel, TDbContext>.DbContext
+  nameWithType.vb: EntityController(Of TModel, TDbContext).DbContext
+- uid: Sensei.AspNet.EntityController`2.DbContext*
+  name: DbContext
+  href: api/Sensei.AspNet.EntityController-2.html#Sensei_AspNet_EntityController_2_DbContext_
+  commentId: Overload:Sensei.AspNet.EntityController`2.DbContext
+  isSpec: "True"
+  fullName: Sensei.AspNet.EntityController<TModel, TDbContext>.DbContext
+  fullName.vb: Sensei.AspNet.EntityController(Of TModel, TDbContext).DbContext
+  nameWithType: EntityController<TModel, TDbContext>.DbContext
+  nameWithType.vb: EntityController(Of TModel, TDbContext).DbContext
+- uid: Sensei.AspNet.EntityController`2.DbSet
+  name: DbSet
+  href: api/Sensei.AspNet.EntityController-2.html#Sensei_AspNet_EntityController_2_DbSet
+  commentId: P:Sensei.AspNet.EntityController`2.DbSet
+  fullName: Sensei.AspNet.EntityController<TModel, TDbContext>.DbSet
+  fullName.vb: Sensei.AspNet.EntityController(Of TModel, TDbContext).DbSet
+  nameWithType: EntityController<TModel, TDbContext>.DbSet
+  nameWithType.vb: EntityController(Of TModel, TDbContext).DbSet
+- uid: Sensei.AspNet.EntityController`2.DbSet*
+  name: DbSet
+  href: api/Sensei.AspNet.EntityController-2.html#Sensei_AspNet_EntityController_2_DbSet_
+  commentId: Overload:Sensei.AspNet.EntityController`2.DbSet
+  isSpec: "True"
+  fullName: Sensei.AspNet.EntityController<TModel, TDbContext>.DbSet
+  fullName.vb: Sensei.AspNet.EntityController(Of TModel, TDbContext).DbSet
+  nameWithType: EntityController<TModel, TDbContext>.DbSet
+  nameWithType.vb: EntityController(Of TModel, TDbContext).DbSet
+- uid: Sensei.AspNet.EntityController`2.Delete(Guid)
+  name: Delete(Guid)
+  href: api/Sensei.AspNet.EntityController-2.html#Sensei_AspNet_EntityController_2_Delete_Guid_
+  commentId: M:Sensei.AspNet.EntityController`2.Delete(Guid)
+  fullName: Sensei.AspNet.EntityController<TModel, TDbContext>.Delete(Guid)
+  fullName.vb: Sensei.AspNet.EntityController(Of TModel, TDbContext).Delete(Guid)
+  nameWithType: EntityController<TModel, TDbContext>.Delete(Guid)
+  nameWithType.vb: EntityController(Of TModel, TDbContext).Delete(Guid)
+- uid: Sensei.AspNet.EntityController`2.Delete*
+  name: Delete
+  href: api/Sensei.AspNet.EntityController-2.html#Sensei_AspNet_EntityController_2_Delete_
+  commentId: Overload:Sensei.AspNet.EntityController`2.Delete
+  isSpec: "True"
+  fullName: Sensei.AspNet.EntityController<TModel, TDbContext>.Delete
+  fullName.vb: Sensei.AspNet.EntityController(Of TModel, TDbContext).Delete
+  nameWithType: EntityController<TModel, TDbContext>.Delete
+  nameWithType.vb: EntityController(Of TModel, TDbContext).Delete
+- uid: Sensei.AspNet.EntityController`2.Get(Guid,Sensei.AspNet.Queries.Entities.Including)
+  name: Get(Guid, Including)
+  href: api/Sensei.AspNet.EntityController-2.html#Sensei_AspNet_EntityController_2_Get_Guid_Sensei_AspNet_Queries_Entities_Including_
+  commentId: M:Sensei.AspNet.EntityController`2.Get(Guid,Sensei.AspNet.Queries.Entities.Including)
+  fullName: Sensei.AspNet.EntityController<TModel, TDbContext>.Get(Guid, Sensei.AspNet.Queries.Entities.Including)
+  fullName.vb: Sensei.AspNet.EntityController(Of TModel, TDbContext).Get(Guid, Sensei.AspNet.Queries.Entities.Including)
+  nameWithType: EntityController<TModel, TDbContext>.Get(Guid, Including)
+  nameWithType.vb: EntityController(Of TModel, TDbContext).Get(Guid, Including)
+- uid: Sensei.AspNet.EntityController`2.Get(Sensei.AspNet.Queries.Entities.Filtering,Sensei.AspNet.Queries.Entities.Sorting,Sensei.AspNet.Queries.Entities.Pagination,Sensei.AspNet.Queries.Entities.Including)
+  name: Get(Filtering, Sorting, Pagination, Including)
+  href: api/Sensei.AspNet.EntityController-2.html#Sensei_AspNet_EntityController_2_Get_Sensei_AspNet_Queries_Entities_Filtering_Sensei_AspNet_Queries_Entities_Sorting_Sensei_AspNet_Queries_Entities_Pagination_Sensei_AspNet_Queries_Entities_Including_
+  commentId: M:Sensei.AspNet.EntityController`2.Get(Sensei.AspNet.Queries.Entities.Filtering,Sensei.AspNet.Queries.Entities.Sorting,Sensei.AspNet.Queries.Entities.Pagination,Sensei.AspNet.Queries.Entities.Including)
+  fullName: Sensei.AspNet.EntityController<TModel, TDbContext>.Get(Sensei.AspNet.Queries.Entities.Filtering, Sensei.AspNet.Queries.Entities.Sorting, Sensei.AspNet.Queries.Entities.Pagination, Sensei.AspNet.Queries.Entities.Including)
+  fullName.vb: Sensei.AspNet.EntityController(Of TModel, TDbContext).Get(Sensei.AspNet.Queries.Entities.Filtering, Sensei.AspNet.Queries.Entities.Sorting, Sensei.AspNet.Queries.Entities.Pagination, Sensei.AspNet.Queries.Entities.Including)
+  nameWithType: EntityController<TModel, TDbContext>.Get(Filtering, Sorting, Pagination, Including)
+  nameWithType.vb: EntityController(Of TModel, TDbContext).Get(Filtering, Sorting, Pagination, Including)
+- uid: Sensei.AspNet.EntityController`2.Get*
+  name: Get
+  href: api/Sensei.AspNet.EntityController-2.html#Sensei_AspNet_EntityController_2_Get_
+  commentId: Overload:Sensei.AspNet.EntityController`2.Get
+  isSpec: "True"
+  fullName: Sensei.AspNet.EntityController<TModel, TDbContext>.Get
+  fullName.vb: Sensei.AspNet.EntityController(Of TModel, TDbContext).Get
+  nameWithType: EntityController<TModel, TDbContext>.Get
+  nameWithType.vb: EntityController(Of TModel, TDbContext).Get
+- uid: Sensei.AspNet.EntityController`2.Post(`0)
+  name: Post(TModel)
+  href: api/Sensei.AspNet.EntityController-2.html#Sensei_AspNet_EntityController_2_Post__0_
+  commentId: M:Sensei.AspNet.EntityController`2.Post(`0)
+  fullName: Sensei.AspNet.EntityController<TModel, TDbContext>.Post(TModel)
+  fullName.vb: Sensei.AspNet.EntityController(Of TModel, TDbContext).Post(TModel)
+  nameWithType: EntityController<TModel, TDbContext>.Post(TModel)
+  nameWithType.vb: EntityController(Of TModel, TDbContext).Post(TModel)
+- uid: Sensei.AspNet.EntityController`2.Post*
+  name: Post
+  href: api/Sensei.AspNet.EntityController-2.html#Sensei_AspNet_EntityController_2_Post_
+  commentId: Overload:Sensei.AspNet.EntityController`2.Post
+  isSpec: "True"
+  fullName: Sensei.AspNet.EntityController<TModel, TDbContext>.Post
+  fullName.vb: Sensei.AspNet.EntityController(Of TModel, TDbContext).Post
+  nameWithType: EntityController<TModel, TDbContext>.Post
+  nameWithType.vb: EntityController(Of TModel, TDbContext).Post
+- uid: Sensei.AspNet.EntityController`2.Put(Guid,`0)
+  name: Put(Guid, TModel)
+  href: api/Sensei.AspNet.EntityController-2.html#Sensei_AspNet_EntityController_2_Put_Guid__0_
+  commentId: M:Sensei.AspNet.EntityController`2.Put(Guid,`0)
+  fullName: Sensei.AspNet.EntityController<TModel, TDbContext>.Put(Guid, TModel)
+  fullName.vb: Sensei.AspNet.EntityController(Of TModel, TDbContext).Put(Guid, TModel)
+  nameWithType: EntityController<TModel, TDbContext>.Put(Guid, TModel)
+  nameWithType.vb: EntityController(Of TModel, TDbContext).Put(Guid, TModel)
+- uid: Sensei.AspNet.EntityController`2.Put*
+  name: Put
+  href: api/Sensei.AspNet.EntityController-2.html#Sensei_AspNet_EntityController_2_Put_
+  commentId: Overload:Sensei.AspNet.EntityController`2.Put
+  isSpec: "True"
+  fullName: Sensei.AspNet.EntityController<TModel, TDbContext>.Put
+  fullName.vb: Sensei.AspNet.EntityController(Of TModel, TDbContext).Put
+  nameWithType: EntityController<TModel, TDbContext>.Put
+  nameWithType.vb: EntityController(Of TModel, TDbContext).Put
+- uid: Sensei.AspNet.EntityController`2.QueryProcessor
+  name: QueryProcessor
+  href: api/Sensei.AspNet.EntityController-2.html#Sensei_AspNet_EntityController_2_QueryProcessor
+  commentId: P:Sensei.AspNet.EntityController`2.QueryProcessor
+  fullName: Sensei.AspNet.EntityController<TModel, TDbContext>.QueryProcessor
+  fullName.vb: Sensei.AspNet.EntityController(Of TModel, TDbContext).QueryProcessor
+  nameWithType: EntityController<TModel, TDbContext>.QueryProcessor
+  nameWithType.vb: EntityController(Of TModel, TDbContext).QueryProcessor
+- uid: Sensei.AspNet.EntityController`2.QueryProcessor*
+  name: QueryProcessor
+  href: api/Sensei.AspNet.EntityController-2.html#Sensei_AspNet_EntityController_2_QueryProcessor_
+  commentId: Overload:Sensei.AspNet.EntityController`2.QueryProcessor
+  isSpec: "True"
+  fullName: Sensei.AspNet.EntityController<TModel, TDbContext>.QueryProcessor
+  fullName.vb: Sensei.AspNet.EntityController(Of TModel, TDbContext).QueryProcessor
+  nameWithType: EntityController<TModel, TDbContext>.QueryProcessor
+  nameWithType.vb: EntityController(Of TModel, TDbContext).QueryProcessor
+- uid: Sensei.AspNet.Extensions
+  name: Sensei.AspNet.Extensions
+  href: api/Sensei.AspNet.Extensions.html
+  commentId: N:Sensei.AspNet.Extensions
+  fullName: Sensei.AspNet.Extensions
+  nameWithType: Sensei.AspNet.Extensions
+- uid: Sensei.AspNet.Extensions.ServiceCollectionExtensions
+  name: ServiceCollectionExtensions
+  href: api/Sensei.AspNet.Extensions.ServiceCollectionExtensions.html
+  commentId: T:Sensei.AspNet.Extensions.ServiceCollectionExtensions
+  fullName: Sensei.AspNet.Extensions.ServiceCollectionExtensions
+  nameWithType: ServiceCollectionExtensions
+- uid: Sensei.AspNet.Extensions.ServiceCollectionExtensions.UseSensei(IServiceCollection,Action{Sensei.AspNet.SenseiOptions})
+  name: UseSensei(IServiceCollection, Action<SenseiOptions>)
+  href: api/Sensei.AspNet.Extensions.ServiceCollectionExtensions.html#Sensei_AspNet_Extensions_ServiceCollectionExtensions_UseSensei_IServiceCollection_Action_Sensei_AspNet_SenseiOptions__
+  commentId: M:Sensei.AspNet.Extensions.ServiceCollectionExtensions.UseSensei(IServiceCollection,Action{Sensei.AspNet.SenseiOptions})
+  name.vb: UseSensei(IServiceCollection, Action(Of SenseiOptions))
+  fullName: Sensei.AspNet.Extensions.ServiceCollectionExtensions.UseSensei(IServiceCollection, Action<Sensei.AspNet.SenseiOptions>)
+  fullName.vb: Sensei.AspNet.Extensions.ServiceCollectionExtensions.UseSensei(IServiceCollection, Action(Of Sensei.AspNet.SenseiOptions))
+  nameWithType: ServiceCollectionExtensions.UseSensei(IServiceCollection, Action<SenseiOptions>)
+  nameWithType.vb: ServiceCollectionExtensions.UseSensei(IServiceCollection, Action(Of SenseiOptions))
+- uid: Sensei.AspNet.Extensions.ServiceCollectionExtensions.UseSensei*
+  name: UseSensei
+  href: api/Sensei.AspNet.Extensions.ServiceCollectionExtensions.html#Sensei_AspNet_Extensions_ServiceCollectionExtensions_UseSensei_
+  commentId: Overload:Sensei.AspNet.Extensions.ServiceCollectionExtensions.UseSensei
+  isSpec: "True"
+  fullName: Sensei.AspNet.Extensions.ServiceCollectionExtensions.UseSensei
+  nameWithType: ServiceCollectionExtensions.UseSensei
+- uid: Sensei.AspNet.Models
+  name: Sensei.AspNet.Models
+  href: api/Sensei.AspNet.Models.html
+  commentId: N:Sensei.AspNet.Models
+  fullName: Sensei.AspNet.Models
+  nameWithType: Sensei.AspNet.Models
+- uid: Sensei.AspNet.Models.BaseModel
+  name: BaseModel
+  href: api/Sensei.AspNet.Models.BaseModel.html
+  commentId: T:Sensei.AspNet.Models.BaseModel
+  fullName: Sensei.AspNet.Models.BaseModel
+  nameWithType: BaseModel
+- uid: Sensei.AspNet.Models.BaseModel.CopyTo(System.Object,List{System.String})
+  name: CopyTo(Object, List<String>)
+  href: api/Sensei.AspNet.Models.BaseModel.html#Sensei_AspNet_Models_BaseModel_CopyTo_System_Object_List_System_String__
+  commentId: M:Sensei.AspNet.Models.BaseModel.CopyTo(System.Object,List{System.String})
+  name.vb: CopyTo(Object, List(Of String))
+  fullName: Sensei.AspNet.Models.BaseModel.CopyTo(System.Object, List<System.String>)
+  fullName.vb: Sensei.AspNet.Models.BaseModel.CopyTo(System.Object, List(Of System.String))
+  nameWithType: BaseModel.CopyTo(Object, List<String>)
+  nameWithType.vb: BaseModel.CopyTo(Object, List(Of String))
+- uid: Sensei.AspNet.Models.BaseModel.CopyTo*
+  name: CopyTo
+  href: api/Sensei.AspNet.Models.BaseModel.html#Sensei_AspNet_Models_BaseModel_CopyTo_
+  commentId: Overload:Sensei.AspNet.Models.BaseModel.CopyTo
+  isSpec: "True"
+  fullName: Sensei.AspNet.Models.BaseModel.CopyTo
+  nameWithType: BaseModel.CopyTo
+- uid: Sensei.AspNet.Models.BaseModel.CreatedAt
+  name: CreatedAt
+  href: api/Sensei.AspNet.Models.BaseModel.html#Sensei_AspNet_Models_BaseModel_CreatedAt
+  commentId: P:Sensei.AspNet.Models.BaseModel.CreatedAt
+  fullName: Sensei.AspNet.Models.BaseModel.CreatedAt
+  nameWithType: BaseModel.CreatedAt
+- uid: Sensei.AspNet.Models.BaseModel.CreatedAt*
+  name: CreatedAt
+  href: api/Sensei.AspNet.Models.BaseModel.html#Sensei_AspNet_Models_BaseModel_CreatedAt_
+  commentId: Overload:Sensei.AspNet.Models.BaseModel.CreatedAt
+  isSpec: "True"
+  fullName: Sensei.AspNet.Models.BaseModel.CreatedAt
+  nameWithType: BaseModel.CreatedAt
+- uid: Sensei.AspNet.Models.BaseModel.Id
+  name: Id
+  href: api/Sensei.AspNet.Models.BaseModel.html#Sensei_AspNet_Models_BaseModel_Id
+  commentId: P:Sensei.AspNet.Models.BaseModel.Id
+  fullName: Sensei.AspNet.Models.BaseModel.Id
+  nameWithType: BaseModel.Id
+- uid: Sensei.AspNet.Models.BaseModel.Id*
+  name: Id
+  href: api/Sensei.AspNet.Models.BaseModel.html#Sensei_AspNet_Models_BaseModel_Id_
+  commentId: Overload:Sensei.AspNet.Models.BaseModel.Id
+  isSpec: "True"
+  fullName: Sensei.AspNet.Models.BaseModel.Id
+  nameWithType: BaseModel.Id
+- uid: Sensei.AspNet.Models.BaseModel.UpdatedAt
+  name: UpdatedAt
+  href: api/Sensei.AspNet.Models.BaseModel.html#Sensei_AspNet_Models_BaseModel_UpdatedAt
+  commentId: P:Sensei.AspNet.Models.BaseModel.UpdatedAt
+  fullName: Sensei.AspNet.Models.BaseModel.UpdatedAt
+  nameWithType: BaseModel.UpdatedAt
+- uid: Sensei.AspNet.Models.BaseModel.UpdatedAt*
+  name: UpdatedAt
+  href: api/Sensei.AspNet.Models.BaseModel.html#Sensei_AspNet_Models_BaseModel_UpdatedAt_
+  commentId: Overload:Sensei.AspNet.Models.BaseModel.UpdatedAt
+  isSpec: "True"
+  fullName: Sensei.AspNet.Models.BaseModel.UpdatedAt
+  nameWithType: BaseModel.UpdatedAt
+- uid: Sensei.AspNet.Models.Error
+  name: Error
+  href: api/Sensei.AspNet.Models.Error.html
+  commentId: T:Sensei.AspNet.Models.Error
+  fullName: Sensei.AspNet.Models.Error
+  nameWithType: Error
+- uid: Sensei.AspNet.Models.Error.Code
+  name: Code
+  href: api/Sensei.AspNet.Models.Error.html#Sensei_AspNet_Models_Error_Code
+  commentId: P:Sensei.AspNet.Models.Error.Code
+  fullName: Sensei.AspNet.Models.Error.Code
+  nameWithType: Error.Code
+- uid: Sensei.AspNet.Models.Error.Code*
+  name: Code
+  href: api/Sensei.AspNet.Models.Error.html#Sensei_AspNet_Models_Error_Code_
+  commentId: Overload:Sensei.AspNet.Models.Error.Code
+  isSpec: "True"
+  fullName: Sensei.AspNet.Models.Error.Code
+  nameWithType: Error.Code
+- uid: Sensei.AspNet.Models.Error.Description
+  name: Description
+  href: api/Sensei.AspNet.Models.Error.html#Sensei_AspNet_Models_Error_Description
+  commentId: P:Sensei.AspNet.Models.Error.Description
+  fullName: Sensei.AspNet.Models.Error.Description
+  nameWithType: Error.Description
+- uid: Sensei.AspNet.Models.Error.Description*
+  name: Description
+  href: api/Sensei.AspNet.Models.Error.html#Sensei_AspNet_Models_Error_Description_
+  commentId: Overload:Sensei.AspNet.Models.Error.Description
+  isSpec: "True"
+  fullName: Sensei.AspNet.Models.Error.Description
+  nameWithType: Error.Description
+- uid: Sensei.AspNet.Models.Error.Message
+  name: Message
+  href: api/Sensei.AspNet.Models.Error.html#Sensei_AspNet_Models_Error_Message
+  commentId: P:Sensei.AspNet.Models.Error.Message
+  fullName: Sensei.AspNet.Models.Error.Message
+  nameWithType: Error.Message
+- uid: Sensei.AspNet.Models.Error.Message*
+  name: Message
+  href: api/Sensei.AspNet.Models.Error.html#Sensei_AspNet_Models_Error_Message_
+  commentId: Overload:Sensei.AspNet.Models.Error.Message
+  isSpec: "True"
+  fullName: Sensei.AspNet.Models.Error.Message
+  nameWithType: Error.Message
+- uid: Sensei.AspNet.Models.SingleValue`1
+  name: SingleValue<T>
+  href: api/Sensei.AspNet.Models.SingleValue-1.html
+  commentId: T:Sensei.AspNet.Models.SingleValue`1
+  name.vb: SingleValue(Of T)
+  fullName: Sensei.AspNet.Models.SingleValue<T>
+  fullName.vb: Sensei.AspNet.Models.SingleValue(Of T)
+  nameWithType: SingleValue<T>
+  nameWithType.vb: SingleValue(Of T)
+- uid: Sensei.AspNet.Models.SingleValue`1.Value
+  name: Value
+  href: api/Sensei.AspNet.Models.SingleValue-1.html#Sensei_AspNet_Models_SingleValue_1_Value
+  commentId: P:Sensei.AspNet.Models.SingleValue`1.Value
+  fullName: Sensei.AspNet.Models.SingleValue<T>.Value
+  fullName.vb: Sensei.AspNet.Models.SingleValue(Of T).Value
+  nameWithType: SingleValue<T>.Value
+  nameWithType.vb: SingleValue(Of T).Value
+- uid: Sensei.AspNet.Models.SingleValue`1.Value*
+  name: Value
+  href: api/Sensei.AspNet.Models.SingleValue-1.html#Sensei_AspNet_Models_SingleValue_1_Value_
+  commentId: Overload:Sensei.AspNet.Models.SingleValue`1.Value
+  isSpec: "True"
+  fullName: Sensei.AspNet.Models.SingleValue<T>.Value
+  fullName.vb: Sensei.AspNet.Models.SingleValue(Of T).Value
+  nameWithType: SingleValue<T>.Value
+  nameWithType.vb: SingleValue(Of T).Value
+- uid: Sensei.AspNet.Queries
+  name: Sensei.AspNet.Queries
+  href: api/Sensei.AspNet.Queries.html
+  commentId: N:Sensei.AspNet.Queries
+  fullName: Sensei.AspNet.Queries
+  nameWithType: Sensei.AspNet.Queries
+- uid: Sensei.AspNet.Queries.Attributes
+  name: Sensei.AspNet.Queries.Attributes
+  href: api/Sensei.AspNet.Queries.Attributes.html
+  commentId: N:Sensei.AspNet.Queries.Attributes
+  fullName: Sensei.AspNet.Queries.Attributes
+  nameWithType: Sensei.AspNet.Queries.Attributes
+- uid: Sensei.AspNet.Queries.Attributes.CanFilterAttribute
+  name: CanFilterAttribute
+  href: api/Sensei.AspNet.Queries.Attributes.CanFilterAttribute.html
+  commentId: T:Sensei.AspNet.Queries.Attributes.CanFilterAttribute
+  fullName: Sensei.AspNet.Queries.Attributes.CanFilterAttribute
+  nameWithType: CanFilterAttribute
+- uid: Sensei.AspNet.Queries.Attributes.CanFilterAttribute.#ctor(System.Boolean)
+  name: CanFilterAttribute(Boolean)
+  href: api/Sensei.AspNet.Queries.Attributes.CanFilterAttribute.html#Sensei_AspNet_Queries_Attributes_CanFilterAttribute__ctor_System_Boolean_
+  commentId: M:Sensei.AspNet.Queries.Attributes.CanFilterAttribute.#ctor(System.Boolean)
+  fullName: Sensei.AspNet.Queries.Attributes.CanFilterAttribute.CanFilterAttribute(System.Boolean)
+  nameWithType: CanFilterAttribute.CanFilterAttribute(Boolean)
+- uid: Sensei.AspNet.Queries.Attributes.CanFilterAttribute.#ctor*
+  name: CanFilterAttribute
+  href: api/Sensei.AspNet.Queries.Attributes.CanFilterAttribute.html#Sensei_AspNet_Queries_Attributes_CanFilterAttribute__ctor_
+  commentId: Overload:Sensei.AspNet.Queries.Attributes.CanFilterAttribute.#ctor
+  isSpec: "True"
+  fullName: Sensei.AspNet.Queries.Attributes.CanFilterAttribute.CanFilterAttribute
+  nameWithType: CanFilterAttribute.CanFilterAttribute
+- uid: Sensei.AspNet.Queries.Attributes.CanIncludeAttribute
+  name: CanIncludeAttribute
+  href: api/Sensei.AspNet.Queries.Attributes.CanIncludeAttribute.html
+  commentId: T:Sensei.AspNet.Queries.Attributes.CanIncludeAttribute
+  fullName: Sensei.AspNet.Queries.Attributes.CanIncludeAttribute
+  nameWithType: CanIncludeAttribute
+- uid: Sensei.AspNet.Queries.Attributes.CanIncludeAttribute.#ctor(System.Boolean)
+  name: CanIncludeAttribute(Boolean)
+  href: api/Sensei.AspNet.Queries.Attributes.CanIncludeAttribute.html#Sensei_AspNet_Queries_Attributes_CanIncludeAttribute__ctor_System_Boolean_
+  commentId: M:Sensei.AspNet.Queries.Attributes.CanIncludeAttribute.#ctor(System.Boolean)
+  fullName: Sensei.AspNet.Queries.Attributes.CanIncludeAttribute.CanIncludeAttribute(System.Boolean)
+  nameWithType: CanIncludeAttribute.CanIncludeAttribute(Boolean)
+- uid: Sensei.AspNet.Queries.Attributes.CanIncludeAttribute.#ctor*
+  name: CanIncludeAttribute
+  href: api/Sensei.AspNet.Queries.Attributes.CanIncludeAttribute.html#Sensei_AspNet_Queries_Attributes_CanIncludeAttribute__ctor_
+  commentId: Overload:Sensei.AspNet.Queries.Attributes.CanIncludeAttribute.#ctor
+  isSpec: "True"
+  fullName: Sensei.AspNet.Queries.Attributes.CanIncludeAttribute.CanIncludeAttribute
+  nameWithType: CanIncludeAttribute.CanIncludeAttribute
+- uid: Sensei.AspNet.Queries.Attributes.CanSortAttribute
+  name: CanSortAttribute
+  href: api/Sensei.AspNet.Queries.Attributes.CanSortAttribute.html
+  commentId: T:Sensei.AspNet.Queries.Attributes.CanSortAttribute
+  fullName: Sensei.AspNet.Queries.Attributes.CanSortAttribute
+  nameWithType: CanSortAttribute
+- uid: Sensei.AspNet.Queries.Attributes.CanSortAttribute.#ctor(System.Boolean)
+  name: CanSortAttribute(Boolean)
+  href: api/Sensei.AspNet.Queries.Attributes.CanSortAttribute.html#Sensei_AspNet_Queries_Attributes_CanSortAttribute__ctor_System_Boolean_
+  commentId: M:Sensei.AspNet.Queries.Attributes.CanSortAttribute.#ctor(System.Boolean)
+  fullName: Sensei.AspNet.Queries.Attributes.CanSortAttribute.CanSortAttribute(System.Boolean)
+  nameWithType: CanSortAttribute.CanSortAttribute(Boolean)
+- uid: Sensei.AspNet.Queries.Attributes.CanSortAttribute.#ctor*
+  name: CanSortAttribute
+  href: api/Sensei.AspNet.Queries.Attributes.CanSortAttribute.html#Sensei_AspNet_Queries_Attributes_CanSortAttribute__ctor_
+  commentId: Overload:Sensei.AspNet.Queries.Attributes.CanSortAttribute.#ctor
+  isSpec: "True"
+  fullName: Sensei.AspNet.Queries.Attributes.CanSortAttribute.CanSortAttribute
+  nameWithType: CanSortAttribute.CanSortAttribute
+- uid: Sensei.AspNet.Queries.Entities
+  name: Sensei.AspNet.Queries.Entities
+  href: api/Sensei.AspNet.Queries.Entities.html
+  commentId: N:Sensei.AspNet.Queries.Entities
+  fullName: Sensei.AspNet.Queries.Entities
+  nameWithType: Sensei.AspNet.Queries.Entities
+- uid: Sensei.AspNet.Queries.Entities.Filtering
+  name: Filtering
+  href: api/Sensei.AspNet.Queries.Entities.Filtering.html
+  commentId: T:Sensei.AspNet.Queries.Entities.Filtering
+  fullName: Sensei.AspNet.Queries.Entities.Filtering
+  nameWithType: Filtering
+- uid: Sensei.AspNet.Queries.Entities.Filtering.Filters
+  name: Filters
+  href: api/Sensei.AspNet.Queries.Entities.Filtering.html#Sensei_AspNet_Queries_Entities_Filtering_Filters
+  commentId: P:Sensei.AspNet.Queries.Entities.Filtering.Filters
+  fullName: Sensei.AspNet.Queries.Entities.Filtering.Filters
+  nameWithType: Filtering.Filters
+- uid: Sensei.AspNet.Queries.Entities.Filtering.Filters*
+  name: Filters
+  href: api/Sensei.AspNet.Queries.Entities.Filtering.html#Sensei_AspNet_Queries_Entities_Filtering_Filters_
+  commentId: Overload:Sensei.AspNet.Queries.Entities.Filtering.Filters
+  isSpec: "True"
+  fullName: Sensei.AspNet.Queries.Entities.Filtering.Filters
+  nameWithType: Filtering.Filters
+- uid: Sensei.AspNet.Queries.Entities.Including
+  name: Including
+  href: api/Sensei.AspNet.Queries.Entities.Including.html
+  commentId: T:Sensei.AspNet.Queries.Entities.Including
+  fullName: Sensei.AspNet.Queries.Entities.Including
+  nameWithType: Including
+- uid: Sensei.AspNet.Queries.Entities.Including.Includes
+  name: Includes
+  href: api/Sensei.AspNet.Queries.Entities.Including.html#Sensei_AspNet_Queries_Entities_Including_Includes
+  commentId: P:Sensei.AspNet.Queries.Entities.Including.Includes
+  fullName: Sensei.AspNet.Queries.Entities.Including.Includes
+  nameWithType: Including.Includes
+- uid: Sensei.AspNet.Queries.Entities.Including.Includes*
+  name: Includes
+  href: api/Sensei.AspNet.Queries.Entities.Including.html#Sensei_AspNet_Queries_Entities_Including_Includes_
+  commentId: Overload:Sensei.AspNet.Queries.Entities.Including.Includes
+  isSpec: "True"
+  fullName: Sensei.AspNet.Queries.Entities.Including.Includes
+  nameWithType: Including.Includes
+- uid: Sensei.AspNet.Queries.Entities.Pagination
+  name: Pagination
+  href: api/Sensei.AspNet.Queries.Entities.Pagination.html
+  commentId: T:Sensei.AspNet.Queries.Entities.Pagination
+  fullName: Sensei.AspNet.Queries.Entities.Pagination
+  nameWithType: Pagination
+- uid: Sensei.AspNet.Queries.Entities.Pagination.Page
+  name: Page
+  href: api/Sensei.AspNet.Queries.Entities.Pagination.html#Sensei_AspNet_Queries_Entities_Pagination_Page
+  commentId: P:Sensei.AspNet.Queries.Entities.Pagination.Page
+  fullName: Sensei.AspNet.Queries.Entities.Pagination.Page
+  nameWithType: Pagination.Page
+- uid: Sensei.AspNet.Queries.Entities.Pagination.Page*
+  name: Page
+  href: api/Sensei.AspNet.Queries.Entities.Pagination.html#Sensei_AspNet_Queries_Entities_Pagination_Page_
+  commentId: Overload:Sensei.AspNet.Queries.Entities.Pagination.Page
+  isSpec: "True"
+  fullName: Sensei.AspNet.Queries.Entities.Pagination.Page
+  nameWithType: Pagination.Page
+- uid: Sensei.AspNet.Queries.Entities.Pagination.PageSize
+  name: PageSize
+  href: api/Sensei.AspNet.Queries.Entities.Pagination.html#Sensei_AspNet_Queries_Entities_Pagination_PageSize
+  commentId: P:Sensei.AspNet.Queries.Entities.Pagination.PageSize
+  fullName: Sensei.AspNet.Queries.Entities.Pagination.PageSize
+  nameWithType: Pagination.PageSize
+- uid: Sensei.AspNet.Queries.Entities.Pagination.PageSize*
+  name: PageSize
+  href: api/Sensei.AspNet.Queries.Entities.Pagination.html#Sensei_AspNet_Queries_Entities_Pagination_PageSize_
+  commentId: Overload:Sensei.AspNet.Queries.Entities.Pagination.PageSize
+  isSpec: "True"
+  fullName: Sensei.AspNet.Queries.Entities.Pagination.PageSize
+  nameWithType: Pagination.PageSize
+- uid: Sensei.AspNet.Queries.Entities.Paginator`1
+  name: Paginator<T>
+  href: api/Sensei.AspNet.Queries.Entities.Paginator-1.html
+  commentId: T:Sensei.AspNet.Queries.Entities.Paginator`1
+  name.vb: Paginator(Of T)
+  fullName: Sensei.AspNet.Queries.Entities.Paginator<T>
+  fullName.vb: Sensei.AspNet.Queries.Entities.Paginator(Of T)
+  nameWithType: Paginator<T>
+  nameWithType.vb: Paginator(Of T)
+- uid: Sensei.AspNet.Queries.Entities.Paginator`1.HaveNext
+  name: HaveNext
+  href: api/Sensei.AspNet.Queries.Entities.Paginator-1.html#Sensei_AspNet_Queries_Entities_Paginator_1_HaveNext
+  commentId: P:Sensei.AspNet.Queries.Entities.Paginator`1.HaveNext
+  fullName: Sensei.AspNet.Queries.Entities.Paginator<T>.HaveNext
+  fullName.vb: Sensei.AspNet.Queries.Entities.Paginator(Of T).HaveNext
+  nameWithType: Paginator<T>.HaveNext
+  nameWithType.vb: Paginator(Of T).HaveNext
+- uid: Sensei.AspNet.Queries.Entities.Paginator`1.HaveNext*
+  name: HaveNext
+  href: api/Sensei.AspNet.Queries.Entities.Paginator-1.html#Sensei_AspNet_Queries_Entities_Paginator_1_HaveNext_
+  commentId: Overload:Sensei.AspNet.Queries.Entities.Paginator`1.HaveNext
+  isSpec: "True"
+  fullName: Sensei.AspNet.Queries.Entities.Paginator<T>.HaveNext
+  fullName.vb: Sensei.AspNet.Queries.Entities.Paginator(Of T).HaveNext
+  nameWithType: Paginator<T>.HaveNext
+  nameWithType.vb: Paginator(Of T).HaveNext
+- uid: Sensei.AspNet.Queries.Entities.Paginator`1.HavePrev
+  name: HavePrev
+  href: api/Sensei.AspNet.Queries.Entities.Paginator-1.html#Sensei_AspNet_Queries_Entities_Paginator_1_HavePrev
+  commentId: P:Sensei.AspNet.Queries.Entities.Paginator`1.HavePrev
+  fullName: Sensei.AspNet.Queries.Entities.Paginator<T>.HavePrev
+  fullName.vb: Sensei.AspNet.Queries.Entities.Paginator(Of T).HavePrev
+  nameWithType: Paginator<T>.HavePrev
+  nameWithType.vb: Paginator(Of T).HavePrev
+- uid: Sensei.AspNet.Queries.Entities.Paginator`1.HavePrev*
+  name: HavePrev
+  href: api/Sensei.AspNet.Queries.Entities.Paginator-1.html#Sensei_AspNet_Queries_Entities_Paginator_1_HavePrev_
+  commentId: Overload:Sensei.AspNet.Queries.Entities.Paginator`1.HavePrev
+  isSpec: "True"
+  fullName: Sensei.AspNet.Queries.Entities.Paginator<T>.HavePrev
+  fullName.vb: Sensei.AspNet.Queries.Entities.Paginator(Of T).HavePrev
+  nameWithType: Paginator<T>.HavePrev
+  nameWithType.vb: Paginator(Of T).HavePrev
+- uid: Sensei.AspNet.Queries.Entities.Paginator`1.Items
+  name: Items
+  href: api/Sensei.AspNet.Queries.Entities.Paginator-1.html#Sensei_AspNet_Queries_Entities_Paginator_1_Items
+  commentId: P:Sensei.AspNet.Queries.Entities.Paginator`1.Items
+  fullName: Sensei.AspNet.Queries.Entities.Paginator<T>.Items
+  fullName.vb: Sensei.AspNet.Queries.Entities.Paginator(Of T).Items
+  nameWithType: Paginator<T>.Items
+  nameWithType.vb: Paginator(Of T).Items
+- uid: Sensei.AspNet.Queries.Entities.Paginator`1.Items*
+  name: Items
+  href: api/Sensei.AspNet.Queries.Entities.Paginator-1.html#Sensei_AspNet_Queries_Entities_Paginator_1_Items_
+  commentId: Overload:Sensei.AspNet.Queries.Entities.Paginator`1.Items
+  isSpec: "True"
+  fullName: Sensei.AspNet.Queries.Entities.Paginator<T>.Items
+  fullName.vb: Sensei.AspNet.Queries.Entities.Paginator(Of T).Items
+  nameWithType: Paginator<T>.Items
+  nameWithType.vb: Paginator(Of T).Items
+- uid: Sensei.AspNet.Queries.Entities.Paginator`1.Page
+  name: Page
+  href: api/Sensei.AspNet.Queries.Entities.Paginator-1.html#Sensei_AspNet_Queries_Entities_Paginator_1_Page
+  commentId: P:Sensei.AspNet.Queries.Entities.Paginator`1.Page
+  fullName: Sensei.AspNet.Queries.Entities.Paginator<T>.Page
+  fullName.vb: Sensei.AspNet.Queries.Entities.Paginator(Of T).Page
+  nameWithType: Paginator<T>.Page
+  nameWithType.vb: Paginator(Of T).Page
+- uid: Sensei.AspNet.Queries.Entities.Paginator`1.Page*
+  name: Page
+  href: api/Sensei.AspNet.Queries.Entities.Paginator-1.html#Sensei_AspNet_Queries_Entities_Paginator_1_Page_
+  commentId: Overload:Sensei.AspNet.Queries.Entities.Paginator`1.Page
+  isSpec: "True"
+  fullName: Sensei.AspNet.Queries.Entities.Paginator<T>.Page
+  fullName.vb: Sensei.AspNet.Queries.Entities.Paginator(Of T).Page
+  nameWithType: Paginator<T>.Page
+  nameWithType.vb: Paginator(Of T).Page
+- uid: Sensei.AspNet.Queries.Entities.Paginator`1.PageSize
+  name: PageSize
+  href: api/Sensei.AspNet.Queries.Entities.Paginator-1.html#Sensei_AspNet_Queries_Entities_Paginator_1_PageSize
+  commentId: P:Sensei.AspNet.Queries.Entities.Paginator`1.PageSize
+  fullName: Sensei.AspNet.Queries.Entities.Paginator<T>.PageSize
+  fullName.vb: Sensei.AspNet.Queries.Entities.Paginator(Of T).PageSize
+  nameWithType: Paginator<T>.PageSize
+  nameWithType.vb: Paginator(Of T).PageSize
+- uid: Sensei.AspNet.Queries.Entities.Paginator`1.PageSize*
+  name: PageSize
+  href: api/Sensei.AspNet.Queries.Entities.Paginator-1.html#Sensei_AspNet_Queries_Entities_Paginator_1_PageSize_
+  commentId: Overload:Sensei.AspNet.Queries.Entities.Paginator`1.PageSize
+  isSpec: "True"
+  fullName: Sensei.AspNet.Queries.Entities.Paginator<T>.PageSize
+  fullName.vb: Sensei.AspNet.Queries.Entities.Paginator(Of T).PageSize
+  nameWithType: Paginator<T>.PageSize
+  nameWithType.vb: Paginator(Of T).PageSize
+- uid: Sensei.AspNet.Queries.Entities.Paginator`1.Total
+  name: Total
+  href: api/Sensei.AspNet.Queries.Entities.Paginator-1.html#Sensei_AspNet_Queries_Entities_Paginator_1_Total
+  commentId: P:Sensei.AspNet.Queries.Entities.Paginator`1.Total
+  fullName: Sensei.AspNet.Queries.Entities.Paginator<T>.Total
+  fullName.vb: Sensei.AspNet.Queries.Entities.Paginator(Of T).Total
+  nameWithType: Paginator<T>.Total
+  nameWithType.vb: Paginator(Of T).Total
+- uid: Sensei.AspNet.Queries.Entities.Paginator`1.Total*
+  name: Total
+  href: api/Sensei.AspNet.Queries.Entities.Paginator-1.html#Sensei_AspNet_Queries_Entities_Paginator_1_Total_
+  commentId: Overload:Sensei.AspNet.Queries.Entities.Paginator`1.Total
+  isSpec: "True"
+  fullName: Sensei.AspNet.Queries.Entities.Paginator<T>.Total
+  fullName.vb: Sensei.AspNet.Queries.Entities.Paginator(Of T).Total
+  nameWithType: Paginator<T>.Total
+  nameWithType.vb: Paginator(Of T).Total
+- uid: Sensei.AspNet.Queries.Entities.Sorting
+  name: Sorting
+  href: api/Sensei.AspNet.Queries.Entities.Sorting.html
+  commentId: T:Sensei.AspNet.Queries.Entities.Sorting
+  fullName: Sensei.AspNet.Queries.Entities.Sorting
+  nameWithType: Sorting
+- uid: Sensei.AspNet.Queries.Entities.Sorting.Sorts
+  name: Sorts
+  href: api/Sensei.AspNet.Queries.Entities.Sorting.html#Sensei_AspNet_Queries_Entities_Sorting_Sorts
+  commentId: P:Sensei.AspNet.Queries.Entities.Sorting.Sorts
+  fullName: Sensei.AspNet.Queries.Entities.Sorting.Sorts
+  nameWithType: Sorting.Sorts
+- uid: Sensei.AspNet.Queries.Entities.Sorting.Sorts*
+  name: Sorts
+  href: api/Sensei.AspNet.Queries.Entities.Sorting.html#Sensei_AspNet_Queries_Entities_Sorting_Sorts_
+  commentId: Overload:Sensei.AspNet.Queries.Entities.Sorting.Sorts
+  isSpec: "True"
+  fullName: Sensei.AspNet.Queries.Entities.Sorting.Sorts
+  nameWithType: Sorting.Sorts
+- uid: Sensei.AspNet.Queries.Exceptions
+  name: Sensei.AspNet.Queries.Exceptions
+  href: api/Sensei.AspNet.Queries.Exceptions.html
+  commentId: N:Sensei.AspNet.Queries.Exceptions
+  fullName: Sensei.AspNet.Queries.Exceptions
+  nameWithType: Sensei.AspNet.Queries.Exceptions
+- uid: Sensei.AspNet.Queries.Exceptions.EvaluateFilterException
+  name: EvaluateFilterException
+  href: api/Sensei.AspNet.Queries.Exceptions.EvaluateFilterException.html
+  commentId: T:Sensei.AspNet.Queries.Exceptions.EvaluateFilterException
+  fullName: Sensei.AspNet.Queries.Exceptions.EvaluateFilterException
+  nameWithType: EvaluateFilterException
+- uid: Sensei.AspNet.Queries.Exceptions.LuceneParserException
+  name: LuceneParserException
+  href: api/Sensei.AspNet.Queries.Exceptions.LuceneParserException.html
+  commentId: T:Sensei.AspNet.Queries.Exceptions.LuceneParserException
+  fullName: Sensei.AspNet.Queries.Exceptions.LuceneParserException
+  nameWithType: LuceneParserException
+- uid: Sensei.AspNet.Queries.Exceptions.MissingFilterException
+  name: MissingFilterException
+  href: api/Sensei.AspNet.Queries.Exceptions.MissingFilterException.html
+  commentId: T:Sensei.AspNet.Queries.Exceptions.MissingFilterException
+  fullName: Sensei.AspNet.Queries.Exceptions.MissingFilterException
+  nameWithType: MissingFilterException
+- uid: Sensei.AspNet.Queries.Exceptions.MissingPropertyException
+  name: MissingPropertyException
+  href: api/Sensei.AspNet.Queries.Exceptions.MissingPropertyException.html
+  commentId: T:Sensei.AspNet.Queries.Exceptions.MissingPropertyException
+  fullName: Sensei.AspNet.Queries.Exceptions.MissingPropertyException
+  nameWithType: MissingPropertyException
+- uid: Sensei.AspNet.Queries.Exceptions.QueryContextInvalidException
+  name: QueryContextInvalidException
+  href: api/Sensei.AspNet.Queries.Exceptions.QueryContextInvalidException.html
+  commentId: T:Sensei.AspNet.Queries.Exceptions.QueryContextInvalidException
+  fullName: Sensei.AspNet.Queries.Exceptions.QueryContextInvalidException
+  nameWithType: QueryContextInvalidException
+- uid: Sensei.AspNet.Queries.IQueryContext
+  name: IQueryContext
+  href: api/Sensei.AspNet.Queries.IQueryContext.html
+  commentId: T:Sensei.AspNet.Queries.IQueryContext
+  fullName: Sensei.AspNet.Queries.IQueryContext
+  nameWithType: IQueryContext
+- uid: Sensei.AspNet.Queries.IQueryProcessor
+  name: IQueryProcessor
+  href: api/Sensei.AspNet.Queries.IQueryProcessor.html
+  commentId: T:Sensei.AspNet.Queries.IQueryProcessor
+  fullName: Sensei.AspNet.Queries.IQueryProcessor
+  nameWithType: IQueryProcessor
+- uid: Sensei.AspNet.Queries.IQueryProcessor.Start*
+  name: Start
+  href: api/Sensei.AspNet.Queries.IQueryProcessor.html#Sensei_AspNet_Queries_IQueryProcessor_Start_
+  commentId: Overload:Sensei.AspNet.Queries.IQueryProcessor.Start
+  isSpec: "True"
+  fullName: Sensei.AspNet.Queries.IQueryProcessor.Start
+  nameWithType: IQueryProcessor.Start
+- uid: Sensei.AspNet.Queries.IQueryProcessor.Start``1(IQueryable{``0},Sensei.AspNet.Queries.IQueryContext)
+  name: Start<TEntity>(IQueryable<TEntity>, IQueryContext)
+  href: api/Sensei.AspNet.Queries.IQueryProcessor.html#Sensei_AspNet_Queries_IQueryProcessor_Start__1_IQueryable___0__Sensei_AspNet_Queries_IQueryContext_
+  commentId: M:Sensei.AspNet.Queries.IQueryProcessor.Start``1(IQueryable{``0},Sensei.AspNet.Queries.IQueryContext)
+  name.vb: Start(Of TEntity)(IQueryable(Of TEntity), IQueryContext)
+  fullName: Sensei.AspNet.Queries.IQueryProcessor.Start<TEntity>(IQueryable<TEntity>, Sensei.AspNet.Queries.IQueryContext)
+  fullName.vb: Sensei.AspNet.Queries.IQueryProcessor.Start(Of TEntity)(IQueryable(Of TEntity), Sensei.AspNet.Queries.IQueryContext)
+  nameWithType: IQueryProcessor.Start<TEntity>(IQueryable<TEntity>, IQueryContext)
+  nameWithType.vb: IQueryProcessor.Start(Of TEntity)(IQueryable(Of TEntity), IQueryContext)
+- uid: Sensei.AspNet.Queries.Query`1
+  name: Query<TEntity>
+  href: api/Sensei.AspNet.Queries.Query-1.html
+  commentId: T:Sensei.AspNet.Queries.Query`1
+  name.vb: Query(Of TEntity)
+  fullName: Sensei.AspNet.Queries.Query<TEntity>
+  fullName.vb: Sensei.AspNet.Queries.Query(Of TEntity)
+  nameWithType: Query<TEntity>
+  nameWithType.vb: Query(Of TEntity)
+- uid: Sensei.AspNet.Queries.Query`1.Queryable
+  name: Queryable
+  href: api/Sensei.AspNet.Queries.Query-1.html#Sensei_AspNet_Queries_Query_1_Queryable
+  commentId: P:Sensei.AspNet.Queries.Query`1.Queryable
+  fullName: Sensei.AspNet.Queries.Query<TEntity>.Queryable
+  fullName.vb: Sensei.AspNet.Queries.Query(Of TEntity).Queryable
+  nameWithType: Query<TEntity>.Queryable
+  nameWithType.vb: Query(Of TEntity).Queryable
+- uid: Sensei.AspNet.Queries.Query`1.Queryable*
+  name: Queryable
+  href: api/Sensei.AspNet.Queries.Query-1.html#Sensei_AspNet_Queries_Query_1_Queryable_
+  commentId: Overload:Sensei.AspNet.Queries.Query`1.Queryable
+  isSpec: "True"
+  fullName: Sensei.AspNet.Queries.Query<TEntity>.Queryable
+  fullName.vb: Sensei.AspNet.Queries.Query(Of TEntity).Queryable
+  nameWithType: Query<TEntity>.Queryable
+  nameWithType.vb: Query(Of TEntity).Queryable
+- uid: Sensei.AspNet.Queries.Query`1.ServiceProvider
+  name: ServiceProvider
+  href: api/Sensei.AspNet.Queries.Query-1.html#Sensei_AspNet_Queries_Query_1_ServiceProvider
+  commentId: P:Sensei.AspNet.Queries.Query`1.ServiceProvider
+  fullName: Sensei.AspNet.Queries.Query<TEntity>.ServiceProvider
+  fullName.vb: Sensei.AspNet.Queries.Query(Of TEntity).ServiceProvider
+  nameWithType: Query<TEntity>.ServiceProvider
+  nameWithType.vb: Query(Of TEntity).ServiceProvider
+- uid: Sensei.AspNet.Queries.Query`1.ServiceProvider*
+  name: ServiceProvider
+  href: api/Sensei.AspNet.Queries.Query-1.html#Sensei_AspNet_Queries_Query_1_ServiceProvider_
+  commentId: Overload:Sensei.AspNet.Queries.Query`1.ServiceProvider
+  isSpec: "True"
+  fullName: Sensei.AspNet.Queries.Query<TEntity>.ServiceProvider
+  fullName.vb: Sensei.AspNet.Queries.Query(Of TEntity).ServiceProvider
+  nameWithType: Query<TEntity>.ServiceProvider
+  nameWithType.vb: Query(Of TEntity).ServiceProvider
+- uid: Sensei.AspNet.Queries.QueryContext
+  name: QueryContext
+  href: api/Sensei.AspNet.Queries.QueryContext.html
+  commentId: T:Sensei.AspNet.Queries.QueryContext
+  fullName: Sensei.AspNet.Queries.QueryContext
+  nameWithType: QueryContext
+- uid: Sensei.AspNet.Queries.QueryContext.MapProperties(Sensei.AspNet.Queries.QueryMapper)
+  name: MapProperties(QueryMapper)
+  href: api/Sensei.AspNet.Queries.QueryContext.html#Sensei_AspNet_Queries_QueryContext_MapProperties_Sensei_AspNet_Queries_QueryMapper_
+  commentId: M:Sensei.AspNet.Queries.QueryContext.MapProperties(Sensei.AspNet.Queries.QueryMapper)
+  fullName: Sensei.AspNet.Queries.QueryContext.MapProperties(Sensei.AspNet.Queries.QueryMapper)
+  nameWithType: QueryContext.MapProperties(QueryMapper)
+- uid: Sensei.AspNet.Queries.QueryContext.MapProperties*
+  name: MapProperties
+  href: api/Sensei.AspNet.Queries.QueryContext.html#Sensei_AspNet_Queries_QueryContext_MapProperties_
+  commentId: Overload:Sensei.AspNet.Queries.QueryContext.MapProperties
+  isSpec: "True"
+  fullName: Sensei.AspNet.Queries.QueryContext.MapProperties
+  nameWithType: QueryContext.MapProperties
+- uid: Sensei.AspNet.Queries.QueryFilters
+  name: Sensei.AspNet.Queries.QueryFilters
+  href: api/Sensei.AspNet.Queries.QueryFilters.html
+  commentId: N:Sensei.AspNet.Queries.QueryFilters
+  fullName: Sensei.AspNet.Queries.QueryFilters
+  nameWithType: Sensei.AspNet.Queries.QueryFilters
+- uid: Sensei.AspNet.Queries.QueryFilters.Filters
+  name: Sensei.AspNet.Queries.QueryFilters.Filters
+  href: api/Sensei.AspNet.Queries.QueryFilters.Filters.html
+  commentId: N:Sensei.AspNet.Queries.QueryFilters.Filters
+  fullName: Sensei.AspNet.Queries.QueryFilters.Filters
+  nameWithType: Sensei.AspNet.Queries.QueryFilters.Filters
+- uid: Sensei.AspNet.Queries.QueryFilters.Filters.ComplexQueryFilter
+  name: ComplexQueryFilter
+  href: api/Sensei.AspNet.Queries.QueryFilters.Filters.ComplexQueryFilter.html
+  commentId: T:Sensei.AspNet.Queries.QueryFilters.Filters.ComplexQueryFilter
+  fullName: Sensei.AspNet.Queries.QueryFilters.Filters.ComplexQueryFilter
+  nameWithType: ComplexQueryFilter
+- uid: Sensei.AspNet.Queries.QueryFilters.Filters.ComplexQueryFilter.GetCompareExpression(Expression,Type,System.String)
+  name: GetCompareExpression(Expression, Type, String)
+  href: api/Sensei.AspNet.Queries.QueryFilters.Filters.ComplexQueryFilter.html#Sensei_AspNet_Queries_QueryFilters_Filters_ComplexQueryFilter_GetCompareExpression_Expression_Type_System_String_
+  commentId: M:Sensei.AspNet.Queries.QueryFilters.Filters.ComplexQueryFilter.GetCompareExpression(Expression,Type,System.String)
+  fullName: Sensei.AspNet.Queries.QueryFilters.Filters.ComplexQueryFilter.GetCompareExpression(Expression, Type, System.String)
+  nameWithType: ComplexQueryFilter.GetCompareExpression(Expression, Type, String)
+- uid: Sensei.AspNet.Queries.QueryFilters.Filters.ComplexQueryFilter.GetCompareExpression*
+  name: GetCompareExpression
+  href: api/Sensei.AspNet.Queries.QueryFilters.Filters.ComplexQueryFilter.html#Sensei_AspNet_Queries_QueryFilters_Filters_ComplexQueryFilter_GetCompareExpression_
+  commentId: Overload:Sensei.AspNet.Queries.QueryFilters.Filters.ComplexQueryFilter.GetCompareExpression
+  isSpec: "True"
+  fullName: Sensei.AspNet.Queries.QueryFilters.Filters.ComplexQueryFilter.GetCompareExpression
+  nameWithType: ComplexQueryFilter.GetCompareExpression
+- uid: Sensei.AspNet.Queries.QueryFilters.Filters.ComplexQueryFilter.GetExistsExpression(Expression,Type)
+  name: GetExistsExpression(Expression, Type)
+  href: api/Sensei.AspNet.Queries.QueryFilters.Filters.ComplexQueryFilter.html#Sensei_AspNet_Queries_QueryFilters_Filters_ComplexQueryFilter_GetExistsExpression_Expression_Type_
+  commentId: M:Sensei.AspNet.Queries.QueryFilters.Filters.ComplexQueryFilter.GetExistsExpression(Expression,Type)
+  fullName: Sensei.AspNet.Queries.QueryFilters.Filters.ComplexQueryFilter.GetExistsExpression(Expression, Type)
+  nameWithType: ComplexQueryFilter.GetExistsExpression(Expression, Type)
+- uid: Sensei.AspNet.Queries.QueryFilters.Filters.ComplexQueryFilter.GetExistsExpression*
+  name: GetExistsExpression
+  href: api/Sensei.AspNet.Queries.QueryFilters.Filters.ComplexQueryFilter.html#Sensei_AspNet_Queries_QueryFilters_Filters_ComplexQueryFilter_GetExistsExpression_
+  commentId: Overload:Sensei.AspNet.Queries.QueryFilters.Filters.ComplexQueryFilter.GetExistsExpression
+  isSpec: "True"
+  fullName: Sensei.AspNet.Queries.QueryFilters.Filters.ComplexQueryFilter.GetExistsExpression
+  nameWithType: ComplexQueryFilter.GetExistsExpression
+- uid: Sensei.AspNet.Queries.QueryFilters.Filters.ComplexQueryFilter.GetGreaterExpression(Expression,Type,System.String,System.Boolean)
+  name: GetGreaterExpression(Expression, Type, String, Boolean)
+  href: api/Sensei.AspNet.Queries.QueryFilters.Filters.ComplexQueryFilter.html#Sensei_AspNet_Queries_QueryFilters_Filters_ComplexQueryFilter_GetGreaterExpression_Expression_Type_System_String_System_Boolean_
+  commentId: M:Sensei.AspNet.Queries.QueryFilters.Filters.ComplexQueryFilter.GetGreaterExpression(Expression,Type,System.String,System.Boolean)
+  fullName: Sensei.AspNet.Queries.QueryFilters.Filters.ComplexQueryFilter.GetGreaterExpression(Expression, Type, System.String, System.Boolean)
+  nameWithType: ComplexQueryFilter.GetGreaterExpression(Expression, Type, String, Boolean)
+- uid: Sensei.AspNet.Queries.QueryFilters.Filters.ComplexQueryFilter.GetGreaterExpression*
+  name: GetGreaterExpression
+  href: api/Sensei.AspNet.Queries.QueryFilters.Filters.ComplexQueryFilter.html#Sensei_AspNet_Queries_QueryFilters_Filters_ComplexQueryFilter_GetGreaterExpression_
+  commentId: Overload:Sensei.AspNet.Queries.QueryFilters.Filters.ComplexQueryFilter.GetGreaterExpression
+  isSpec: "True"
+  fullName: Sensei.AspNet.Queries.QueryFilters.Filters.ComplexQueryFilter.GetGreaterExpression
+  nameWithType: ComplexQueryFilter.GetGreaterExpression
+- uid: Sensei.AspNet.Queries.QueryFilters.Filters.ComplexQueryFilter.GetLessExpression(Expression,Type,System.String,System.Boolean)
+  name: GetLessExpression(Expression, Type, String, Boolean)
+  href: api/Sensei.AspNet.Queries.QueryFilters.Filters.ComplexQueryFilter.html#Sensei_AspNet_Queries_QueryFilters_Filters_ComplexQueryFilter_GetLessExpression_Expression_Type_System_String_System_Boolean_
+  commentId: M:Sensei.AspNet.Queries.QueryFilters.Filters.ComplexQueryFilter.GetLessExpression(Expression,Type,System.String,System.Boolean)
+  fullName: Sensei.AspNet.Queries.QueryFilters.Filters.ComplexQueryFilter.GetLessExpression(Expression, Type, System.String, System.Boolean)
+  nameWithType: ComplexQueryFilter.GetLessExpression(Expression, Type, String, Boolean)
+- uid: Sensei.AspNet.Queries.QueryFilters.Filters.ComplexQueryFilter.GetLessExpression*
+  name: GetLessExpression
+  href: api/Sensei.AspNet.Queries.QueryFilters.Filters.ComplexQueryFilter.html#Sensei_AspNet_Queries_QueryFilters_Filters_ComplexQueryFilter_GetLessExpression_
+  commentId: Overload:Sensei.AspNet.Queries.QueryFilters.Filters.ComplexQueryFilter.GetLessExpression
+  isSpec: "True"
+  fullName: Sensei.AspNet.Queries.QueryFilters.Filters.ComplexQueryFilter.GetLessExpression
+  nameWithType: ComplexQueryFilter.GetLessExpression
+- uid: Sensei.AspNet.Queries.QueryFilters.Filters.ComplexQueryFilter.SupportedTypes
+  name: SupportedTypes
+  href: api/Sensei.AspNet.Queries.QueryFilters.Filters.ComplexQueryFilter.html#Sensei_AspNet_Queries_QueryFilters_Filters_ComplexQueryFilter_SupportedTypes
+  commentId: P:Sensei.AspNet.Queries.QueryFilters.Filters.ComplexQueryFilter.SupportedTypes
+  fullName: Sensei.AspNet.Queries.QueryFilters.Filters.ComplexQueryFilter.SupportedTypes
+  nameWithType: ComplexQueryFilter.SupportedTypes
+- uid: Sensei.AspNet.Queries.QueryFilters.Filters.ComplexQueryFilter.SupportedTypes*
+  name: SupportedTypes
+  href: api/Sensei.AspNet.Queries.QueryFilters.Filters.ComplexQueryFilter.html#Sensei_AspNet_Queries_QueryFilters_Filters_ComplexQueryFilter_SupportedTypes_
+  commentId: Overload:Sensei.AspNet.Queries.QueryFilters.Filters.ComplexQueryFilter.SupportedTypes
+  isSpec: "True"
+  fullName: Sensei.AspNet.Queries.QueryFilters.Filters.ComplexQueryFilter.SupportedTypes
+  nameWithType: ComplexQueryFilter.SupportedTypes
+- uid: Sensei.AspNet.Queries.QueryFilters.Filters.GenericQueryFilter
+  name: GenericQueryFilter
+  href: api/Sensei.AspNet.Queries.QueryFilters.Filters.GenericQueryFilter.html
+  commentId: T:Sensei.AspNet.Queries.QueryFilters.Filters.GenericQueryFilter
+  fullName: Sensei.AspNet.Queries.QueryFilters.Filters.GenericQueryFilter
+  nameWithType: GenericQueryFilter
+- uid: Sensei.AspNet.Queries.QueryFilters.Filters.GenericQueryFilter.GetCompareExpression(Expression,Type,System.String)
+  name: GetCompareExpression(Expression, Type, String)
+  href: api/Sensei.AspNet.Queries.QueryFilters.Filters.GenericQueryFilter.html#Sensei_AspNet_Queries_QueryFilters_Filters_GenericQueryFilter_GetCompareExpression_Expression_Type_System_String_
+  commentId: M:Sensei.AspNet.Queries.QueryFilters.Filters.GenericQueryFilter.GetCompareExpression(Expression,Type,System.String)
+  fullName: Sensei.AspNet.Queries.QueryFilters.Filters.GenericQueryFilter.GetCompareExpression(Expression, Type, System.String)
+  nameWithType: GenericQueryFilter.GetCompareExpression(Expression, Type, String)
+- uid: Sensei.AspNet.Queries.QueryFilters.Filters.GenericQueryFilter.GetCompareExpression*
+  name: GetCompareExpression
+  href: api/Sensei.AspNet.Queries.QueryFilters.Filters.GenericQueryFilter.html#Sensei_AspNet_Queries_QueryFilters_Filters_GenericQueryFilter_GetCompareExpression_
+  commentId: Overload:Sensei.AspNet.Queries.QueryFilters.Filters.GenericQueryFilter.GetCompareExpression
+  isSpec: "True"
+  fullName: Sensei.AspNet.Queries.QueryFilters.Filters.GenericQueryFilter.GetCompareExpression
+  nameWithType: GenericQueryFilter.GetCompareExpression
+- uid: Sensei.AspNet.Queries.QueryFilters.Filters.GenericQueryFilter.GetExistsExpression(Expression,Type)
+  name: GetExistsExpression(Expression, Type)
+  href: api/Sensei.AspNet.Queries.QueryFilters.Filters.GenericQueryFilter.html#Sensei_AspNet_Queries_QueryFilters_Filters_GenericQueryFilter_GetExistsExpression_Expression_Type_
+  commentId: M:Sensei.AspNet.Queries.QueryFilters.Filters.GenericQueryFilter.GetExistsExpression(Expression,Type)
+  fullName: Sensei.AspNet.Queries.QueryFilters.Filters.GenericQueryFilter.GetExistsExpression(Expression, Type)
+  nameWithType: GenericQueryFilter.GetExistsExpression(Expression, Type)
+- uid: Sensei.AspNet.Queries.QueryFilters.Filters.GenericQueryFilter.GetExistsExpression*
+  name: GetExistsExpression
+  href: api/Sensei.AspNet.Queries.QueryFilters.Filters.GenericQueryFilter.html#Sensei_AspNet_Queries_QueryFilters_Filters_GenericQueryFilter_GetExistsExpression_
+  commentId: Overload:Sensei.AspNet.Queries.QueryFilters.Filters.GenericQueryFilter.GetExistsExpression
+  isSpec: "True"
+  fullName: Sensei.AspNet.Queries.QueryFilters.Filters.GenericQueryFilter.GetExistsExpression
+  nameWithType: GenericQueryFilter.GetExistsExpression
+- uid: Sensei.AspNet.Queries.QueryFilters.Filters.GenericQueryFilter.GetGreaterExpression(Expression,Type,System.String,System.Boolean)
+  name: GetGreaterExpression(Expression, Type, String, Boolean)
+  href: api/Sensei.AspNet.Queries.QueryFilters.Filters.GenericQueryFilter.html#Sensei_AspNet_Queries_QueryFilters_Filters_GenericQueryFilter_GetGreaterExpression_Expression_Type_System_String_System_Boolean_
+  commentId: M:Sensei.AspNet.Queries.QueryFilters.Filters.GenericQueryFilter.GetGreaterExpression(Expression,Type,System.String,System.Boolean)
+  fullName: Sensei.AspNet.Queries.QueryFilters.Filters.GenericQueryFilter.GetGreaterExpression(Expression, Type, System.String, System.Boolean)
+  nameWithType: GenericQueryFilter.GetGreaterExpression(Expression, Type, String, Boolean)
+- uid: Sensei.AspNet.Queries.QueryFilters.Filters.GenericQueryFilter.GetGreaterExpression*
+  name: GetGreaterExpression
+  href: api/Sensei.AspNet.Queries.QueryFilters.Filters.GenericQueryFilter.html#Sensei_AspNet_Queries_QueryFilters_Filters_GenericQueryFilter_GetGreaterExpression_
+  commentId: Overload:Sensei.AspNet.Queries.QueryFilters.Filters.GenericQueryFilter.GetGreaterExpression
+  isSpec: "True"
+  fullName: Sensei.AspNet.Queries.QueryFilters.Filters.GenericQueryFilter.GetGreaterExpression
+  nameWithType: GenericQueryFilter.GetGreaterExpression
+- uid: Sensei.AspNet.Queries.QueryFilters.Filters.GenericQueryFilter.GetLessExpression(Expression,Type,System.String,System.Boolean)
+  name: GetLessExpression(Expression, Type, String, Boolean)
+  href: api/Sensei.AspNet.Queries.QueryFilters.Filters.GenericQueryFilter.html#Sensei_AspNet_Queries_QueryFilters_Filters_GenericQueryFilter_GetLessExpression_Expression_Type_System_String_System_Boolean_
+  commentId: M:Sensei.AspNet.Queries.QueryFilters.Filters.GenericQueryFilter.GetLessExpression(Expression,Type,System.String,System.Boolean)
+  fullName: Sensei.AspNet.Queries.QueryFilters.Filters.GenericQueryFilter.GetLessExpression(Expression, Type, System.String, System.Boolean)
+  nameWithType: GenericQueryFilter.GetLessExpression(Expression, Type, String, Boolean)
+- uid: Sensei.AspNet.Queries.QueryFilters.Filters.GenericQueryFilter.GetLessExpression*
+  name: GetLessExpression
+  href: api/Sensei.AspNet.Queries.QueryFilters.Filters.GenericQueryFilter.html#Sensei_AspNet_Queries_QueryFilters_Filters_GenericQueryFilter_GetLessExpression_
+  commentId: Overload:Sensei.AspNet.Queries.QueryFilters.Filters.GenericQueryFilter.GetLessExpression
+  isSpec: "True"
+  fullName: Sensei.AspNet.Queries.QueryFilters.Filters.GenericQueryFilter.GetLessExpression
+  nameWithType: GenericQueryFilter.GetLessExpression
+- uid: Sensei.AspNet.Queries.QueryFilters.Filters.GenericQueryFilter.SupportedTypes
+  name: SupportedTypes
+  href: api/Sensei.AspNet.Queries.QueryFilters.Filters.GenericQueryFilter.html#Sensei_AspNet_Queries_QueryFilters_Filters_GenericQueryFilter_SupportedTypes
+  commentId: P:Sensei.AspNet.Queries.QueryFilters.Filters.GenericQueryFilter.SupportedTypes
+  fullName: Sensei.AspNet.Queries.QueryFilters.Filters.GenericQueryFilter.SupportedTypes
+  nameWithType: GenericQueryFilter.SupportedTypes
+- uid: Sensei.AspNet.Queries.QueryFilters.Filters.GenericQueryFilter.SupportedTypes*
+  name: SupportedTypes
+  href: api/Sensei.AspNet.Queries.QueryFilters.Filters.GenericQueryFilter.html#Sensei_AspNet_Queries_QueryFilters_Filters_GenericQueryFilter_SupportedTypes_
+  commentId: Overload:Sensei.AspNet.Queries.QueryFilters.Filters.GenericQueryFilter.SupportedTypes
+  isSpec: "True"
+  fullName: Sensei.AspNet.Queries.QueryFilters.Filters.GenericQueryFilter.SupportedTypes
+  nameWithType: GenericQueryFilter.SupportedTypes
+- uid: Sensei.AspNet.Queries.QueryFilters.Filters.StringQueryFilter
+  name: StringQueryFilter
+  href: api/Sensei.AspNet.Queries.QueryFilters.Filters.StringQueryFilter.html
+  commentId: T:Sensei.AspNet.Queries.QueryFilters.Filters.StringQueryFilter
+  fullName: Sensei.AspNet.Queries.QueryFilters.Filters.StringQueryFilter
+  nameWithType: StringQueryFilter
+- uid: Sensei.AspNet.Queries.QueryFilters.Filters.StringQueryFilter.GetCompareExpression(Expression,Type,System.String)
+  name: GetCompareExpression(Expression, Type, String)
+  href: api/Sensei.AspNet.Queries.QueryFilters.Filters.StringQueryFilter.html#Sensei_AspNet_Queries_QueryFilters_Filters_StringQueryFilter_GetCompareExpression_Expression_Type_System_String_
+  commentId: M:Sensei.AspNet.Queries.QueryFilters.Filters.StringQueryFilter.GetCompareExpression(Expression,Type,System.String)
+  fullName: Sensei.AspNet.Queries.QueryFilters.Filters.StringQueryFilter.GetCompareExpression(Expression, Type, System.String)
+  nameWithType: StringQueryFilter.GetCompareExpression(Expression, Type, String)
+- uid: Sensei.AspNet.Queries.QueryFilters.Filters.StringQueryFilter.GetCompareExpression*
+  name: GetCompareExpression
+  href: api/Sensei.AspNet.Queries.QueryFilters.Filters.StringQueryFilter.html#Sensei_AspNet_Queries_QueryFilters_Filters_StringQueryFilter_GetCompareExpression_
+  commentId: Overload:Sensei.AspNet.Queries.QueryFilters.Filters.StringQueryFilter.GetCompareExpression
+  isSpec: "True"
+  fullName: Sensei.AspNet.Queries.QueryFilters.Filters.StringQueryFilter.GetCompareExpression
+  nameWithType: StringQueryFilter.GetCompareExpression
+- uid: Sensei.AspNet.Queries.QueryFilters.Filters.StringQueryFilter.GetExistsExpression(Expression,Type)
+  name: GetExistsExpression(Expression, Type)
+  href: api/Sensei.AspNet.Queries.QueryFilters.Filters.StringQueryFilter.html#Sensei_AspNet_Queries_QueryFilters_Filters_StringQueryFilter_GetExistsExpression_Expression_Type_
+  commentId: M:Sensei.AspNet.Queries.QueryFilters.Filters.StringQueryFilter.GetExistsExpression(Expression,Type)
+  fullName: Sensei.AspNet.Queries.QueryFilters.Filters.StringQueryFilter.GetExistsExpression(Expression, Type)
+  nameWithType: StringQueryFilter.GetExistsExpression(Expression, Type)
+- uid: Sensei.AspNet.Queries.QueryFilters.Filters.StringQueryFilter.GetExistsExpression*
+  name: GetExistsExpression
+  href: api/Sensei.AspNet.Queries.QueryFilters.Filters.StringQueryFilter.html#Sensei_AspNet_Queries_QueryFilters_Filters_StringQueryFilter_GetExistsExpression_
+  commentId: Overload:Sensei.AspNet.Queries.QueryFilters.Filters.StringQueryFilter.GetExistsExpression
+  isSpec: "True"
+  fullName: Sensei.AspNet.Queries.QueryFilters.Filters.StringQueryFilter.GetExistsExpression
+  nameWithType: StringQueryFilter.GetExistsExpression
+- uid: Sensei.AspNet.Queries.QueryFilters.Filters.StringQueryFilter.GetGreaterExpression(Expression,Type,System.String,System.Boolean)
+  name: GetGreaterExpression(Expression, Type, String, Boolean)
+  href: api/Sensei.AspNet.Queries.QueryFilters.Filters.StringQueryFilter.html#Sensei_AspNet_Queries_QueryFilters_Filters_StringQueryFilter_GetGreaterExpression_Expression_Type_System_String_System_Boolean_
+  commentId: M:Sensei.AspNet.Queries.QueryFilters.Filters.StringQueryFilter.GetGreaterExpression(Expression,Type,System.String,System.Boolean)
+  fullName: Sensei.AspNet.Queries.QueryFilters.Filters.StringQueryFilter.GetGreaterExpression(Expression, Type, System.String, System.Boolean)
+  nameWithType: StringQueryFilter.GetGreaterExpression(Expression, Type, String, Boolean)
+- uid: Sensei.AspNet.Queries.QueryFilters.Filters.StringQueryFilter.GetGreaterExpression*
+  name: GetGreaterExpression
+  href: api/Sensei.AspNet.Queries.QueryFilters.Filters.StringQueryFilter.html#Sensei_AspNet_Queries_QueryFilters_Filters_StringQueryFilter_GetGreaterExpression_
+  commentId: Overload:Sensei.AspNet.Queries.QueryFilters.Filters.StringQueryFilter.GetGreaterExpression
+  isSpec: "True"
+  fullName: Sensei.AspNet.Queries.QueryFilters.Filters.StringQueryFilter.GetGreaterExpression
+  nameWithType: StringQueryFilter.GetGreaterExpression
+- uid: Sensei.AspNet.Queries.QueryFilters.Filters.StringQueryFilter.GetLessExpression(Expression,Type,System.String,System.Boolean)
+  name: GetLessExpression(Expression, Type, String, Boolean)
+  href: api/Sensei.AspNet.Queries.QueryFilters.Filters.StringQueryFilter.html#Sensei_AspNet_Queries_QueryFilters_Filters_StringQueryFilter_GetLessExpression_Expression_Type_System_String_System_Boolean_
+  commentId: M:Sensei.AspNet.Queries.QueryFilters.Filters.StringQueryFilter.GetLessExpression(Expression,Type,System.String,System.Boolean)
+  fullName: Sensei.AspNet.Queries.QueryFilters.Filters.StringQueryFilter.GetLessExpression(Expression, Type, System.String, System.Boolean)
+  nameWithType: StringQueryFilter.GetLessExpression(Expression, Type, String, Boolean)
+- uid: Sensei.AspNet.Queries.QueryFilters.Filters.StringQueryFilter.GetLessExpression*
+  name: GetLessExpression
+  href: api/Sensei.AspNet.Queries.QueryFilters.Filters.StringQueryFilter.html#Sensei_AspNet_Queries_QueryFilters_Filters_StringQueryFilter_GetLessExpression_
+  commentId: Overload:Sensei.AspNet.Queries.QueryFilters.Filters.StringQueryFilter.GetLessExpression
+  isSpec: "True"
+  fullName: Sensei.AspNet.Queries.QueryFilters.Filters.StringQueryFilter.GetLessExpression
+  nameWithType: StringQueryFilter.GetLessExpression
+- uid: Sensei.AspNet.Queries.QueryFilters.Filters.StringQueryFilter.SupportedTypes
+  name: SupportedTypes
+  href: api/Sensei.AspNet.Queries.QueryFilters.Filters.StringQueryFilter.html#Sensei_AspNet_Queries_QueryFilters_Filters_StringQueryFilter_SupportedTypes
+  commentId: P:Sensei.AspNet.Queries.QueryFilters.Filters.StringQueryFilter.SupportedTypes
+  fullName: Sensei.AspNet.Queries.QueryFilters.Filters.StringQueryFilter.SupportedTypes
+  nameWithType: StringQueryFilter.SupportedTypes
+- uid: Sensei.AspNet.Queries.QueryFilters.Filters.StringQueryFilter.SupportedTypes*
+  name: SupportedTypes
+  href: api/Sensei.AspNet.Queries.QueryFilters.Filters.StringQueryFilter.html#Sensei_AspNet_Queries_QueryFilters_Filters_StringQueryFilter_SupportedTypes_
+  commentId: Overload:Sensei.AspNet.Queries.QueryFilters.Filters.StringQueryFilter.SupportedTypes
+  isSpec: "True"
+  fullName: Sensei.AspNet.Queries.QueryFilters.Filters.StringQueryFilter.SupportedTypes
+  nameWithType: StringQueryFilter.SupportedTypes
+- uid: Sensei.AspNet.Queries.QueryFilters.IQueryFilter
+  name: IQueryFilter
+  href: api/Sensei.AspNet.Queries.QueryFilters.IQueryFilter.html
+  commentId: T:Sensei.AspNet.Queries.QueryFilters.IQueryFilter
+  fullName: Sensei.AspNet.Queries.QueryFilters.IQueryFilter
+  nameWithType: IQueryFilter
+- uid: Sensei.AspNet.Queries.QueryFilters.IQueryFilter.GetCompareExpression(Expression,Type,System.String)
+  name: GetCompareExpression(Expression, Type, String)
+  href: api/Sensei.AspNet.Queries.QueryFilters.IQueryFilter.html#Sensei_AspNet_Queries_QueryFilters_IQueryFilter_GetCompareExpression_Expression_Type_System_String_
+  commentId: M:Sensei.AspNet.Queries.QueryFilters.IQueryFilter.GetCompareExpression(Expression,Type,System.String)
+  fullName: Sensei.AspNet.Queries.QueryFilters.IQueryFilter.GetCompareExpression(Expression, Type, System.String)
+  nameWithType: IQueryFilter.GetCompareExpression(Expression, Type, String)
+- uid: Sensei.AspNet.Queries.QueryFilters.IQueryFilter.GetCompareExpression*
+  name: GetCompareExpression
+  href: api/Sensei.AspNet.Queries.QueryFilters.IQueryFilter.html#Sensei_AspNet_Queries_QueryFilters_IQueryFilter_GetCompareExpression_
+  commentId: Overload:Sensei.AspNet.Queries.QueryFilters.IQueryFilter.GetCompareExpression
+  isSpec: "True"
+  fullName: Sensei.AspNet.Queries.QueryFilters.IQueryFilter.GetCompareExpression
+  nameWithType: IQueryFilter.GetCompareExpression
+- uid: Sensei.AspNet.Queries.QueryFilters.IQueryFilter.GetExistsExpression(Expression,Type)
+  name: GetExistsExpression(Expression, Type)
+  href: api/Sensei.AspNet.Queries.QueryFilters.IQueryFilter.html#Sensei_AspNet_Queries_QueryFilters_IQueryFilter_GetExistsExpression_Expression_Type_
+  commentId: M:Sensei.AspNet.Queries.QueryFilters.IQueryFilter.GetExistsExpression(Expression,Type)
+  fullName: Sensei.AspNet.Queries.QueryFilters.IQueryFilter.GetExistsExpression(Expression, Type)
+  nameWithType: IQueryFilter.GetExistsExpression(Expression, Type)
+- uid: Sensei.AspNet.Queries.QueryFilters.IQueryFilter.GetExistsExpression*
+  name: GetExistsExpression
+  href: api/Sensei.AspNet.Queries.QueryFilters.IQueryFilter.html#Sensei_AspNet_Queries_QueryFilters_IQueryFilter_GetExistsExpression_
+  commentId: Overload:Sensei.AspNet.Queries.QueryFilters.IQueryFilter.GetExistsExpression
+  isSpec: "True"
+  fullName: Sensei.AspNet.Queries.QueryFilters.IQueryFilter.GetExistsExpression
+  nameWithType: IQueryFilter.GetExistsExpression
+- uid: Sensei.AspNet.Queries.QueryFilters.IQueryFilter.GetGreaterExpression(Expression,Type,System.String,System.Boolean)
+  name: GetGreaterExpression(Expression, Type, String, Boolean)
+  href: api/Sensei.AspNet.Queries.QueryFilters.IQueryFilter.html#Sensei_AspNet_Queries_QueryFilters_IQueryFilter_GetGreaterExpression_Expression_Type_System_String_System_Boolean_
+  commentId: M:Sensei.AspNet.Queries.QueryFilters.IQueryFilter.GetGreaterExpression(Expression,Type,System.String,System.Boolean)
+  fullName: Sensei.AspNet.Queries.QueryFilters.IQueryFilter.GetGreaterExpression(Expression, Type, System.String, System.Boolean)
+  nameWithType: IQueryFilter.GetGreaterExpression(Expression, Type, String, Boolean)
+- uid: Sensei.AspNet.Queries.QueryFilters.IQueryFilter.GetGreaterExpression*
+  name: GetGreaterExpression
+  href: api/Sensei.AspNet.Queries.QueryFilters.IQueryFilter.html#Sensei_AspNet_Queries_QueryFilters_IQueryFilter_GetGreaterExpression_
+  commentId: Overload:Sensei.AspNet.Queries.QueryFilters.IQueryFilter.GetGreaterExpression
+  isSpec: "True"
+  fullName: Sensei.AspNet.Queries.QueryFilters.IQueryFilter.GetGreaterExpression
+  nameWithType: IQueryFilter.GetGreaterExpression
+- uid: Sensei.AspNet.Queries.QueryFilters.IQueryFilter.GetLessExpression(Expression,Type,System.String,System.Boolean)
+  name: GetLessExpression(Expression, Type, String, Boolean)
+  href: api/Sensei.AspNet.Queries.QueryFilters.IQueryFilter.html#Sensei_AspNet_Queries_QueryFilters_IQueryFilter_GetLessExpression_Expression_Type_System_String_System_Boolean_
+  commentId: M:Sensei.AspNet.Queries.QueryFilters.IQueryFilter.GetLessExpression(Expression,Type,System.String,System.Boolean)
+  fullName: Sensei.AspNet.Queries.QueryFilters.IQueryFilter.GetLessExpression(Expression, Type, System.String, System.Boolean)
+  nameWithType: IQueryFilter.GetLessExpression(Expression, Type, String, Boolean)
+- uid: Sensei.AspNet.Queries.QueryFilters.IQueryFilter.GetLessExpression*
+  name: GetLessExpression
+  href: api/Sensei.AspNet.Queries.QueryFilters.IQueryFilter.html#Sensei_AspNet_Queries_QueryFilters_IQueryFilter_GetLessExpression_
+  commentId: Overload:Sensei.AspNet.Queries.QueryFilters.IQueryFilter.GetLessExpression
+  isSpec: "True"
+  fullName: Sensei.AspNet.Queries.QueryFilters.IQueryFilter.GetLessExpression
+  nameWithType: IQueryFilter.GetLessExpression
+- uid: Sensei.AspNet.Queries.QueryFilters.IQueryFilter.SupportedTypes
+  name: SupportedTypes
+  href: api/Sensei.AspNet.Queries.QueryFilters.IQueryFilter.html#Sensei_AspNet_Queries_QueryFilters_IQueryFilter_SupportedTypes
+  commentId: P:Sensei.AspNet.Queries.QueryFilters.IQueryFilter.SupportedTypes
+  fullName: Sensei.AspNet.Queries.QueryFilters.IQueryFilter.SupportedTypes
+  nameWithType: IQueryFilter.SupportedTypes
+- uid: Sensei.AspNet.Queries.QueryFilters.IQueryFilter.SupportedTypes*
+  name: SupportedTypes
+  href: api/Sensei.AspNet.Queries.QueryFilters.IQueryFilter.html#Sensei_AspNet_Queries_QueryFilters_IQueryFilter_SupportedTypes_
+  commentId: Overload:Sensei.AspNet.Queries.QueryFilters.IQueryFilter.SupportedTypes
+  isSpec: "True"
+  fullName: Sensei.AspNet.Queries.QueryFilters.IQueryFilter.SupportedTypes
+  nameWithType: IQueryFilter.SupportedTypes
+- uid: Sensei.AspNet.Queries.QueryFilters.QueryFilterProcessor
+  name: QueryFilterProcessor
+  href: api/Sensei.AspNet.Queries.QueryFilters.QueryFilterProcessor.html
+  commentId: T:Sensei.AspNet.Queries.QueryFilters.QueryFilterProcessor
+  fullName: Sensei.AspNet.Queries.QueryFilters.QueryFilterProcessor
+  nameWithType: QueryFilterProcessor
+- uid: Sensei.AspNet.Queries.QueryFilters.QueryFilterProcessor.ApplyFilters*
+  name: ApplyFilters
+  href: api/Sensei.AspNet.Queries.QueryFilters.QueryFilterProcessor.html#Sensei_AspNet_Queries_QueryFilters_QueryFilterProcessor_ApplyFilters_
+  commentId: Overload:Sensei.AspNet.Queries.QueryFilters.QueryFilterProcessor.ApplyFilters
+  isSpec: "True"
+  fullName: Sensei.AspNet.Queries.QueryFilters.QueryFilterProcessor.ApplyFilters
+  nameWithType: QueryFilterProcessor.ApplyFilters
+- uid: Sensei.AspNet.Queries.QueryFilters.QueryFilterProcessor.ApplyFilters``1(Sensei.AspNet.Queries.Query{``0},Sensei.AspNet.Queries.Entities.Filtering)
+  name: ApplyFilters<TEntity>(Query<TEntity>, Filtering)
+  href: api/Sensei.AspNet.Queries.QueryFilters.QueryFilterProcessor.html#Sensei_AspNet_Queries_QueryFilters_QueryFilterProcessor_ApplyFilters__1_Sensei_AspNet_Queries_Query___0__Sensei_AspNet_Queries_Entities_Filtering_
+  commentId: M:Sensei.AspNet.Queries.QueryFilters.QueryFilterProcessor.ApplyFilters``1(Sensei.AspNet.Queries.Query{``0},Sensei.AspNet.Queries.Entities.Filtering)
+  name.vb: ApplyFilters(Of TEntity)(Query(Of TEntity), Filtering)
+  fullName: Sensei.AspNet.Queries.QueryFilters.QueryFilterProcessor.ApplyFilters<TEntity>(Sensei.AspNet.Queries.Query<TEntity>, Sensei.AspNet.Queries.Entities.Filtering)
+  fullName.vb: Sensei.AspNet.Queries.QueryFilters.QueryFilterProcessor.ApplyFilters(Of TEntity)(Sensei.AspNet.Queries.Query(Of TEntity), Sensei.AspNet.Queries.Entities.Filtering)
+  nameWithType: QueryFilterProcessor.ApplyFilters<TEntity>(Query<TEntity>, Filtering)
+  nameWithType.vb: QueryFilterProcessor.ApplyFilters(Of TEntity)(Query(Of TEntity), Filtering)
+- uid: Sensei.AspNet.Queries.QueryIncludes
+  name: Sensei.AspNet.Queries.QueryIncludes
+  href: api/Sensei.AspNet.Queries.QueryIncludes.html
+  commentId: N:Sensei.AspNet.Queries.QueryIncludes
+  fullName: Sensei.AspNet.Queries.QueryIncludes
+  nameWithType: Sensei.AspNet.Queries.QueryIncludes
+- uid: Sensei.AspNet.Queries.QueryIncludes.QueryIncludeProcessor
+  name: QueryIncludeProcessor
+  href: api/Sensei.AspNet.Queries.QueryIncludes.QueryIncludeProcessor.html
+  commentId: T:Sensei.AspNet.Queries.QueryIncludes.QueryIncludeProcessor
+  fullName: Sensei.AspNet.Queries.QueryIncludes.QueryIncludeProcessor
+  nameWithType: QueryIncludeProcessor
+- uid: Sensei.AspNet.Queries.QueryIncludes.QueryIncludeProcessor.ApplyIncluding*
+  name: ApplyIncluding
+  href: api/Sensei.AspNet.Queries.QueryIncludes.QueryIncludeProcessor.html#Sensei_AspNet_Queries_QueryIncludes_QueryIncludeProcessor_ApplyIncluding_
+  commentId: Overload:Sensei.AspNet.Queries.QueryIncludes.QueryIncludeProcessor.ApplyIncluding
+  isSpec: "True"
+  fullName: Sensei.AspNet.Queries.QueryIncludes.QueryIncludeProcessor.ApplyIncluding
+  nameWithType: QueryIncludeProcessor.ApplyIncluding
+- uid: Sensei.AspNet.Queries.QueryIncludes.QueryIncludeProcessor.ApplyIncluding``1(Sensei.AspNet.Queries.Query{``0},Sensei.AspNet.Queries.Entities.Including)
+  name: ApplyIncluding<TEntity>(Query<TEntity>, Including)
+  href: api/Sensei.AspNet.Queries.QueryIncludes.QueryIncludeProcessor.html#Sensei_AspNet_Queries_QueryIncludes_QueryIncludeProcessor_ApplyIncluding__1_Sensei_AspNet_Queries_Query___0__Sensei_AspNet_Queries_Entities_Including_
+  commentId: M:Sensei.AspNet.Queries.QueryIncludes.QueryIncludeProcessor.ApplyIncluding``1(Sensei.AspNet.Queries.Query{``0},Sensei.AspNet.Queries.Entities.Including)
+  name.vb: ApplyIncluding(Of TEntity)(Query(Of TEntity), Including)
+  fullName: Sensei.AspNet.Queries.QueryIncludes.QueryIncludeProcessor.ApplyIncluding<TEntity>(Sensei.AspNet.Queries.Query<TEntity>, Sensei.AspNet.Queries.Entities.Including)
+  fullName.vb: Sensei.AspNet.Queries.QueryIncludes.QueryIncludeProcessor.ApplyIncluding(Of TEntity)(Sensei.AspNet.Queries.Query(Of TEntity), Sensei.AspNet.Queries.Entities.Including)
+  nameWithType: QueryIncludeProcessor.ApplyIncluding<TEntity>(Query<TEntity>, Including)
+  nameWithType.vb: QueryIncludeProcessor.ApplyIncluding(Of TEntity)(Query(Of TEntity), Including)
+- uid: Sensei.AspNet.Queries.QueryMapper
+  name: QueryMapper
+  href: api/Sensei.AspNet.Queries.QueryMapper.html
+  commentId: T:Sensei.AspNet.Queries.QueryMapper
+  fullName: Sensei.AspNet.Queries.QueryMapper
+  nameWithType: QueryMapper
+- uid: Sensei.AspNet.Queries.QueryMapper.Property*
+  name: Property
+  href: api/Sensei.AspNet.Queries.QueryMapper.html#Sensei_AspNet_Queries_QueryMapper_Property_
+  commentId: Overload:Sensei.AspNet.Queries.QueryMapper.Property
+  isSpec: "True"
+  fullName: Sensei.AspNet.Queries.QueryMapper.Property
+  nameWithType: QueryMapper.Property
+- uid: Sensei.AspNet.Queries.QueryMapper.Property``1(Expression{Func{``0,System.Object}})
+  name: Property<TEntity>(Expression<Func<TEntity, Object>>)
+  href: api/Sensei.AspNet.Queries.QueryMapper.html#Sensei_AspNet_Queries_QueryMapper_Property__1_Expression_Func___0_System_Object___
+  commentId: M:Sensei.AspNet.Queries.QueryMapper.Property``1(Expression{Func{``0,System.Object}})
+  name.vb: Property(Of TEntity)(Expression(Of Func(Of TEntity, Object)))
+  fullName: Sensei.AspNet.Queries.QueryMapper.Property<TEntity>(Expression<Func<TEntity, System.Object>>)
+  fullName.vb: Sensei.AspNet.Queries.QueryMapper.Property(Of TEntity)(Expression(Of Func(Of TEntity, System.Object)))
+  nameWithType: QueryMapper.Property<TEntity>(Expression<Func<TEntity, Object>>)
+  nameWithType.vb: QueryMapper.Property(Of TEntity)(Expression(Of Func(Of TEntity, Object)))
+- uid: Sensei.AspNet.Queries.QueryPagination
+  name: Sensei.AspNet.Queries.QueryPagination
+  href: api/Sensei.AspNet.Queries.QueryPagination.html
+  commentId: N:Sensei.AspNet.Queries.QueryPagination
+  fullName: Sensei.AspNet.Queries.QueryPagination
+  nameWithType: Sensei.AspNet.Queries.QueryPagination
+- uid: Sensei.AspNet.Queries.QueryPagination.QueryPaginationProcessor
+  name: QueryPaginationProcessor
+  href: api/Sensei.AspNet.Queries.QueryPagination.QueryPaginationProcessor.html
+  commentId: T:Sensei.AspNet.Queries.QueryPagination.QueryPaginationProcessor
+  fullName: Sensei.AspNet.Queries.QueryPagination.QueryPaginationProcessor
+  nameWithType: QueryPaginationProcessor
+- uid: Sensei.AspNet.Queries.QueryPagination.QueryPaginationProcessor.ApplyPagination*
+  name: ApplyPagination
+  href: api/Sensei.AspNet.Queries.QueryPagination.QueryPaginationProcessor.html#Sensei_AspNet_Queries_QueryPagination_QueryPaginationProcessor_ApplyPagination_
+  commentId: Overload:Sensei.AspNet.Queries.QueryPagination.QueryPaginationProcessor.ApplyPagination
+  isSpec: "True"
+  fullName: Sensei.AspNet.Queries.QueryPagination.QueryPaginationProcessor.ApplyPagination
+  nameWithType: QueryPaginationProcessor.ApplyPagination
+- uid: Sensei.AspNet.Queries.QueryPagination.QueryPaginationProcessor.ApplyPagination``1(Sensei.AspNet.Queries.Query{``0},Sensei.AspNet.Queries.Entities.Pagination)
+  name: ApplyPagination<TEntity>(Query<TEntity>, Pagination)
+  href: api/Sensei.AspNet.Queries.QueryPagination.QueryPaginationProcessor.html#Sensei_AspNet_Queries_QueryPagination_QueryPaginationProcessor_ApplyPagination__1_Sensei_AspNet_Queries_Query___0__Sensei_AspNet_Queries_Entities_Pagination_
+  commentId: M:Sensei.AspNet.Queries.QueryPagination.QueryPaginationProcessor.ApplyPagination``1(Sensei.AspNet.Queries.Query{``0},Sensei.AspNet.Queries.Entities.Pagination)
+  name.vb: ApplyPagination(Of TEntity)(Query(Of TEntity), Pagination)
+  fullName: Sensei.AspNet.Queries.QueryPagination.QueryPaginationProcessor.ApplyPagination<TEntity>(Sensei.AspNet.Queries.Query<TEntity>, Sensei.AspNet.Queries.Entities.Pagination)
+  fullName.vb: Sensei.AspNet.Queries.QueryPagination.QueryPaginationProcessor.ApplyPagination(Of TEntity)(Sensei.AspNet.Queries.Query(Of TEntity), Sensei.AspNet.Queries.Entities.Pagination)
+  nameWithType: QueryPaginationProcessor.ApplyPagination<TEntity>(Query<TEntity>, Pagination)
+  nameWithType.vb: QueryPaginationProcessor.ApplyPagination(Of TEntity)(Query(Of TEntity), Pagination)
+- uid: Sensei.AspNet.Queries.QueryProcessor
+  name: QueryProcessor
+  href: api/Sensei.AspNet.Queries.QueryProcessor.html
+  commentId: T:Sensei.AspNet.Queries.QueryProcessor
+  fullName: Sensei.AspNet.Queries.QueryProcessor
+  nameWithType: QueryProcessor
+- uid: Sensei.AspNet.Queries.QueryProcessor.#ctor(IServiceProvider,ILoggerFactory)
+  name: QueryProcessor(IServiceProvider, ILoggerFactory)
+  href: api/Sensei.AspNet.Queries.QueryProcessor.html#Sensei_AspNet_Queries_QueryProcessor__ctor_IServiceProvider_ILoggerFactory_
+  commentId: M:Sensei.AspNet.Queries.QueryProcessor.#ctor(IServiceProvider,ILoggerFactory)
+  fullName: Sensei.AspNet.Queries.QueryProcessor.QueryProcessor(IServiceProvider, ILoggerFactory)
+  nameWithType: QueryProcessor.QueryProcessor(IServiceProvider, ILoggerFactory)
+- uid: Sensei.AspNet.Queries.QueryProcessor.#ctor*
+  name: QueryProcessor
+  href: api/Sensei.AspNet.Queries.QueryProcessor.html#Sensei_AspNet_Queries_QueryProcessor__ctor_
+  commentId: Overload:Sensei.AspNet.Queries.QueryProcessor.#ctor
+  isSpec: "True"
+  fullName: Sensei.AspNet.Queries.QueryProcessor.QueryProcessor
+  nameWithType: QueryProcessor.QueryProcessor
+- uid: Sensei.AspNet.Queries.QueryProcessor.Start*
+  name: Start
+  href: api/Sensei.AspNet.Queries.QueryProcessor.html#Sensei_AspNet_Queries_QueryProcessor_Start_
+  commentId: Overload:Sensei.AspNet.Queries.QueryProcessor.Start
+  isSpec: "True"
+  fullName: Sensei.AspNet.Queries.QueryProcessor.Start
+  nameWithType: QueryProcessor.Start
+- uid: Sensei.AspNet.Queries.QueryProcessor.Start``1(IQueryable{``0},Sensei.AspNet.Queries.IQueryContext)
+  name: Start<TEntity>(IQueryable<TEntity>, IQueryContext)
+  href: api/Sensei.AspNet.Queries.QueryProcessor.html#Sensei_AspNet_Queries_QueryProcessor_Start__1_IQueryable___0__Sensei_AspNet_Queries_IQueryContext_
+  commentId: M:Sensei.AspNet.Queries.QueryProcessor.Start``1(IQueryable{``0},Sensei.AspNet.Queries.IQueryContext)
+  name.vb: Start(Of TEntity)(IQueryable(Of TEntity), IQueryContext)
+  fullName: Sensei.AspNet.Queries.QueryProcessor.Start<TEntity>(IQueryable<TEntity>, Sensei.AspNet.Queries.IQueryContext)
+  fullName.vb: Sensei.AspNet.Queries.QueryProcessor.Start(Of TEntity)(IQueryable(Of TEntity), Sensei.AspNet.Queries.IQueryContext)
+  nameWithType: QueryProcessor.Start<TEntity>(IQueryable<TEntity>, IQueryContext)
+  nameWithType.vb: QueryProcessor.Start(Of TEntity)(IQueryable(Of TEntity), IQueryContext)
+- uid: Sensei.AspNet.Queries.QueryProperty
+  name: QueryProperty
+  href: api/Sensei.AspNet.Queries.QueryProperty.html
+  commentId: T:Sensei.AspNet.Queries.QueryProperty
+  fullName: Sensei.AspNet.Queries.QueryProperty
+  nameWithType: QueryProperty
+- uid: Sensei.AspNet.Queries.QueryProperty.CanFilter(System.Boolean)
+  name: CanFilter(Boolean)
+  href: api/Sensei.AspNet.Queries.QueryProperty.html#Sensei_AspNet_Queries_QueryProperty_CanFilter_System_Boolean_
+  commentId: M:Sensei.AspNet.Queries.QueryProperty.CanFilter(System.Boolean)
+  fullName: Sensei.AspNet.Queries.QueryProperty.CanFilter(System.Boolean)
+  nameWithType: QueryProperty.CanFilter(Boolean)
+- uid: Sensei.AspNet.Queries.QueryProperty.CanFilter*
+  name: CanFilter
+  href: api/Sensei.AspNet.Queries.QueryProperty.html#Sensei_AspNet_Queries_QueryProperty_CanFilter_
+  commentId: Overload:Sensei.AspNet.Queries.QueryProperty.CanFilter
+  isSpec: "True"
+  fullName: Sensei.AspNet.Queries.QueryProperty.CanFilter
+  nameWithType: QueryProperty.CanFilter
+- uid: Sensei.AspNet.Queries.QueryProperty.CanInclude(System.Boolean)
+  name: CanInclude(Boolean)
+  href: api/Sensei.AspNet.Queries.QueryProperty.html#Sensei_AspNet_Queries_QueryProperty_CanInclude_System_Boolean_
+  commentId: M:Sensei.AspNet.Queries.QueryProperty.CanInclude(System.Boolean)
+  fullName: Sensei.AspNet.Queries.QueryProperty.CanInclude(System.Boolean)
+  nameWithType: QueryProperty.CanInclude(Boolean)
+- uid: Sensei.AspNet.Queries.QueryProperty.CanInclude*
+  name: CanInclude
+  href: api/Sensei.AspNet.Queries.QueryProperty.html#Sensei_AspNet_Queries_QueryProperty_CanInclude_
+  commentId: Overload:Sensei.AspNet.Queries.QueryProperty.CanInclude
+  isSpec: "True"
+  fullName: Sensei.AspNet.Queries.QueryProperty.CanInclude
+  nameWithType: QueryProperty.CanInclude
+- uid: Sensei.AspNet.Queries.QueryProperty.CanSort(System.Boolean)
+  name: CanSort(Boolean)
+  href: api/Sensei.AspNet.Queries.QueryProperty.html#Sensei_AspNet_Queries_QueryProperty_CanSort_System_Boolean_
+  commentId: M:Sensei.AspNet.Queries.QueryProperty.CanSort(System.Boolean)
+  fullName: Sensei.AspNet.Queries.QueryProperty.CanSort(System.Boolean)
+  nameWithType: QueryProperty.CanSort(Boolean)
+- uid: Sensei.AspNet.Queries.QueryProperty.CanSort*
+  name: CanSort
+  href: api/Sensei.AspNet.Queries.QueryProperty.html#Sensei_AspNet_Queries_QueryProperty_CanSort_
+  commentId: Overload:Sensei.AspNet.Queries.QueryProperty.CanSort
+  isSpec: "True"
+  fullName: Sensei.AspNet.Queries.QueryProperty.CanSort
+  nameWithType: QueryProperty.CanSort
+- uid: Sensei.AspNet.Queries.QuerySorts
+  name: Sensei.AspNet.Queries.QuerySorts
+  href: api/Sensei.AspNet.Queries.QuerySorts.html
+  commentId: N:Sensei.AspNet.Queries.QuerySorts
+  fullName: Sensei.AspNet.Queries.QuerySorts
+  nameWithType: Sensei.AspNet.Queries.QuerySorts
+- uid: Sensei.AspNet.Queries.QuerySorts.QuerySortProcessor
+  name: QuerySortProcessor
+  href: api/Sensei.AspNet.Queries.QuerySorts.QuerySortProcessor.html
+  commentId: T:Sensei.AspNet.Queries.QuerySorts.QuerySortProcessor
+  fullName: Sensei.AspNet.Queries.QuerySorts.QuerySortProcessor
+  nameWithType: QuerySortProcessor
+- uid: Sensei.AspNet.Queries.QuerySorts.QuerySortProcessor.ApplySorting*
+  name: ApplySorting
+  href: api/Sensei.AspNet.Queries.QuerySorts.QuerySortProcessor.html#Sensei_AspNet_Queries_QuerySorts_QuerySortProcessor_ApplySorting_
+  commentId: Overload:Sensei.AspNet.Queries.QuerySorts.QuerySortProcessor.ApplySorting
+  isSpec: "True"
+  fullName: Sensei.AspNet.Queries.QuerySorts.QuerySortProcessor.ApplySorting
+  nameWithType: QuerySortProcessor.ApplySorting
+- uid: Sensei.AspNet.Queries.QuerySorts.QuerySortProcessor.ApplySorting``1(Sensei.AspNet.Queries.Query{``0},Sensei.AspNet.Queries.Entities.Sorting)
+  name: ApplySorting<TEntity>(Query<TEntity>, Sorting)
+  href: api/Sensei.AspNet.Queries.QuerySorts.QuerySortProcessor.html#Sensei_AspNet_Queries_QuerySorts_QuerySortProcessor_ApplySorting__1_Sensei_AspNet_Queries_Query___0__Sensei_AspNet_Queries_Entities_Sorting_
+  commentId: M:Sensei.AspNet.Queries.QuerySorts.QuerySortProcessor.ApplySorting``1(Sensei.AspNet.Queries.Query{``0},Sensei.AspNet.Queries.Entities.Sorting)
+  name.vb: ApplySorting(Of TEntity)(Query(Of TEntity), Sorting)
+  fullName: Sensei.AspNet.Queries.QuerySorts.QuerySortProcessor.ApplySorting<TEntity>(Sensei.AspNet.Queries.Query<TEntity>, Sensei.AspNet.Queries.Entities.Sorting)
+  fullName.vb: Sensei.AspNet.Queries.QuerySorts.QuerySortProcessor.ApplySorting(Of TEntity)(Sensei.AspNet.Queries.Query(Of TEntity), Sensei.AspNet.Queries.Entities.Sorting)
+  nameWithType: QuerySortProcessor.ApplySorting<TEntity>(Query<TEntity>, Sorting)
+  nameWithType.vb: QuerySortProcessor.ApplySorting(Of TEntity)(Query(Of TEntity), Sorting)
+- uid: Sensei.AspNet.SenseiDbContext
+  name: SenseiDbContext
+  href: api/Sensei.AspNet.SenseiDbContext.html
+  commentId: T:Sensei.AspNet.SenseiDbContext
+  fullName: Sensei.AspNet.SenseiDbContext
+  nameWithType: SenseiDbContext
+- uid: Sensei.AspNet.SenseiDbContext.#ctor
+  name: SenseiDbContext()
+  href: api/Sensei.AspNet.SenseiDbContext.html#Sensei_AspNet_SenseiDbContext__ctor
+  commentId: M:Sensei.AspNet.SenseiDbContext.#ctor
+  fullName: Sensei.AspNet.SenseiDbContext.SenseiDbContext()
+  nameWithType: SenseiDbContext.SenseiDbContext()
+- uid: Sensei.AspNet.SenseiDbContext.#ctor(DbContextOptions,IServiceProvider)
+  name: SenseiDbContext(DbContextOptions, IServiceProvider)
+  href: api/Sensei.AspNet.SenseiDbContext.html#Sensei_AspNet_SenseiDbContext__ctor_DbContextOptions_IServiceProvider_
+  commentId: M:Sensei.AspNet.SenseiDbContext.#ctor(DbContextOptions,IServiceProvider)
+  fullName: Sensei.AspNet.SenseiDbContext.SenseiDbContext(DbContextOptions, IServiceProvider)
+  nameWithType: SenseiDbContext.SenseiDbContext(DbContextOptions, IServiceProvider)
+- uid: Sensei.AspNet.SenseiDbContext.#ctor*
+  name: SenseiDbContext
+  href: api/Sensei.AspNet.SenseiDbContext.html#Sensei_AspNet_SenseiDbContext__ctor_
+  commentId: Overload:Sensei.AspNet.SenseiDbContext.#ctor
+  isSpec: "True"
+  fullName: Sensei.AspNet.SenseiDbContext.SenseiDbContext
+  nameWithType: SenseiDbContext.SenseiDbContext
+- uid: Sensei.AspNet.SenseiDbContext.SaveChanges(System.Boolean)
+  name: SaveChanges(Boolean)
+  href: api/Sensei.AspNet.SenseiDbContext.html#Sensei_AspNet_SenseiDbContext_SaveChanges_System_Boolean_
+  commentId: M:Sensei.AspNet.SenseiDbContext.SaveChanges(System.Boolean)
+  fullName: Sensei.AspNet.SenseiDbContext.SaveChanges(System.Boolean)
+  nameWithType: SenseiDbContext.SaveChanges(Boolean)
+- uid: Sensei.AspNet.SenseiDbContext.SaveChanges*
+  name: SaveChanges
+  href: api/Sensei.AspNet.SenseiDbContext.html#Sensei_AspNet_SenseiDbContext_SaveChanges_
+  commentId: Overload:Sensei.AspNet.SenseiDbContext.SaveChanges
+  isSpec: "True"
+  fullName: Sensei.AspNet.SenseiDbContext.SaveChanges
+  nameWithType: SenseiDbContext.SaveChanges
+- uid: Sensei.AspNet.SenseiDbContext.SaveChangesAsync(System.Boolean,CancellationToken)
+  name: SaveChangesAsync(Boolean, CancellationToken)
+  href: api/Sensei.AspNet.SenseiDbContext.html#Sensei_AspNet_SenseiDbContext_SaveChangesAsync_System_Boolean_CancellationToken_
+  commentId: M:Sensei.AspNet.SenseiDbContext.SaveChangesAsync(System.Boolean,CancellationToken)
+  fullName: Sensei.AspNet.SenseiDbContext.SaveChangesAsync(System.Boolean, CancellationToken)
+  nameWithType: SenseiDbContext.SaveChangesAsync(Boolean, CancellationToken)
+- uid: Sensei.AspNet.SenseiDbContext.SaveChangesAsync*
+  name: SaveChangesAsync
+  href: api/Sensei.AspNet.SenseiDbContext.html#Sensei_AspNet_SenseiDbContext_SaveChangesAsync_
+  commentId: Overload:Sensei.AspNet.SenseiDbContext.SaveChangesAsync
+  isSpec: "True"
+  fullName: Sensei.AspNet.SenseiDbContext.SaveChangesAsync
+  nameWithType: SenseiDbContext.SaveChangesAsync
+- uid: Sensei.AspNet.SenseiOptions
+  name: SenseiOptions
+  href: api/Sensei.AspNet.SenseiOptions.html
+  commentId: T:Sensei.AspNet.SenseiOptions
+  fullName: Sensei.AspNet.SenseiOptions
+  nameWithType: SenseiOptions
+- uid: Sensei.AspNet.SenseiOptions.EnableFiltersAsDefault
+  name: EnableFiltersAsDefault
+  href: api/Sensei.AspNet.SenseiOptions.html#Sensei_AspNet_SenseiOptions_EnableFiltersAsDefault
+  commentId: P:Sensei.AspNet.SenseiOptions.EnableFiltersAsDefault
+  fullName: Sensei.AspNet.SenseiOptions.EnableFiltersAsDefault
+  nameWithType: SenseiOptions.EnableFiltersAsDefault
+- uid: Sensei.AspNet.SenseiOptions.EnableFiltersAsDefault*
+  name: EnableFiltersAsDefault
+  href: api/Sensei.AspNet.SenseiOptions.html#Sensei_AspNet_SenseiOptions_EnableFiltersAsDefault_
+  commentId: Overload:Sensei.AspNet.SenseiOptions.EnableFiltersAsDefault
+  isSpec: "True"
+  fullName: Sensei.AspNet.SenseiOptions.EnableFiltersAsDefault
+  nameWithType: SenseiOptions.EnableFiltersAsDefault
+- uid: Sensei.AspNet.SenseiOptions.EnableIncludesAsDefault
+  name: EnableIncludesAsDefault
+  href: api/Sensei.AspNet.SenseiOptions.html#Sensei_AspNet_SenseiOptions_EnableIncludesAsDefault
+  commentId: P:Sensei.AspNet.SenseiOptions.EnableIncludesAsDefault
+  fullName: Sensei.AspNet.SenseiOptions.EnableIncludesAsDefault
+  nameWithType: SenseiOptions.EnableIncludesAsDefault
+- uid: Sensei.AspNet.SenseiOptions.EnableIncludesAsDefault*
+  name: EnableIncludesAsDefault
+  href: api/Sensei.AspNet.SenseiOptions.html#Sensei_AspNet_SenseiOptions_EnableIncludesAsDefault_
+  commentId: Overload:Sensei.AspNet.SenseiOptions.EnableIncludesAsDefault
+  isSpec: "True"
+  fullName: Sensei.AspNet.SenseiOptions.EnableIncludesAsDefault
+  nameWithType: SenseiOptions.EnableIncludesAsDefault
+- uid: Sensei.AspNet.SenseiOptions.EnableSortsAsDefault
+  name: EnableSortsAsDefault
+  href: api/Sensei.AspNet.SenseiOptions.html#Sensei_AspNet_SenseiOptions_EnableSortsAsDefault
+  commentId: P:Sensei.AspNet.SenseiOptions.EnableSortsAsDefault
+  fullName: Sensei.AspNet.SenseiOptions.EnableSortsAsDefault
+  nameWithType: SenseiOptions.EnableSortsAsDefault
+- uid: Sensei.AspNet.SenseiOptions.EnableSortsAsDefault*
+  name: EnableSortsAsDefault
+  href: api/Sensei.AspNet.SenseiOptions.html#Sensei_AspNet_SenseiOptions_EnableSortsAsDefault_
+  commentId: Overload:Sensei.AspNet.SenseiOptions.EnableSortsAsDefault
+  isSpec: "True"
+  fullName: Sensei.AspNet.SenseiOptions.EnableSortsAsDefault
+  nameWithType: SenseiOptions.EnableSortsAsDefault
+- uid: Sensei.AspNet.SenseiOptions.PaginationDefaultPageSize
+  name: PaginationDefaultPageSize
+  href: api/Sensei.AspNet.SenseiOptions.html#Sensei_AspNet_SenseiOptions_PaginationDefaultPageSize
+  commentId: P:Sensei.AspNet.SenseiOptions.PaginationDefaultPageSize
+  fullName: Sensei.AspNet.SenseiOptions.PaginationDefaultPageSize
+  nameWithType: SenseiOptions.PaginationDefaultPageSize
+- uid: Sensei.AspNet.SenseiOptions.PaginationDefaultPageSize*
+  name: PaginationDefaultPageSize
+  href: api/Sensei.AspNet.SenseiOptions.html#Sensei_AspNet_SenseiOptions_PaginationDefaultPageSize_
+  commentId: Overload:Sensei.AspNet.SenseiOptions.PaginationDefaultPageSize
+  isSpec: "True"
+  fullName: Sensei.AspNet.SenseiOptions.PaginationDefaultPageSize
+  nameWithType: SenseiOptions.PaginationDefaultPageSize
+- uid: Sensei.AspNet.SenseiOptions.PaginationMaxPageSize
+  name: PaginationMaxPageSize
+  href: api/Sensei.AspNet.SenseiOptions.html#Sensei_AspNet_SenseiOptions_PaginationMaxPageSize
+  commentId: P:Sensei.AspNet.SenseiOptions.PaginationMaxPageSize
+  fullName: Sensei.AspNet.SenseiOptions.PaginationMaxPageSize
+  nameWithType: SenseiOptions.PaginationMaxPageSize
+- uid: Sensei.AspNet.SenseiOptions.PaginationMaxPageSize*
+  name: PaginationMaxPageSize
+  href: api/Sensei.AspNet.SenseiOptions.html#Sensei_AspNet_SenseiOptions_PaginationMaxPageSize_
+  commentId: Overload:Sensei.AspNet.SenseiOptions.PaginationMaxPageSize
+  isSpec: "True"
+  fullName: Sensei.AspNet.SenseiOptions.PaginationMaxPageSize
+  nameWithType: SenseiOptions.PaginationMaxPageSize
+- uid: Sensei.AspNet.SenseiOptions.ThrowExceptionOnQueryError
+  name: ThrowExceptionOnQueryError
+  href: api/Sensei.AspNet.SenseiOptions.html#Sensei_AspNet_SenseiOptions_ThrowExceptionOnQueryError
+  commentId: P:Sensei.AspNet.SenseiOptions.ThrowExceptionOnQueryError
+  fullName: Sensei.AspNet.SenseiOptions.ThrowExceptionOnQueryError
+  nameWithType: SenseiOptions.ThrowExceptionOnQueryError
+- uid: Sensei.AspNet.SenseiOptions.ThrowExceptionOnQueryError*
+  name: ThrowExceptionOnQueryError
+  href: api/Sensei.AspNet.SenseiOptions.html#Sensei_AspNet_SenseiOptions_ThrowExceptionOnQueryError_
+  commentId: Overload:Sensei.AspNet.SenseiOptions.ThrowExceptionOnQueryError
+  isSpec: "True"
+  fullName: Sensei.AspNet.SenseiOptions.ThrowExceptionOnQueryError
+  nameWithType: SenseiOptions.ThrowExceptionOnQueryError
+- uid: Sensei.AspNet.SenseiOptions.UserIdClaim
+  name: UserIdClaim
+  href: api/Sensei.AspNet.SenseiOptions.html#Sensei_AspNet_SenseiOptions_UserIdClaim
+  commentId: P:Sensei.AspNet.SenseiOptions.UserIdClaim
+  fullName: Sensei.AspNet.SenseiOptions.UserIdClaim
+  nameWithType: SenseiOptions.UserIdClaim
+- uid: Sensei.AspNet.SenseiOptions.UserIdClaim*
+  name: UserIdClaim
+  href: api/Sensei.AspNet.SenseiOptions.html#Sensei_AspNet_SenseiOptions_UserIdClaim_
+  commentId: Overload:Sensei.AspNet.SenseiOptions.UserIdClaim
+  isSpec: "True"
+  fullName: Sensei.AspNet.SenseiOptions.UserIdClaim
+  nameWithType: SenseiOptions.UserIdClaim
+- uid: Sensei.AspNet.Utils.Database
+  name: Sensei.AspNet.Utils.Database
+  href: api/Sensei.AspNet.Utils.Database.html
+  commentId: N:Sensei.AspNet.Utils.Database
+  fullName: Sensei.AspNet.Utils.Database
+  nameWithType: Sensei.AspNet.Utils.Database
+- uid: Sensei.AspNet.Utils.Database.Seeder
+  name: Seeder
+  href: api/Sensei.AspNet.Utils.Database.Seeder.html
+  commentId: T:Sensei.AspNet.Utils.Database.Seeder
+  fullName: Sensei.AspNet.Utils.Database.Seeder
+  nameWithType: Seeder
+- uid: Sensei.AspNet.Utils.Database.Seeder.Seed*
+  name: Seed
+  href: api/Sensei.AspNet.Utils.Database.Seeder.html#Sensei_AspNet_Utils_Database_Seeder_Seed_
+  commentId: Overload:Sensei.AspNet.Utils.Database.Seeder.Seed
+  isSpec: "True"
+  fullName: Sensei.AspNet.Utils.Database.Seeder.Seed
+  nameWithType: Seeder.Seed
+- uid: Sensei.AspNet.Utils.Database.Seeder.Seed``1(DbContext,System.String)
+  name: Seed<TEntity>(DbContext, String)
+  href: api/Sensei.AspNet.Utils.Database.Seeder.html#Sensei_AspNet_Utils_Database_Seeder_Seed__1_DbContext_System_String_
+  commentId: M:Sensei.AspNet.Utils.Database.Seeder.Seed``1(DbContext,System.String)
+  name.vb: Seed(Of TEntity)(DbContext, String)
+  fullName: Sensei.AspNet.Utils.Database.Seeder.Seed<TEntity>(DbContext, System.String)
+  fullName.vb: Sensei.AspNet.Utils.Database.Seeder.Seed(Of TEntity)(DbContext, System.String)
+  nameWithType: Seeder.Seed<TEntity>(DbContext, String)
+  nameWithType.vb: Seeder.Seed(Of TEntity)(DbContext, String)

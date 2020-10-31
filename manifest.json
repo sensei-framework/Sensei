@@ -1,0 +1,824 @@
+{
+  "homepages": [],
+  "source_base_path": "/github/workspace/Sensei.Documentation",
+  "xrefmap": "xrefmap.yml",
+  "files": [
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sensei.AspNet.Attributes.PopulateWithClaimAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sensei.AspNet.Attributes.PopulateWithClaimAttribute.html",
+          "hash": "+6oanJLQwmCivY3HGX1kqA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sensei.AspNet.Attributes.PopulateWithDateTimeAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sensei.AspNet.Attributes.PopulateWithDateTimeAttribute.html",
+          "hash": "pc90yMaaoBJqGtLWt4bCyQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sensei.AspNet.Attributes.PopulateWithUserIdAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sensei.AspNet.Attributes.PopulateWithUserIdAttribute.html",
+          "hash": "yRFG25bUg5fbuoBLkQXW4A=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sensei.AspNet.Attributes.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sensei.AspNet.Attributes.html",
+          "hash": "j/Ssw1SAcJ4xuwaio7nGUQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sensei.AspNet.DbProcessor.DbEntityState.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sensei.AspNet.DbProcessor.DbEntityState.html",
+          "hash": "uPyANdTB681qXN5JY+upVQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sensei.AspNet.DbProcessor.DbProcessor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sensei.AspNet.DbProcessor.DbProcessor.html",
+          "hash": "8uQfp+kR/k1TgWAE41i/fg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sensei.AspNet.DbProcessor.IDbProcessorAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sensei.AspNet.DbProcessor.IDbProcessorAttribute.html",
+          "hash": "PR9dU9oaiGCdmMHEdgeDMw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sensei.AspNet.DbProcessor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sensei.AspNet.DbProcessor.html",
+          "hash": "mWe+Jrd/cncitLYie6bp9Q=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sensei.AspNet.EntityController-2.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sensei.AspNet.EntityController-2.html",
+          "hash": "5Mzl4LlothDDSm9hkOu0QQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sensei.AspNet.Extensions.ServiceCollectionExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sensei.AspNet.Extensions.ServiceCollectionExtensions.html",
+          "hash": "cfs+CNE66DhXR8AaW4ZppA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sensei.AspNet.Extensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sensei.AspNet.Extensions.html",
+          "hash": "5fOlnl8BPoLayYsUSamchw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sensei.AspNet.Models.BaseModel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sensei.AspNet.Models.BaseModel.html",
+          "hash": "/pCwzmLOn7M4amIVAAUUxw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sensei.AspNet.Models.Error.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sensei.AspNet.Models.Error.html",
+          "hash": "MDQHgsyMAUPg8cC205HkIQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sensei.AspNet.Models.SingleValue-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sensei.AspNet.Models.SingleValue-1.html",
+          "hash": "wje3nlsIi+JDB+9tPwBh8g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sensei.AspNet.Models.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sensei.AspNet.Models.html",
+          "hash": "ecH7f+9gcaoAB5cq5TJMbA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sensei.AspNet.Queries.Attributes.CanFilterAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sensei.AspNet.Queries.Attributes.CanFilterAttribute.html",
+          "hash": "VbpGbW55AkGN0iew1RMzFg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sensei.AspNet.Queries.Attributes.CanIncludeAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sensei.AspNet.Queries.Attributes.CanIncludeAttribute.html",
+          "hash": "Nf/ylo52Z/E8yUOQvAitwQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sensei.AspNet.Queries.Attributes.CanSortAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sensei.AspNet.Queries.Attributes.CanSortAttribute.html",
+          "hash": "kXwHF34+dKvUzo2VFJX5fQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sensei.AspNet.Queries.Attributes.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sensei.AspNet.Queries.Attributes.html",
+          "hash": "CuC8j5abT43hvOlXsk511g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sensei.AspNet.Queries.Entities.Filtering.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sensei.AspNet.Queries.Entities.Filtering.html",
+          "hash": "8r0GUITOnQJvNVjQQ0gvDA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sensei.AspNet.Queries.Entities.Including.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sensei.AspNet.Queries.Entities.Including.html",
+          "hash": "/skr5hoX8mtLyDXukCrm5g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sensei.AspNet.Queries.Entities.Pagination.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sensei.AspNet.Queries.Entities.Pagination.html",
+          "hash": "2kCOKGRPNd7U+IZoLIl/uA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sensei.AspNet.Queries.Entities.Paginator-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sensei.AspNet.Queries.Entities.Paginator-1.html",
+          "hash": "c5Xepw7xFBoy8DNEOP9dIA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sensei.AspNet.Queries.Entities.Sorting.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sensei.AspNet.Queries.Entities.Sorting.html",
+          "hash": "KKN9is/1qJVMtXiLcF4B6w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sensei.AspNet.Queries.Entities.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sensei.AspNet.Queries.Entities.html",
+          "hash": "eAD5Mbh/+Z8sNMl7mhwthg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sensei.AspNet.Queries.Exceptions.EvaluateFilterException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sensei.AspNet.Queries.Exceptions.EvaluateFilterException.html",
+          "hash": "CMcEvR0Rm3VHalFRzu5Gkg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sensei.AspNet.Queries.Exceptions.LuceneParserException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sensei.AspNet.Queries.Exceptions.LuceneParserException.html",
+          "hash": "EFea4LVjidM0g87PeW0ERw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sensei.AspNet.Queries.Exceptions.MissingFilterException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sensei.AspNet.Queries.Exceptions.MissingFilterException.html",
+          "hash": "RQ2FyyP+pTF5aJFDVKrVNA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sensei.AspNet.Queries.Exceptions.MissingPropertyException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sensei.AspNet.Queries.Exceptions.MissingPropertyException.html",
+          "hash": "85HuMQhmn7yCLnR+cwGe6A=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sensei.AspNet.Queries.Exceptions.QueryContextInvalidException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sensei.AspNet.Queries.Exceptions.QueryContextInvalidException.html",
+          "hash": "QUnrGgwGmkyXAkwh3Yy5UQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sensei.AspNet.Queries.Exceptions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sensei.AspNet.Queries.Exceptions.html",
+          "hash": "ktpiZ8sYORNejovF9oKIzw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sensei.AspNet.Queries.IQueryContext.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sensei.AspNet.Queries.IQueryContext.html",
+          "hash": "IpBYa7B2h7KXosx4rg3UjQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sensei.AspNet.Queries.IQueryProcessor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sensei.AspNet.Queries.IQueryProcessor.html",
+          "hash": "PbOFM506vDzEPQTiWPL3qA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sensei.AspNet.Queries.Query-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sensei.AspNet.Queries.Query-1.html",
+          "hash": "1tUawfPkaMctWuq0gGISKA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sensei.AspNet.Queries.QueryContext.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sensei.AspNet.Queries.QueryContext.html",
+          "hash": "MiVNaiNMuOMvnm5QJlDKWA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sensei.AspNet.Queries.QueryFilters.Filters.ComplexQueryFilter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sensei.AspNet.Queries.QueryFilters.Filters.ComplexQueryFilter.html",
+          "hash": "lGWIjBsd6/pPFpFsiqsV+A=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sensei.AspNet.Queries.QueryFilters.Filters.GenericQueryFilter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sensei.AspNet.Queries.QueryFilters.Filters.GenericQueryFilter.html",
+          "hash": "OfEUmIX66OO/3LaEs3AQjg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sensei.AspNet.Queries.QueryFilters.Filters.StringQueryFilter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sensei.AspNet.Queries.QueryFilters.Filters.StringQueryFilter.html",
+          "hash": "it+Eq6JIt83YfadZr+y0Aw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sensei.AspNet.Queries.QueryFilters.Filters.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sensei.AspNet.Queries.QueryFilters.Filters.html",
+          "hash": "x4T8EZtAVpG/sLmY21pgWw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sensei.AspNet.Queries.QueryFilters.IQueryFilter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sensei.AspNet.Queries.QueryFilters.IQueryFilter.html",
+          "hash": "4dD/zC1/hyhT8+iqHnklYA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sensei.AspNet.Queries.QueryFilters.QueryFilterProcessor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sensei.AspNet.Queries.QueryFilters.QueryFilterProcessor.html",
+          "hash": "W+MVnTmmQQrwgDp01RzZ4g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sensei.AspNet.Queries.QueryFilters.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sensei.AspNet.Queries.QueryFilters.html",
+          "hash": "sxZnQG9zBFWAkiIpmJFYNA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sensei.AspNet.Queries.QueryIncludes.QueryIncludeProcessor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sensei.AspNet.Queries.QueryIncludes.QueryIncludeProcessor.html",
+          "hash": "jPwNodVZUSUTKzpNvmrBmw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sensei.AspNet.Queries.QueryIncludes.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sensei.AspNet.Queries.QueryIncludes.html",
+          "hash": "hrsSZyGPpt5UXORnLx3tyw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sensei.AspNet.Queries.QueryMapper.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sensei.AspNet.Queries.QueryMapper.html",
+          "hash": "yYzWNGqPjzbfKZtE6PEN5g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sensei.AspNet.Queries.QueryPagination.QueryPaginationProcessor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sensei.AspNet.Queries.QueryPagination.QueryPaginationProcessor.html",
+          "hash": "KpgexNUcAXYUzO8tOhfVIQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sensei.AspNet.Queries.QueryPagination.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sensei.AspNet.Queries.QueryPagination.html",
+          "hash": "Nr/1KbaWpesI/n0ryBKY8g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sensei.AspNet.Queries.QueryProcessor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sensei.AspNet.Queries.QueryProcessor.html",
+          "hash": "gcF677zbefZq9mNv5h57hw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sensei.AspNet.Queries.QueryProperty.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sensei.AspNet.Queries.QueryProperty.html",
+          "hash": "MRXMmqMRI+J7JH43PpdNhA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sensei.AspNet.Queries.QuerySorts.QuerySortProcessor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sensei.AspNet.Queries.QuerySorts.QuerySortProcessor.html",
+          "hash": "LThTQ8LEehvrF9PPFxy3hw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sensei.AspNet.Queries.QuerySorts.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sensei.AspNet.Queries.QuerySorts.html",
+          "hash": "vOaCJnzO1z//KPKvHFGUBg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sensei.AspNet.Queries.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sensei.AspNet.Queries.html",
+          "hash": "C8SxsTJaE95mCtfGN6dN2Q=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sensei.AspNet.SenseiDbContext.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sensei.AspNet.SenseiDbContext.html",
+          "hash": "WtZEfBjbw5R9/yp1+0YAmQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sensei.AspNet.SenseiOptions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sensei.AspNet.SenseiOptions.html",
+          "hash": "deLExdMw0WsUnOXvxqxd8Q=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sensei.AspNet.Utils.Database.Seeder.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sensei.AspNet.Utils.Database.Seeder.html",
+          "hash": "HVBvwJ5xIEhTqe4srrlD3w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sensei.AspNet.Utils.Database.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sensei.AspNet.Utils.Database.html",
+          "hash": "ZhgjSFqjkSTqMieIaXpN7A=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sensei.AspNet.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sensei.AspNet.html",
+          "hash": "Y0Xt05zu09smI8ReO4lW6A=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "api/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "api/index.html",
+          "hash": "mIgdRiIDey8eRikdjFEwPg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "api/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/toc.html",
+          "hash": "MqqftTSutBwTasZl+nCj4w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/intro.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/intro.html",
+          "hash": "jderx3CH+uMIWgj1XxbmjA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/queries.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/queries.html",
+          "hash": "ZKfDPKgLcu/znY3hvq8Kwg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "articles/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "articles/toc.html",
+          "hash": "XSNgIBJnovf8MvSmQp4rxQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "index.md",
+      "output": {
+        ".html": {
+          "relative_path": "index.html",
+          "hash": "HVkSdypqIz8VaWkA72Sq6w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "toc.html",
+          "hash": "k+/dkjFuwAVS32HduMpmBw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    }
+  ],
+  "incremental_info": [
+    {
+      "status": {
+        "can_incremental": false,
+        "details": "Cannot build incrementally because last build info is missing.",
+        "incrementalPhase": "build",
+        "total_file_count": 0,
+        "skipped_file_count": 0,
+        "full_build_reason_code": "NoAvailableBuildCache"
+      },
+      "processors": {
+        "TocDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor TocDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build",
+          "total_file_count": 0,
+          "skipped_file_count": 0
+        },
+        "ConceptualDocumentProcessor": {
+          "can_incremental": false,
+          "incrementalPhase": "build",
+          "total_file_count": 4,
+          "skipped_file_count": 0
+        },
+        "ManagedReferenceDocumentProcessor": {
+          "can_incremental": false,
+          "incrementalPhase": "build",
+          "total_file_count": 57,
+          "skipped_file_count": 0
+        }
+      }
+    },
+    {
+      "status": {
+        "can_incremental": false,
+        "details": "Cannot support incremental post processing, the reason is: last post processor info is null.",
+        "incrementalPhase": "postProcessing",
+        "total_file_count": 0,
+        "skipped_file_count": 0
+      },
+      "processors": {}
+    }
+  ],
+  "version_info": {},
+  "groups": [
+    {
+      "xrefmap": "xrefmap.yml"
+    }
+  ]
+}

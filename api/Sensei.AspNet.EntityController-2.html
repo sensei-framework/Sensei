@@ -1,0 +1,615 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class EntityController&lt;TModel, TDbContext&gt;
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class EntityController&lt;TModel, TDbContext&gt;
+   ">
+    <meta name="generator" content="docfx 2.45.1.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Sensei.AspNet.EntityController`2">
+  
+  
+  <h1 id="Sensei_AspNet_EntityController_2" data-uid="Sensei.AspNet.EntityController`2" class="text-break">Class EntityController&lt;TModel, TDbContext&gt;
+  </h1>
+  <div class="markdown level0 summary"><p>Provide an abstract base service for controllers</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">EntityController&lt;TModel, TDbContext&gt;</span></div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Sensei.AspNet.html">Sensei.AspNet</a></h6>
+  <h6><strong>Assembly</strong>: Sensei.AspNet.dll</h6>
+  <h5 id="Sensei_AspNet_EntityController_2_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract class EntityController&lt;TModel, TDbContext&gt; : ControllerBase where TModel : BaseModel where TDbContext : DbContext</code></pre>
+  </div>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TModel</span></td>
+        <td><p>The type of the data model to handle</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="parametername">TDbContext</span></td>
+        <td><p>The type for the database context</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="constructors">Constructors
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/sensei-framework/Sensei/new/master/apiSpec/new?filename=Sensei_AspNet_EntityController_2__ctor_IServiceProvider_.md&amp;value=---%0Auid%3A%20Sensei.AspNet.EntityController%602.%23ctor(IServiceProvider)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/sensei-framework/Sensei/blob/master/Sensei.AspNet/EntityController.cs/#L35">View Source</a>
+  </span>
+  <a id="Sensei_AspNet_EntityController_2__ctor_" data-uid="Sensei.AspNet.EntityController`2.#ctor*"></a>
+  <h4 id="Sensei_AspNet_EntityController_2__ctor_IServiceProvider_" data-uid="Sensei.AspNet.EntityController`2.#ctor(IServiceProvider)">EntityController(IServiceProvider)</h4>
+  <div class="markdown level1 summary"><p>Controller constructor</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected EntityController(IServiceProvider serviceProvider)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IServiceProvider</span></td>
+        <td><span class="parametername">serviceProvider</span></td>
+        <td><p>Instance of service provider</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/sensei-framework/Sensei/new/master/apiSpec/new?filename=Sensei_AspNet_EntityController_2_DbContext.md&amp;value=---%0Auid%3A%20Sensei.AspNet.EntityController%602.DbContext%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/sensei-framework/Sensei/blob/master/Sensei.AspNet/EntityController.cs/#L48">View Source</a>
+  </span>
+  <a id="Sensei_AspNet_EntityController_2_DbContext_" data-uid="Sensei.AspNet.EntityController`2.DbContext*"></a>
+  <h4 id="Sensei_AspNet_EntityController_2_DbContext" data-uid="Sensei.AspNet.EntityController`2.DbContext">DbContext</h4>
+  <div class="markdown level1 summary"><p>The database context</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected TDbContext DbContext { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TDbContext</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/sensei-framework/Sensei/new/master/apiSpec/new?filename=Sensei_AspNet_EntityController_2_DbSet.md&amp;value=---%0Auid%3A%20Sensei.AspNet.EntityController%602.DbSet%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/sensei-framework/Sensei/blob/master/Sensei.AspNet/EntityController.cs/#L53">View Source</a>
+  </span>
+  <a id="Sensei_AspNet_EntityController_2_DbSet_" data-uid="Sensei.AspNet.EntityController`2.DbSet*"></a>
+  <h4 id="Sensei_AspNet_EntityController_2_DbSet" data-uid="Sensei.AspNet.EntityController`2.DbSet">DbSet</h4>
+  <div class="markdown level1 summary"><p>The database set of data</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected DbSet&lt;TModel&gt; DbSet { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">DbSet</span>&lt;TModel&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/sensei-framework/Sensei/new/master/apiSpec/new?filename=Sensei_AspNet_EntityController_2_QueryProcessor.md&amp;value=---%0Auid%3A%20Sensei.AspNet.EntityController%602.QueryProcessor%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/sensei-framework/Sensei/blob/master/Sensei.AspNet/EntityController.cs/#L58">View Source</a>
+  </span>
+  <a id="Sensei_AspNet_EntityController_2_QueryProcessor_" data-uid="Sensei.AspNet.EntityController`2.QueryProcessor*"></a>
+  <h4 id="Sensei_AspNet_EntityController_2_QueryProcessor" data-uid="Sensei.AspNet.EntityController`2.QueryProcessor">QueryProcessor</h4>
+  <div class="markdown level1 summary"><p>The query processor</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected IQueryProcessor QueryProcessor { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Sensei.AspNet.Queries.IQueryProcessor.html">IQueryProcessor</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/sensei-framework/Sensei/new/master/apiSpec/new?filename=Sensei_AspNet_EntityController_2_Count_Sensei_AspNet_Queries_Entities_Filtering_.md&amp;value=---%0Auid%3A%20Sensei.AspNet.EntityController%602.Count(Sensei.AspNet.Queries.Entities.Filtering)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/sensei-framework/Sensei/blob/master/Sensei.AspNet/EntityController.cs/#L199">View Source</a>
+  </span>
+  <a id="Sensei_AspNet_EntityController_2_Count_" data-uid="Sensei.AspNet.EntityController`2.Count*"></a>
+  <h4 id="Sensei_AspNet_EntityController_2_Count_Sensei_AspNet_Queries_Entities_Filtering_" data-uid="Sensei.AspNet.EntityController`2.Count(Sensei.AspNet.Queries.Entities.Filtering)">Count(Filtering)</h4>
+  <div class="markdown level1 summary"><p>Count the records</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Task&lt;ActionResult&lt;SingleValue&lt;long&gt;&gt;&gt; Count(Filtering filtering)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Sensei.AspNet.Queries.Entities.Filtering.html">Filtering</a></td>
+        <td><span class="parametername">filtering</span></td>
+        <td><p>The filtering data model</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<span class="xref">ActionResult</span>&lt;<a class="xref" href="Sensei.AspNet.Models.SingleValue-1.html">SingleValue</a>&lt;<span class="xref">System.Int64</span>&gt;&gt;&gt;</td>
+        <td><p>The action result with the count result</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/sensei-framework/Sensei/new/master/apiSpec/new?filename=Sensei_AspNet_EntityController_2_Delete_Guid_.md&amp;value=---%0Auid%3A%20Sensei.AspNet.EntityController%602.Delete(Guid)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/sensei-framework/Sensei/blob/master/Sensei.AspNet/EntityController.cs/#L173">View Source</a>
+  </span>
+  <a id="Sensei_AspNet_EntityController_2_Delete_" data-uid="Sensei.AspNet.EntityController`2.Delete*"></a>
+  <h4 id="Sensei_AspNet_EntityController_2_Delete_Guid_" data-uid="Sensei.AspNet.EntityController`2.Delete(Guid)">Delete(Guid)</h4>
+  <div class="markdown level1 summary"><p>Delete a record</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Task&lt;ActionResult&gt; Delete(Guid id)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Guid</span></td>
+        <td><span class="parametername">id</span></td>
+        <td><p>The record id</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<span class="xref">ActionResult</span>&gt;</td>
+        <td><p>The action result</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/sensei-framework/Sensei/new/master/apiSpec/new?filename=Sensei_AspNet_EntityController_2_Get_Guid_Sensei_AspNet_Queries_Entities_Including_.md&amp;value=---%0Auid%3A%20Sensei.AspNet.EntityController%602.Get(Guid%2CSensei.AspNet.Queries.Entities.Including)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/sensei-framework/Sensei/blob/master/Sensei.AspNet/EntityController.cs/#L93">View Source</a>
+  </span>
+  <a id="Sensei_AspNet_EntityController_2_Get_" data-uid="Sensei.AspNet.EntityController`2.Get*"></a>
+  <h4 id="Sensei_AspNet_EntityController_2_Get_Guid_Sensei_AspNet_Queries_Entities_Including_" data-uid="Sensei.AspNet.EntityController`2.Get(Guid,Sensei.AspNet.Queries.Entities.Including)">Get(Guid, Including)</h4>
+  <div class="markdown level1 summary"><p>Get record by Id</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Task&lt;ActionResult&lt;TModel&gt;&gt; Get(Guid id, Including including)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Guid</span></td>
+        <td><span class="parametername">id</span></td>
+        <td><p>The record id</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Sensei.AspNet.Queries.Entities.Including.html">Including</a></td>
+        <td><span class="parametername">including</span></td>
+        <td><p>The including data model</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<span class="xref">ActionResult</span>&lt;TModel&gt;&gt;</td>
+        <td><p>The action result with read data</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/sensei-framework/Sensei/new/master/apiSpec/new?filename=Sensei_AspNet_EntityController_2_Get_Sensei_AspNet_Queries_Entities_Filtering_Sensei_AspNet_Queries_Entities_Sorting_Sensei_AspNet_Queries_Entities_Pagination_Sensei_AspNet_Queries_Entities_Including_.md&amp;value=---%0Auid%3A%20Sensei.AspNet.EntityController%602.Get(Sensei.AspNet.Queries.Entities.Filtering%2CSensei.AspNet.Queries.Entities.Sorting%2CSensei.AspNet.Queries.Entities.Pagination%2CSensei.AspNet.Queries.Entities.Including)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/sensei-framework/Sensei/blob/master/Sensei.AspNet/EntityController.cs/#L68">View Source</a>
+  </span>
+  <a id="Sensei_AspNet_EntityController_2_Get_" data-uid="Sensei.AspNet.EntityController`2.Get*"></a>
+  <h4 id="Sensei_AspNet_EntityController_2_Get_Sensei_AspNet_Queries_Entities_Filtering_Sensei_AspNet_Queries_Entities_Sorting_Sensei_AspNet_Queries_Entities_Pagination_Sensei_AspNet_Queries_Entities_Including_" data-uid="Sensei.AspNet.EntityController`2.Get(Sensei.AspNet.Queries.Entities.Filtering,Sensei.AspNet.Queries.Entities.Sorting,Sensei.AspNet.Queries.Entities.Pagination,Sensei.AspNet.Queries.Entities.Including)">Get(Filtering, Sorting, Pagination, Including)</h4>
+  <div class="markdown level1 summary"><p>Get records</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Task&lt;ActionResult&lt;Paginator&lt;TModel&gt;&gt;&gt; Get(Filtering filtering, Sorting sorting, Pagination pagination, Including including)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Sensei.AspNet.Queries.Entities.Filtering.html">Filtering</a></td>
+        <td><span class="parametername">filtering</span></td>
+        <td><p>The filtering data model</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Sensei.AspNet.Queries.Entities.Sorting.html">Sorting</a></td>
+        <td><span class="parametername">sorting</span></td>
+        <td><p>The sorting data model</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Sensei.AspNet.Queries.Entities.Pagination.html">Pagination</a></td>
+        <td><span class="parametername">pagination</span></td>
+        <td><p>The pagination data model</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Sensei.AspNet.Queries.Entities.Including.html">Including</a></td>
+        <td><span class="parametername">including</span></td>
+        <td><p>The including data model</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<span class="xref">ActionResult</span>&lt;<a class="xref" href="Sensei.AspNet.Queries.Entities.Paginator-1.html">Paginator</a>&lt;TModel&gt;&gt;&gt;</td>
+        <td><p>The action result with read data</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/sensei-framework/Sensei/new/master/apiSpec/new?filename=Sensei_AspNet_EntityController_2_Post__0_.md&amp;value=---%0Auid%3A%20Sensei.AspNet.EntityController%602.Post(%600)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/sensei-framework/Sensei/blob/master/Sensei.AspNet/EntityController.cs/#L121">View Source</a>
+  </span>
+  <a id="Sensei_AspNet_EntityController_2_Post_" data-uid="Sensei.AspNet.EntityController`2.Post*"></a>
+  <h4 id="Sensei_AspNet_EntityController_2_Post__0_" data-uid="Sensei.AspNet.EntityController`2.Post(`0)">Post(TModel)</h4>
+  <div class="markdown level1 summary"><p>Create record</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Task&lt;ActionResult&lt;TModel&gt;&gt; Post(TModel entity)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TModel</span></td>
+        <td><span class="parametername">entity</span></td>
+        <td><p>The data model</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<span class="xref">ActionResult</span>&lt;TModel&gt;&gt;</td>
+        <td><p>The action result with read data</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/sensei-framework/Sensei/new/master/apiSpec/new?filename=Sensei_AspNet_EntityController_2_Put_Guid__0_.md&amp;value=---%0Auid%3A%20Sensei.AspNet.EntityController%602.Put(Guid%2C%600)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/sensei-framework/Sensei/blob/master/Sensei.AspNet/EntityController.cs/#L145">View Source</a>
+  </span>
+  <a id="Sensei_AspNet_EntityController_2_Put_" data-uid="Sensei.AspNet.EntityController`2.Put*"></a>
+  <h4 id="Sensei_AspNet_EntityController_2_Put_Guid__0_" data-uid="Sensei.AspNet.EntityController`2.Put(Guid,`0)">Put(Guid, TModel)</h4>
+  <div class="markdown level1 summary"><p>Update a record</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Task&lt;ActionResult&lt;TModel&gt;&gt; Put(Guid id, TModel entity)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Guid</span></td>
+        <td><span class="parametername">id</span></td>
+        <td><p>The record id</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">TModel</span></td>
+        <td><span class="parametername">entity</span></td>
+        <td><p>The data model</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<span class="xref">ActionResult</span>&lt;TModel&gt;&gt;</td>
+        <td><p>The action result with read data</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/sensei-framework/Sensei/new/master/apiSpec/new?filename=Sensei_AspNet_EntityController_2.md&amp;value=---%0Auid%3A%20Sensei.AspNet.EntityController%602%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/sensei-framework/Sensei/blob/master/Sensei.AspNet/EntityController.cs/#L27" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>
